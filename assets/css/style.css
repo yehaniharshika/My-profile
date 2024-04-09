@@ -216,7 +216,7 @@ section{
 }
 
 #about-heading{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     position: absolute;
     top: 40px;
@@ -261,7 +261,7 @@ section{
     text-align: center ;
     font-size: 30px;
     font-family: Ubuntu;
-    top: 170px;
+    top: 200px;
     left: 880px;
     position: absolute;
 }
@@ -276,7 +276,7 @@ section{
     height: 300px;
     position: absolute;
     left: 880px;
-    top: 220px;
+    top: 300px;
     background-color: transparent;
     /*font-family: "Lato", sans-serif;
     font-weight: 400;*/
@@ -291,10 +291,10 @@ section{
 #my-details{
     position: absolute;
     left: 880px;
-    top: 500px;
+    top: 550px;
     width: 700px;
     height: 250px;
-    background-color: #515578;
+    background-image: linear-gradient(to right, #515578,skyblue,white);
 }
 
 #my-details p{
@@ -304,14 +304,10 @@ section{
     padding-left: 20px;
 }
 
-.btn-box.btns{
-    display: inline-block;
-    width: 15rem;
-    position: absolute;
-    top: 820px;
-    left: 880px;
-}
 
+.btn-box.buttons{
+    background: #FFCD1E;
+}
 .cv-btn{
     display: inline-block;
     padding: 1rem 2.5rem;
@@ -321,10 +317,51 @@ section{
     font-size: 20px;
     color: #262A56;
     letter-spacing: .1rem;
-    top: 800px;
+    top: 850px;
     position: absolute;
     font-weight: bolder;
     font-family: Ubuntu;
     transition: .5s ease;
 }
 
+.btn-box.buttons a:hover{
+    background-color: var(--bg-color);
+    color: #FFCD1E;
+}
+.my-education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+}
+
+#my-education-heading{
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
+
+#education-last{
+    color: #00EEFF;
+}
+
+.education-list-01{
+    color: #FFCD1E;
+}
+
+.education-list-02{
+    color: #FFCD1E;
+}
+
+.education-list-03{
+    color: #FFCD1E;
+}
+
+.education-list-04{
+    color: #FFCD1E;
+}
