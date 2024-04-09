@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 
 </head>
 <body class="body">
 <div class="div"></div>
 <!--header design-->
 <header class="header">
-    <div class="box-menu" id="menu-icon"></div>
+    <div class="box-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#aboutme">About me</a>
@@ -32,65 +37,73 @@
     <img src="assets/images/logo.jpg" title="logo" alt="Yehani Harshika">
 </div>
 <!--hero section-->
-<section>
-    <!--    hero section left side-->
-    <div>
-        <h1 id="home"><span>Hello,,,</span></h1>
-        <h3>I'm Yehani Harshika</h3>
-        <div>
+
+<section class="home" id="home">
+    <!--  hero section left side-->
+    <div class="homeContent">
+        <h1>Hi,  I'm <span> Yehani Harshika</span></h1>
+        <div class="text-animate">
             <h3>Software Engineering Student</h3>
         </div>
+        <p id="text-paragraph">
+            I am a  passionate software engineering student that<br>
+            trying to be a full-stack software engineer...
+        </p>
     </div>
     <!--    hero section right side-->
     <div class="main-pic">
-        <img src="assets/images/mainpic.png" title="my profile" alt="Yehani Harshika">
+        <img src="assets/images/yehacolor-removebg-preview.png" title="my profile" alt="Yehani Harshika">
     </div>
     <br><br>
-    <div>
-        <a href="https://web.facebook.com/yehani.hpamunuwa"><img src="assets/icon/facebook.png" title="" alt="" width="31" height="31"></a>
-        <a href="https://www.linkedin.com/in/yehani-harshika-pamunuwa-5b64a1283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/icon/linkedin.png" title="" alt="" width="35" height="37"></a>
-        <a href="https://www.instagram.com/hpamunuwa/"><img src="assets/icon/instagram.png" title=""alt="" width="32" height="32"></a>
-        <a href="https://github.com/yehaniharshika"><img src="assets/icon/github.png" title=""alt="" width="35" height="35"></a>
-        <a href="https://medium.com/@pamunuwayehaniharshika"><img src="assets/icon/medium.png" title=""alt="" width="38" height="40"></a>
+    <div class="connect-links">
+        <a href="https://web.facebook.com/yehani.hpamunuwa"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/yehani-harshika-pamunuwa-5b64a1283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/hpamunuwa/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/yehaniharshika"><i class="fa-brands fa-github"></i></a>
+        <a href="https://medium.com/@pamunuwayehaniharshika"><i class="fa-brands fa-medium"></i></a>
+        <a href="https://stackoverflow.com/users/22076254/yehani-harshika-pamunuwa"><i class="fa-brands fa-stack-overflow"></i></a>
     </div>
 </section>
 <br><br>
-<section>
-    <h2 id="aboutme">
+<section class="about" id="about">
+    <h2 id="about-heading">
         <span>About</span>
         <span>Me</span>
     </h2>
-    <!-- About me section Left side-->
-    <h3>Beginner in Software Engineering</h3>
-    <div>
-        <p> I am studying software engineering perfectly.I like
-            <br>front end web development..and I can do back-end
-            <br> web development,Figma proto type design and
-            <br> website design.I have completed java,
-            <br>java FX,mysql,HTML. ,CSS,java script,cyber security.
-        </p>
-    </div>
-    <div>
-        <p>
-            <br>
-            Name: H.M. Yehani Harshika Pamunuwa
-            <br><br>
-            Age: 22
-            <br><br>
-            Date Of Birth: 2001-10-21
-            <br><br>
-            Email: pamunuwayehaniharshika@gmail.com
-        </p>
-    </div>
-    <div>
-        <button type="button">Download CV</button>
+
+    <!-- About me section right side-->
+    <div class="about-image">
+        <img src="assets/images/Aboutme%20myPic.jpeg" title="" alt="" width="400" height="500">
+        <span class="circle-rotate"></span>
     </div>
 
-    <br>
-    <!--About me section Right side-->
+    <!-- About me section Left side-->
     <div>
-        <img src="assets/images/Aboutme%20myPic.jpeg" title="" alt="" width="400" height="500">
+        <h3 class="main-content">Beginner in Software Engineering</h3>
     </div>
+    <div class="about-content">
+        <p>
+            A passionate software engineering student specializing in Java.
+            I am studying software engineering perfectly.With a keen interest
+            in crafting efficient and  modern technology solutions, I’m
+            constantly exploring the deep world of software development.
+            I like front-end web development.and I can do back-end web development,
+            Figma mockup design and website design.I have completed java, java FX , mysql , HTML , CSS , java Script , Cyber security currently.
+        </p>
+    </div>
+    <div id="my-details">
+        <p>
+            <br>
+             Name:  H.M. Yehani Harshika Pamunuwa
+            <br><br>
+            Age:  22
+            <br><br>
+            Date Of Birth:  2001-10-21
+            <br><br>
+            Email:  pamunuwayehaniharshika@gmail.com
+        </p>
+    </div>
+    <a href="" class="cv-btn">Download CV</a>
 </section>
 <br><br>
 <section>
