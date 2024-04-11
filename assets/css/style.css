@@ -387,7 +387,7 @@ section{
     position: absolute;
     top: 220px;
     left: 200px;
-    background-image: linear-gradient(to right,#D9D9D9,white);
+    background-color: #1E2245;
     border-radius: 50px;
 }
 
@@ -396,7 +396,7 @@ section{
 }
 
 .education-list-square-01 p{
-    color: black;
+    color: white;
     font-weight: 500;
     font-family: "Lato", sans-serif;
     position: absolute;
@@ -412,7 +412,7 @@ section{
     position: absolute;
     top: 220px;
     right: 200px;
-    background-image: linear-gradient(to right,#D9D9D9,white);
+    background-color: #1E2245;
     border-radius: 50px;
 }
 
@@ -427,11 +427,11 @@ section{
     font-size: 20px;
     font-family: Ubuntu;
     font-weight: 600;
-    color: black;
+    color: white;
 }
 
 .education-list-square-02 p{
-    color: black;
+    color: white;
     font-weight: 500;
     font-family: "Lato", sans-serif;
     position: absolute;
@@ -446,16 +446,16 @@ section{
     position: absolute;
     top: 600px;
     left: 200px;
-    background-image: linear-gradient(to right,#D9D9D9,white);
+    background-color: #1E2245;
     border-radius: 50px;
 }
 
 .education-list-square-03 p{
-    color: black;
+    color: white;
     font-weight: 400;
     font-family: "Lato", sans-serif;
     position: absolute;
-    top: 80px;
+    top: 160px;
     left: 30px;
     font-size: 20px;
 }
@@ -470,7 +470,10 @@ section{
     position: absolute;
     top: 600px;
     right: 200px;
+    background-color: #1E2245;
+    /*
     background-image: linear-gradient(to right,#D9D9D9,white);
+    */
     border-radius: 50px;
 }
 
@@ -479,7 +482,7 @@ section{
 }
 
 .education-list-square-04 p{
-    color: black;
+    color: white;
     font-weight: 400;
     font-family: "Lato", sans-serif;
     position: absolute;
@@ -487,6 +490,7 @@ section{
     left: 30px;
     font-size: 20px;
 }
+
 .school-pic{
     width: 120px; /* Adjust the width and height as needed */
     height: 120px;
@@ -521,6 +525,23 @@ section{
     display: block;
 }
 
+.english-course-pic{
+    width: 120px; /* Adjust the width and height as needed */
+    height: 120px;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.english-course-pic img{
+    width: 100%; /* Makes sure the image covers the entire circle */
+    height: auto;
+    display: block;
+}
+
 .ijse-pic{
     position: absolute;
     top: 30px;
@@ -529,7 +550,7 @@ section{
 
 .year{
     position: absolute;
-    color: black;
+    color: white;
     top: 50px;
     left: 200px;
     font-weight: 650;
@@ -539,7 +560,7 @@ section{
 
 .year-ijse{
     position: absolute;
-    color: black;
+    color: white;
     top: 80px;
     left: 30px;
     font-weight: 650;
@@ -549,15 +570,17 @@ section{
 
 .year-english{
     position: absolute;
-    color: black;
-    top: 40px;
-    left: 30px;
+    color: white;
+    top: 50px;
+    left: 200px;
     font-weight: 650;
     font-family: "Lato", sans-serif;
     font-size: 20px;
 }
 
-.skills{
+
+/*skills style*/
+.my-skills{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,5 +590,176 @@ section{
     flex-direction: column;
     position: relative;
 }
+
+#skills-heading{
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
+
+#my-skill-last{
+    color: #00EEFF;
+}
+
+.skills-paragraph{
+    font-family: Ubuntu;
+    font-size: 18px;
+    position: absolute;
+    left: 180px;
+    top: 140px;
+}
+
+.design-skills-box{
+    row-gap: 2rem;
+}
+
+.development-skills-box .development-skills-content{
+    position: absolute;
+    width: 550px;
+    top: 230px;
+    left: 180px;
+    border:  .2rem solid  #FFCD1E;
+    border-radius: .6rem;
+    padding: .3rem 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.development-skills-box .development-skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: -1;
+    transition: .6s;
+}
+
+.development-skills-box .development-skills-content:hover::before{
+    width: 100%;
+}
+
+.design-skills-box .design-skills-content{
+    position: absolute;
+    width: 550px;
+    height: 620px;
+    top: 230px;
+    right:  180px;
+    border:  .2rem solid  #FFCD1E;
+    border-radius: .6rem;
+    padding: .5rem 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.design-skills-box .design-skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: -1;
+    transition: .6s;
+}
+
+.design-skills-box .design-skills-content:hover::before{
+    width: 100%;
+}
+
+.development-skills-title{
+    font-size: 20px;
+    color: #FFCD1E;
+    position: absolute;
+    top: 190px;
+    left: 180px;
+}
+
+.design-skills-title{
+    font-size: 20px;
+    color: #FFCD1E;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 190px;
+    right: 610px;
+}
+
+.skills-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 45px;
+}
+
+.skill-name{
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-percentage{
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills-bar{
+    position: absolute;
+    bottom: -.75rem;
+    height: 10px;
+    border-radius: 6px;
+    background-color: #FFCD1E;
+}
+
+.skill-java{
+    width: 82%;
+}
+
+.skill-mysql{
+    width: 92%;
+}
+
+.skill-html{
+    width: 85%;
+}
+
+.skill-hql{
+    width: 62%;
+}
+
+.skill-css{
+    width: 75%;
+}
+
+.skill-webDesign{
+    width: 90%;
+}
+
+.skill-photoshop{
+    width: 70%;
+}
+
+.skill-figma{
+    width: 80%;
+}
+
+.skill-draw-io{
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
