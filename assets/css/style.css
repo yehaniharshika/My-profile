@@ -1029,6 +1029,7 @@ section{
     gap: 2rem;
     flex-direction: column;
     position: relative;
+    height: 150vh;
 }
 
 #assignment-heading{
@@ -1042,11 +1043,212 @@ section{
     color: #00EEFF;
 }
 
+.assignment-title-01{
+    position: absolute;
+    color: #FFCD1E;
+    font-size: 20px;
+    top: 140px;
+    left: 145px;
+    font-weight: bold;
+}
+
+.assignment-title-02{
+    position: absolute;
+    color: #FFCD1E;
+    font-size: 20px;
+    top: 440px;
+    left: 145px;
+    font-weight: bold;
+}
+
+.assignment-title-03{
+    position: absolute;
+    color: #FFCD1E;
+    font-size: 20px;
+    top: 740px;
+    left: 145px;
+    font-weight: bold;
+}
+
+.assignment-title-04{
+    position: absolute;
+    color: #FFCD1E;
+    font-size: 20px;
+    top: 1040px;
+    left: 145px;
+    font-weight: bold;
+}
+
+.my-assignment-container-prf{
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    background: transparent;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    column-gap: 100px;
+    justify-content: space-between;
+}
+
+.my-assignment-container-prf .assignment-square-01{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    position: absolute;
+    left: 100px;
+}
+
+.my-assignment-container-prf .assignment-square-02{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 540px;
+    position: absolute;
+}
+
+.my-assignment-container-prf .assignment-square-03{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 980px;
+    position: absolute;
+}
+
+.my-assignment-container-prf .assignment-square-04{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    right: 100px;
+    position: absolute;
+}
 
 
 
+.my-assignment-container-oop{
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    background: transparent;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    column-gap: 100px;
+    justify-content: space-between;
+}
 
+.my-assignment-container-oop .assignment-square-05{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    position: absolute;
+    left: 100px;
+}
 
+.my-assignment-container-oop .assignment-square-06{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 540px;
+    position: absolute;
+}
 
+.my-assignment-container-oop .assignment-square-07{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 980px;
+    position: absolute;
+}
 
+.my-assignment-container-network{
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    background: transparent;
+    position: absolute;
+    top: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    column-gap: 100px;
+    justify-content: space-between;
+}
 
+.my-assignment-container-network .assignment-square-08{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    position: absolute;
+    left: 100px;
+}
+
+.my-assignment-container-it{
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
+    background: transparent;
+    position: absolute;
+    top: 1050px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    column-gap: 100px;
+    justify-content: space-between;
+}
+
+.my-assignment-container-it .assignment-square-09{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    position: absolute;
+    left: 100px;
+}
+
+.my-assignment-container-it .assignment-square-10{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 540px;
+    position: absolute;
+}
+
+.my-assignment-container-it .assignment-square-11{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    left: 980px;
+    position: absolute;
+}
+
+.my-assignment-container-it .assignment-square-12{
+    width: 300px;
+    height: 200px;
+    background-color: #1E2245;
+    margin: 25px;
+    right: 100px;
+    position: absolute;
+}
+
+.assignment-image{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: .5rem;
+    width: 250px;
+    height: 150px;
+}
