@@ -1324,5 +1324,183 @@ section{
     position: absolute;
 }
 
+/*my services section style*/
+.my-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    height: 150vh;
+}
 
+#my-services-heading{
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
 
+#service-last{
+    color: #00EEFF;
+}
+.service-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-container .service-box-01{
+    flex: 1 1 30rem;
+    background: #1E2245;
+    border-radius: 15px;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 450px;
+    height: 350px;
+}
+
+.service-container .service-box-02{
+    flex: 1 1 30rem;
+    background: #1E2245;
+    border-radius: 15px;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    position: absolute;
+    top: 200px;
+    left: 730px;
+    width: 450px;
+    height: 350px;
+}
+
+.service-container .service-box-03{
+    flex: 1 1 30rem;
+    background: #1E2245;
+    border-radius: 15px;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    width: 450px;
+    height: 350px;
+}
+
+.service-container .service-box-01:hover{
+    border-color: #FFCD1E;
+    transform: scale(1.02);
+}
+
+.service-container .service-box-02:hover{
+    border-color: #FFCD1E;
+    transform: scale(1.02);
+}
+
+.service-container .service-box-03:hover{
+    border-color: #FFCD1E;
+    transform: scale(1.02);
+}
+
+.service-box-01 i{
+    position: absolute;
+    font-size: 35px;
+    color: #FFCD1E;
+    left: 120px;
+    top: 40px;
+}
+
+.service-box-02 i{
+    position: absolute;
+    font-size: 35px;
+    color: #FFCD1E;
+    left: 80px;
+    top: 40px;
+}
+
+.service-box-03 i{
+    position: absolute;
+    font-size: 35px;
+    color: #FFCD1E;
+    left: 80px;
+    top: 40px;
+}
+
+.service-box-01 h3{
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    margin: auto;
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    color: #FFCD1E;
+}
+
+.service-box-02 h3{
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    margin: auto;
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    color: #FFCD1E;
+}
+
+.service-box-03 h3{
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    margin: auto;
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    color: #FFCD1E;
+}
+
+.service-box-01 p{
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+}
+
+.service-box-02 p{
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+}
+
+.service-box-03 p{
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+}
