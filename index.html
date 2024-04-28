@@ -20,24 +20,36 @@
 <div class="div"></div>
 <!--header design-->
 <header class="header">
-    <div class="box-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+    <div class="box-menu" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#aboutme">About me</a>
-        <a href="#myEducation">My Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#myProjects">Projects</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#myServices">My Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contactMe"><button type="button" >Contact</button></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-list">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" title="logo" alt="Yehani Harshika">
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#my-education">My Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-project">Projects</a></li>
+            <li><a href="#assignment">Assignments</a></li>
+            <li><a href="#services">My Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactMe"><button type="button" >Contact</button></a></li>
+        </ul>
     </nav>
 </header>
-<div class="logo">
+<!--<div class="logo">
     <img src="assets/images/logo.jpg" title="logo" alt="Yehani Harshika">
-</div>
-<!--hero section-->
+</div>-->
 
+<!--hero section-->
 <section class="home" id="home">
     <!--  hero section left side-->
     <div class="homeContent">
@@ -50,7 +62,8 @@
             trying to be a full-stack software engineer...
         </p>
     </div>
-    <!--    hero section right side-->
+
+    <!--hero section right side-->
     <div class="main-pic">
         <img src="assets/images/yehacolor-removebg-preview.png" title="my profile" alt="Yehani Harshika">
     </div>
@@ -66,7 +79,7 @@
 </section>
 <br><br>
 
-<section class="about" id="about">
+<section class="about" id="aboutme">
     <h2 id="about-heading">
         <span>About</span>
         <span class="about-last">Me</span>
@@ -95,7 +108,7 @@
     <div id="my-details">
         <p>
             <br>
-             Name: H.M. Yehani Harshika Pamunuwa
+            Name: H.M. Yehani Harshika Pamunuwa
             <br><br>
             Age: 22
             <br><br>
@@ -110,7 +123,7 @@
 </section>
 
 <br><br>
-
+<!--my education HTML code-->
 <section class="my-education" id="my-education">
     <h2 id="my-education-heading">
         <span>My</span>
@@ -183,6 +196,7 @@
     </div>
 </section>
 <br>
+
 <!--skills section html code-->
 <section id="skills" class="my-skills">
     <h2 id="skills-heading">
@@ -283,7 +297,6 @@
             <span class="mvc-project-title">MVC Architecture Software Project</span>
         </div>
 
-
         <div class="project-square-02">
             <div class="layered-project-image">
                 <img src="assets/images/web-project.jpg" title="Layered Architecture Project" alt="Layered Architecture Project">
@@ -333,6 +346,7 @@
             </div>
             <span class="extra-project-title"> Mobile App Development</span>
         </div>
+
     </div>
 </section>
 
@@ -538,9 +552,10 @@
 </section>
 
 <!--gallery section-->
-<section>
-    <h2 id="gallery">
-        <span>Gall</span><span>ery</span>
+<section id="gallery" class="my-gallery">
+    <h2 id="my-gallery-heading">
+        <span>My</span>
+        <span class="gallery-last">Gallery</span>
     </h2>
 
     <div>
@@ -585,7 +600,6 @@
     </h2>
     <div>
         <h4>Get in touch,,, talk to me</h4>
-
         <p><img src="assets/icon/call.png" title="Telephone number" alt="Telephone number" width="30" height="30">076-4450928</p>
         <p><img src="assets/icon/mail.png" title="Email" alt="Email address" width="30" height="30">Pamunuwayehaniharshika@gmail.com</p>
         <p><img src="assets/icon/watsapp.png" title="Whatsapp" alt="Whatsapp number"> 076-4450928</p>
