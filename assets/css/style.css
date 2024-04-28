@@ -10,7 +10,6 @@
     text-decoration: none;
     outline: none;
     scroll-behavior: smooth;
-
 }
 
 :root{
@@ -42,15 +41,16 @@ body{
     background: transparent;
     height: 100px;
     display: flex;
-    /*padding: 2rem 9%;*/
+    padding: 2rem 9%;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 
 .logo{
-    width: 90px; /* Adjust the width and height as needed */
-    height: 90px;
+    width: 70px; /* Adjust the width and height as needed */
+    height: 70px;
     top: 10px;
     left: 10px;
     position: absolute;
@@ -85,6 +85,7 @@ body{
     display: block;
 }
 
+
 /*.div{
     width: 100px;
     height: 100px;
@@ -94,7 +95,7 @@ body{
 }*/
 
 .navbar{
-    background: pink;
+    background: transparent;
     height: 80px;
     width: 100vw;
     /*left: 800px;
@@ -130,7 +131,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 100%;
-    background: white;
+    background: #FFCD1E;
     transform: scale(0);
     transform-origin: right;
     transition: .4s linear;
@@ -155,7 +156,7 @@ body{
     font-size: 30px;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 1px;
     cursor: pointer;
     display: none;
 }
@@ -169,6 +170,49 @@ body{
         left: 8%;
         top: 40px;
     }
+
+    .navbar ul li a{
+        color: white;
+        font-size: 17px;
+    }
+
+    .menu-list #btn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ .menu-list #btn{
+        display: none;
+    }
+
+    #check:checked ~ .menu-list #cancel{
+        display: block;
+    }
+
 }
 .navbar a:hover,
 .navbar a.active{
