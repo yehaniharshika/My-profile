@@ -165,7 +165,7 @@ body{
     display: none;
 }
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .logo img{
         left: 8%;
         top: 40px;
@@ -235,6 +235,7 @@ section{
 .home{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 9%;
 }
 
@@ -270,7 +271,7 @@ section{
     font-size: 1.5rem;
     font-weight: 600;
     font-family: Ubuntu;
-    top: 600px;
+    top: 400px;
     position: absolute;
 }
 
@@ -393,6 +394,7 @@ section{
     font-size: 22px;
 }
 
+
 #my-details{
     position: absolute;
     left: 880px;
@@ -402,6 +404,7 @@ section{
     /*background-image: linear-gradient(to right, #515578,skyblue,white);*/
     background-color: #262A56;
 }
+
 
 #my-details p{
     font-family: "Lato", sans-serif;
@@ -430,6 +433,8 @@ section{
     font-family: Ubuntu;
     transition: .5s ease;
 }
+
+
 
 .btn-box.buttons a:hover{
     background-color: var(--bg-color);
@@ -1640,3 +1645,21 @@ section{
 .gallery-last{
     color: #00EEFF;
 }
+
+.gallery-container{
+    width: 100%;
+    text-align: center;
+}
+
+.my-gallery input{
+    display: none;
+}
+
+.gallery-top-content{
+    background-color: rgb(243,243,243);
+    width: 80%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+}
+
