@@ -38,7 +38,7 @@ body{
     left: 0;
     right: 0;
     width: 100%;
-    background: transparent;
+    background: var(--bg-color);
     height: 100px;
     display: flex;
     padding: 2rem 9%;
@@ -98,8 +98,6 @@ body{
     background: transparent;
     height: 80px;
     width: 100vw;
-    /*left: 800px;
-    position: absolute;*/
 }
 
 .navbar ul{
@@ -165,55 +163,6 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .logo img{
-        left: 8%;
-        top: 40px;
-    }
-
-    .navbar ul li a{
-        color: white;
-        font-size: 17px;
-    }
-
-    .menu-list #btn{
-        display: block;
-    }
-
-    .navbar ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: red;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    .navbar ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    .navbar ul li a{
-        font-size: 18px;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
-
-    #check:checked ~ .menu-list #btn{
-        display: none;
-    }
-
-    #check:checked ~ .menu-list #cancel{
-        display: block;
-    }
-
-}
 .navbar a:hover,
 .navbar a.active{
     color: #FFCD1E;
@@ -1632,6 +1581,7 @@ section{
     gap: 2rem;
     flex-direction: column;
     position: relative;
+    height: 120vh;
 }
 
 #my-gallery-heading{
@@ -1656,10 +1606,167 @@ section{
 }
 
 .gallery-top-content{
-    background-color: rgb(243,243,243);
-    width: 80%;
+    background-color: #676A89;
+    width: 82%;
     margin: 0 auto 20px auto;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 3px 3px 5px #676A89;
 }
 
+.gallery-top-content h3{
+    height: 100%;
+    background-color: var(--bg-color);
+    line-height: 60px;
+    padding: 0 50px;
+    color: black;
+    font-size: 20px;
+    font-family: Ubuntu;
+}
+
+.gallery-top-content label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 30px;
+    line-height: 60px;
+    color: gray;
+    cursor: pointer;
+    transition: .5s;
+    font-family: Ubuntu;
+    font-weight: 600;
+}
+
+.gallery-top-content label:hover{
+    color: black;
+    font-family: Ubuntu;
+}
+
+.photo-gallery{
+    width: 82%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+    top: 140px;
+    position: relative;
+}
+
+.photo-gallery .pic{
+    position: absolute;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px #676A89 ;
+    transition: .5s;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#check1:checked ~ .gallery-container .photo-gallery .pic{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .0s;
+}
+
+#check2:checked ~ .gallery-container .photo-gallery .pic-professional{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check2:checked ~ .gallery-container .photo-gallery .pic-travelling,
+#check2:checked ~ .gallery-container .photo-gallery .pic-other{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+#check3:checked ~ .gallery-container .photo-gallery .pic-travelling{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check3:checked ~ .gallery-container .photo-gallery .pic-professional,
+#check3:checked ~ .gallery-container .photo-gallery .pic-other{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+#check4:checked ~ .gallery-container .photo-gallery .pic-other{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check4:checked ~ .gallery-container .photo-gallery .pic-travelling,
+#check4:checked ~ .gallery-container .photo-gallery .pic-professional{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo img{
+        left: 8%;
+        top: 40px;
+    }
+
+    .navbar ul li a{
+        color: white;
+        font-size: 17px;
+    }
+
+    .menu-list #btn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ .menu-list #btn{
+        display: none;
+    }
+
+    #check:checked ~ .menu-list #cancel{
+        display: block;
+    }
+
+    .photo-gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
