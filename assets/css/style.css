@@ -1444,13 +1444,13 @@ span{
     top: 220px;
     margin: auto;
     grid-gap: 40px;
-    row-gap: 100px;
+    row-gap: 80px;
 }
 
 .my-assignment-container-it .assignment-square{
     position: relative;
     border-radius: 5px;
-    height: 300px;
+    height: 250px;
     box-shadow: 0 0 1rem #1E2245;
     overflow: hidden;
     display: flex;
@@ -1461,6 +1461,7 @@ span{
     height: 100%;
     transition: .5s ease;
     opacity: 0.7;
+    display: block;
 }
 
 .assignment-square:hover img{
@@ -1491,21 +1492,45 @@ span{
 .assignment-data h4{
     font-weight: 600;
     font-family: Ubuntu;
-    font-size: 22px;
+    font-size: 23px;
+    position: absolute;
+    top: 40px;
+    color: #FFCD1E;
 }
 
 .assignment-data p{
-    font-size: 1.6rem;
+    font-size: 21px;
+    font-weight: bold;
     margin: .3rem 0 1rem;
+    font-family: 'nunito',sans-serif;
 }
 
 .assignment-data a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    background: var(--text-color);
+    /*width: 5rem;
+    background: var(--text-color);*/
+}
 
+.assignment-link-01{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: .25rem;
+    padding: .25rem;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.assignment-link-02{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: .25rem;
+    padding: .25rem;
+    font-family: Ubuntu;
+    font-weight: bold;
 }
 /*.my-assignment-container-it .assignment-square-10{
     width: 280px;
@@ -1553,7 +1578,7 @@ span{
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 #my-services-heading{

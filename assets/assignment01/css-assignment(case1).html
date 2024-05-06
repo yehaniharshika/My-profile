@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        #div1{
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            border: 3px solid black;
+            position: absolute;
+        }
+
+        #div2{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            top: 0;
+            left: 0;
+            position: absolute;
+
+        }
+
+        #div3{
+            width: 50%;
+            height: 50%;
+            background-color: green;
+            top: 0;
+            right: 0;
+            position: absolute;
+
+        }
+
+        #div4{
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+
+        }
+
+        #div5{
+            width: 50%;
+            height: 50%;
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        #div6{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+
+        }
+
+        #div7{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 100px;
+            padding: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #A{
+            width: 120px;
+            height:120px;
+            background-color: white;
+            border-radius: 100px;
+            padding: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #B{
+            width: 120px;
+            height:120px;
+            background-color: white;
+            border-radius: 100px;
+            padding: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #C{
+            width: 120px;
+            height:120px;
+            background-color: white;
+            border-radius: 100px;
+            padding: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #D{
+            width: 120px;
+            height:120px;
+            background-color: white;
+            border-radius: 100px;
+            padding: 20px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #square1{
+            width: 80px;
+            height:80px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #square2{
+            width: 80px;
+            height:80px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #square3{
+            width: 80px;
+            height:80px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #square4{
+            width: 80px;
+            height:80px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        #topLeftSide{
+            width: 8%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+
+            position: absolute;
+            border-radius: 0 0 150px 0;
+        }
+
+        #topRightSide{
+            width: 8%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 0 0 0 150px;
+        }
+
+        #bottomLeftSide{
+            width: 8%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 0 150px 0 0;
+        }
+
+        #bottomRightSide{
+            width: 8%;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 150px 0 0 0 ;
+        }
+
+
+        #halfCircleTop{
+            width: 10%;
+            aspect-ratio: 2/1;
+
+            background-color: white;
+
+            position: absolute;
+
+            top: 0;
+            left: 45%;
+            border-radius: 0 0 100px 100px;
+        }
+
+        #halfCircleBottom{
+            width: 10%;
+            aspect-ratio: 2/1;
+
+            background-color: white;
+
+            position: absolute;
+
+            bottom: 0;
+            left: 45%;
+            border-radius: 100px 100px 0 0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="div1">
+
+    <div id="div2">
+        <div id="topLeftSide"></div>
+        <div id="A">
+            <div id="square1"></div>
+        </div>
+
+    </div>
+
+    <div id="div3">
+        <div id="topRightSide"></div>
+        <div id="B">
+            <div id="square2"></div>
+        </div>
+
+    </div>
+
+    <div id="div4">
+        <div id="bottomLeftSide"></div>
+        <div id="C">
+            <div id="square3"></div>
+        </div>
+
+    </div>
+
+    <div id="div5">
+        <div id="bottomRightSide" ></div>
+        <div id="D">
+            <div id="square4"></div>
+        </div>
+
+    </div>
+
+    <div id="div6">
+
+    </div>
+    <div id="div7">
+
+    </div>
+
+    <section>
+        <div id="halfCircleTop"></div>
+    </section>
+
+    <section>
+        <div id="halfCircleBottom"></div>
+    </section>
+
+   <!-- <section>
+        <div id="topRightSide" class="oneQuarterCircle"></div>
+    </section>-->
+
+   <!-- <section>
+        <div id="bottomLeftSide" class="oneQuarterCircle"></div>
+    </section>-->
+
+</div>
+
+
+</body>
+</html>
