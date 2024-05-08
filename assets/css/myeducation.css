@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #262A56;
+    --second-bg-color: #3C4767;
+    --text-color: #FFFFFF;
+    --sub-text-color: #000000;
+    --hero-text-color: #00EEFF;
+}
+
+html{
+    /* font-size: 62.5%;*/
+    overflow-x: hidden;
+}
+
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.my-education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+#my-education-heading{
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    font-family: 'nunito',sans-serif;
+}
+
+#education-last{
+    color: #00EEFF;
+}
+
+.education-list-01{
+    color: #FFCD1E;
+    position: absolute;
+    top: 180px;
+    left: 230px;
+    font-size: 20px;
+    font-family: 'nunito',sans-serif;
+}
+
+.education-list-02{
+    color: #FFCD1E;
+    position: absolute;
+    top: 180px;
+    right: 400px;
+    font-size: 20px;
+    font-family: 'nunito',sans-serif;
+}
+
+.education-list-03{
+    color: #FFCD1E;
+    position: absolute;
+    left: 230px;
+    top: 610px;
+    font-size: 20px;
+    font-family: 'nunito',sans-serif;
+}
+
+.education-list-04{
+    color: #FFCD1E;
+    position: absolute;
+    right: 400px;
+    top: 610px;
+    font-size: 20px;
+    font-family: 'nunito',sans-serif;
+}
+
+.education-list-square-01{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    background-color: #1E2245;
+    border-radius: 30px;
+}
+
+.education-list-square-01:hover{
+    box-shadow: 0 0 1rem white;
+}
+
+.education-list-square-01 p{
+    color: white;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    font-size: 20px;
+}
+
+
+.education-list-square-02{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 220px;
+    right: 220px;
+    background-color: #1E2245;
+    border-radius: 30px;
+}
+
+.education-list-square-02:hover{
+    box-shadow: 0 0 1rem white;
+}
+
+.it-center-name{
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    color: white;
+}
+
+.education-list-square-02 p{
+    color: white;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 195px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.education-list-square-03{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 650px;
+    left: 220px;
+    background-color: #1E2245;
+    border-radius: 30px;
+}
+
+.education-list-square-03 p{
+    color: white;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.education-list-square-03:hover{
+    box-shadow: 0 0 1rem white;
+}
+
+.education-list-square-04{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 650px;
+    right: 220px;
+    background-color: #1E2245;
+    border-radius: 30px;
+}
+
+.education-list-square-04:hover{
+    box-shadow: 0 0 1rem white;
+    /*transform: scale(1.3) translateY(-5px);*/
+}
+
+.education-list-square-04 p{
+    color: white;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.school-pic{
+    width: 120px; /* Adjust the width and height as needed */
+    height: 120px;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.school-pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.open-university-pic{
+    width: 120px; /* Adjust the width and height as needed */
+    height: 120px;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.open-university-pic img{
+    width: 100%; /* Makes sure the image covers the entire circle */
+    height: auto;
+    display: block;
+}
+
+.english-course-pic{
+    width: 120px; /* Adjust the width and height as needed */
+    height: 120px;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.english-course-pic img{
+    width: 100%; /* Makes sure the image covers the entire circle */
+    height: auto;
+    display: block;
+}
+
+.ijse-pic{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.year{
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 200px;
+    font-weight: 650;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+.year-ijse{
+    position: absolute;
+    color: white;
+    top: 80px;
+    left: 30px;
+    font-weight: 650;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+.year-english{
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 200px;
+    font-weight: 650;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px){
+
+}

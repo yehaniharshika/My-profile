@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #262A56;
+    --second-bg-color: #3C4767;
+    --text-color: #FFFFFF;
+    --sub-text-color: #000000;
+    --hero-text-color: #00EEFF;
+}
+
+html{
+    /* font-size: 62.5%;*/
+    overflow-x: hidden;
+}
+
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--bg-color);
+    height: 100px;
+    display: flex;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    width: 70px; /* Adjust the width and height as needed */
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    border-radius: 100%; /* Makes it circular */
+    overflow: hidden;
+    border: 4px solid black;
+    cursor: default;
+}
+
+.logo img{
+    width: 100%; /* Makes sure the image covers the entire circle */
+    height: auto;
+    display: block;
+}
+
+
+.main-pic{
+    width: 500px;
+    height: 630px;
+    border-radius: 100%;
+    overflow: hidden;
+    top: 300px;
+    right: 360px;
+    position: absolute;
+    background-color: transparent;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+
+.main-pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+    /*animation: floatImage 4s ease-in-out infinite;*/
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.navbar{
+    background: transparent;
+    height: 80px;
+    width: 100vw;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 25px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navbar ul li a{
+    position: relative;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 1s;
+    font-family: 'nunito',sans-serif;
+}
+
+.navbar ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #FFCD1E;
+    transform: scale(0);
+    transform-origin: right;
+    transition: .4s linear;
+}
+
+.navbar ul li a:hover:before{
+    transform: scale(1);
+    transform-origin: left;
+}
+/*.navbar a{
+    font-size: 20px ;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 10px;
+    transition: 1s;
+    font-family: 'nunito',sans-serif;
+}*/
+
+.menu-list #btn,
+.menu-list #cancel{
+    color: var(--text-color);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 1px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #FFCD1E;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    left: 400px;
+    position: relative;
+    display: none;
+}
+
+/*section{
+    min-height: 100vh;
+}*/
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9%;
+    min-height: 100vh;
+    gap: 15rem;
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: #FFFFFF;
+}
+
+.homeContent h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.homeContent h1{
+    font-size: 5rem;
+    top: 400px;
+    line-height: 1;
+    position: absolute;
+    left: 300px;
+    font-weight: bolder;
+    font-family: 'nunito',sans-serif;
+}
+
+
+/*
+.homeContent .text-animate h3{
+    font-size: 3.2rem;
+    font-weight: 800;
+    width: 1000px;
+    top: -50px;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--hero-text-color);
+    font-family: Ubuntu;
+}
+*/
+
+.homeContent p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Ubuntu;
+    bottom: 320px;
+    line-height: 1.8;
+    max-width: 1000px;
+    position: absolute;
+    left: 300px;
+}
+
+.text-animation{
+    font-size: 32px;
+    font-weight: 800;
+    min-width: 280px;
+    font-family: Ubuntu;
+    position: absolute;
+    left: 300px;
+    top: 540px;
+}
+
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: "Software Engineering Student";
+    color: #00EEFF;
+    animation: words 20s infinite;
+}
+
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--bg-color);
+    }
+}
+
+@keyframes words {
+    0%,
+    20%{
+        content: "Software Engineering Student";
+    }
+    21%,
+    40%{
+        content: "Future Frontend Designer";
+    }
+    41%,
+    60%{
+        content: "Future Web Designer";
+    }
+    61%,
+    80%{
+        content: "Future Mobile App Developer";
+    }
+    81%,
+    100%{
+        content: "Future Full-stack Developer";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/*social links*/
+.connect-links{
+    bottom: 160px;
+    left: 300px;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.connect-links a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 3px solid #FFCD1E;
+    border-radius: 100%;
+    font-size: 2rem;
+    color: #FFCD1E;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.connect-links a:hover{
+    background-color:#FFCD1E;
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem #FFCD1E;
+    transform: scale(1.3) translateY(-5px);
+}
+
+.connect-links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo img{
+        left: 8%;
+        top: 40px;
+    }
+
+    .navbar ul li a{
+        color: white;
+        font-size: 17px;
+    }
+
+    .menu-list #btn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ .menu-list #btn{
+        display: none;
+    }
+
+    #check:checked ~ .menu-list #cancel{
+        display: block;
+    }
+
+    .photo-gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 425px){
+
+}
+
+@media screen and (max-width: 375px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}
