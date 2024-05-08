@@ -1,0 +1,146 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,#a882b6,#F0CCFD);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+#logo-name{
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin: 0 5px;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.log-out-btn {
+    margin-right: 20px;
+}
+
+.customer-part>div>h1{
+    margin-top: 8rem;
+    font-weight: bolder;
+}
+.cus-card{
+    max-width: 800px;
+    margin-top: 50px;
+    height: 600px;
+    background-color: lightskyblue;
+}
+
+.name-text{
+    top: 170px;
+    left: 18px;
+    width: 450px;
+    height: 50px;
+    border: 2px solid darkblue;
+    position: absolute;
+}
+
+.input-id{
+    top: 50px;
+    height: 50px;
+    left: 18px;
+    width: 450px;
+    border: 2px solid darkblue;
+    position: absolute;
+}
+
+.telNumber{
+    top: 440px;
+    left: 18px;
+    width: 450px;
+    height: 50px;
+    border: 2px solid darkblue;
+    position: absolute;
+}
+
+.text-address{
+    top: 290px;
+    left: 18px;
+    width: 450px;
+    border: 2px solid darkblue;
+    position: absolute;
+}
+
+.label-customerID{
+    top: 20px;
+    position: absolute;
+}
+
+.label-customerName{
+    top: 140px;
+    position: absolute;
+}
+
+.label-customerAddress{
+    top: 260px;
+    position: absolute;
+}
+
+.label-customerTel{
+    top: 410px;
+    position: absolute;
+}
+
+#button-add-new-customer{
+    border: 4px solid red;
+    color: #E51824;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 3rem;
+}
+
+#button-add-new-customer:hover{
+    color: #eeeeee;
+}
+
+#button-view-customer{
+    border: 4px solid blue;
+    color: blue;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+#button-view-customer:hover{
+    color: #eeeeee;
+}
+
+.search-customer{
+    margin-top: 3rem;
+}
+
+.Card-header-colour{
+    background: #133a75;
+    color: #eeeeee;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customer-search-text-field{
+    border: 2px solid black;
+}
+
+.customer-name-box{
+    border: 2px solid black;
+}
+
+.btn-customer-search{
+    margin-top: 2rem;
+}
+
+.customer-table-view{
+    margin-top: 4rem;
+}

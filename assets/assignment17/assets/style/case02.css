@@ -1,0 +1,106 @@
+body{
+    overflow: hidden;
+    background-color: #364651;
+}
+
+section{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    height: 40vh;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sub-container{
+    border-bottom: 2px solid white;
+    display: flex;
+}
+
+.sub-container:nth-child(2){
+    justify-content: center;
+}
+
+.sub-container:nth-child(3){
+    border-bottom: none;
+    flex-direction: row-reverse;
+}
+
+.sub-container div{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: white;
+    margin: 12px;
+}
+
+.heading{
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    left: 920px;
+    top: 20px;
+    color: white;
+}
+
+#box-color1{
+    background-color: red;
+}
+
+#box-color2{
+    background-color: green;
+}
+
+#box-color3{
+    background-color: blue;
+}
+
+#box-color4{
+    background-color: yellow;
+}
+
+#box-color5{
+    background-color: lightpink;
+}
+
+#box-color6{
+    background-color: deeppink;
+}
+
+.button-group{
+    position: absolute;
+    left: 890px;
+    bottom: 100px;
+    padding: 30px;
+}
+
+#start_btn{
+    font-weight: bold;
+    font-family: Ubuntu;
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: darkred;
+    color: white;
+}
+
+#stop_btn{
+    font-weight: bold;
+    font-family: Ubuntu;
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: darkred;
+    color: white;
+}
