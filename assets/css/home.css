@@ -580,6 +580,7 @@ span{
         top: 12px;
     }
 }
+
 @media all and (max-width: 1110px){
     .header{
         padding: 2rem 3%;
@@ -724,7 +725,7 @@ span{
     }
 
     .home{
-        min-height: 120vh;
+        min-height: 100vh;
     }
 }
 
@@ -801,32 +802,21 @@ span{
         left: 100px;
     }
 
-}
-
-@media all and (max-width: 845px){
-    .connect-links{
-        bottom: -120px;
-        left: 140px;
-        position: absolute;
-        justify-content: space-between;
-    }
-
-    .homeContent h1{
-        font-size: 4rem;
-        top: 700px;
-        line-height: 1;
-        position: absolute;
-        left: 80px;
-    }
-
     .homeContent p{
         font-size: 1.4rem;
         font-weight: 600;
         font-family: Ubuntu;
-        bottom: 35px;
+        bottom: 43px;
+        line-height: 1.8;
+        max-width: 1000px;
         position: absolute;
-        left: 130px;
+        left: 160px;
     }
+
+    .home{
+        min-height: 110vh;
+    }
+
 }
 
 @media all and (max-width: 845px){
@@ -868,26 +858,11 @@ span{
         top: 700px;
         line-height: 1;
         position: absolute;
-        left: 50px;
+        left: 40px;
     }
 
-    .homeContent p{
-        font-size: 1.4rem;
-        font-weight: 600;
-        font-family: Ubuntu;
-        bottom: 35px;
-        position: absolute;
-        left: 110px;
-    }
-
-    .text-animation{
-        font-size: 2px;
-        font-weight: 800;
-        min-width: 20px;
-        font-family: Ubuntu;
-        position: absolute;
-        left: 140px;
-        top: 840px;
+    .home{
+        min-height: 110vh;
     }
 
 }
@@ -941,17 +916,782 @@ span{
     }
 
 
+    .connect-links{
+        bottom: -120px;
+        left: 100px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    .homeContent h1{
+        font-size: 3.8rem;
+        top: 700px;
+        line-height: 1;
+        position: absolute;
+        left: 60px;
+    }
+
+    .homeContent p{
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 35px;
+        position: absolute;
+        left: 100px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 100px;
+        top: 840px;
+    }
+    .home{
+        min-height: 110vh;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .homeContent h1{
+        font-size: 3.4rem;
+        left: 70px;
+        position: absolute;
+    }
+    .home{
+        min-height: 110vh;
+    }
+
+}
+
+@media screen and (max-width: 690px){
+    .homeContent h1{
+        font-size: 3.2rem;
+        left: 70px;
+        top: 720px;
+        position: absolute;
+    }
+
+    .connect-links{
+        bottom: 160px;
+        left: 300px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    .connect-links a{
+        width: 3.5rem;
+        height: 3.5rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.8rem;
+        color: #FFCD1E;
+        margin: 2.5rem 1.5rem 3rem 0;
+    }
+
+    .connect-links{
+        bottom: -100px;
+        left: 100px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 65px;
+        position: absolute;
+        left: 80px;
+    }
+
+    #text-paragraph{
+        width: 500px;
+        height: 100px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 80px;
+        top: 820px;
+    }
+
+    .homeContent h3{
+        font-size: 2.2rem;
+    }
+
+    .home{
+        min-height: 110vh;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .homeContent h1{
+        font-size: 3.2rem;
+        left: 40px;
+        top: 720px;
+        position: absolute;
+    }
+
+    .connect-links{
+        bottom: 160px;
+        left: 300px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    .connect-links a{
+        width: 3.5rem;
+        height: 3.5rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.8rem;
+        color: #FFCD1E;
+        margin: 2.5rem 1.5rem 3rem 0;
+    }
+
+    .connect-links{
+        bottom: -100px;
+        left: 60px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 65px;
+        position: absolute;
+        left: 50px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 50px;
+        top: 820px;
+    }
+
+    .homeContent h3{
+        font-size: 2.2rem;
+    }
+
+    .home{
+        min-height: 110vh;
+    }
+
+}
+
+@media screen and (max-width: 610px){
+    .homeContent h1{
+        font-size: 3.2rem;
+        left: 20px;
+        top: 720px;
+        position: absolute;
+    }
+
+    .connect-links{
+        bottom: 160px;
+        left: 300px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    .connect-links a{
+        width: 3.5rem;
+        height: 3.5rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.8rem;
+        color: #FFCD1E;
+        margin: 2.5rem 1.5rem 3rem 0;
+    }
+
+    .connect-links{
+        bottom: -100px;
+        left: 60px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 65px;
+        position: absolute;
+        left: 50px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 40px;
+        top: 820px;
+    }
+
+    .homeContent h3{
+        font-size: 2.2rem;
+    }
+
+    .home{
+        min-height: 110vh;
+    }
+
+}
+
+@media screen and (max-width: 578px){
+    .homeContent h1{
+        font-size: 2.8rem;
+        left: 35px;
+        top: 720px;
+        position: absolute;
+    }
+
+    .connect-links{
+        bottom: 160px;
+        left: 300px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    .connect-links a{
+        width: 3.2rem;
+        height: 3.2rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.3rem;
+        color: #FFCD1E;
+        margin: 2.2rem 1.2rem 2rem 0;
+    }
+
+    .connect-links{
+        bottom: -70px;
+        left: 60px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 400px;
+        height: 120px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 40px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 40px;
+        top: 820px;
+    }
+
+    .homeContent h3{
+        font-size: 2rem;
+    }
+
+    .home{
+        min-height: 110vh;
+    }
+
+}
+
+@media screen and (max-width: 545px){
+    .homeContent h1{
+        font-size: 2.6rem;
+        left: 20px;
+        top: 720px;
+        position: absolute;
+    }
+
+
+    .connect-links a{
+        width: 3.2rem;
+        height: 3.2rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.3rem;
+        color: #FFCD1E;
+        margin: 2.2rem 1.2rem 2rem 0;
+    }
+
+    .connect-links{
+        bottom: -120px;
+        left: 20px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 380px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: -15px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 30px;
+        top: 820px;
+    }
+
+    .homeContent h3{
+        font-size: 1.8rem;
+    }
+
+    .home{
+        min-height: 115vh;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .homeContent h1{
+        font-size: 2.3rem;
+        left: 20px;
+        top: 660px;
+        position: absolute;
+    }
+
+    .main-pic{
+        width: 350px;
+        height: 460px;
+        border-radius: 100%;
+        overflow: hidden;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        position: absolute;
+        background-color: transparent;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .connect-links a{
+        width: 2.9rem;
+        height: 2.9rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.2rem;
+        color: #FFCD1E;
+        margin: 2rem 1rem 1rem 0;
+    }
+
+    .connect-links{
+        bottom: -10px;
+        left: 30px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 380px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 60px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 30px;
+        top: 750px;
+    }
+
+    .homeContent h3{
+        font-size: 1.6rem;
+    }
+
+    .home{
+        min-height: 115vh;
+    }
+
+}
+
+@media screen and (max-width: 442px){
+    .homeContent h1{
+        font-size: 2.3rem;
+        left: 10px;
+        top: 660px;
+        position: absolute;
+    }
+
+    .main-pic{
+        width: 350px;
+        height: 460px;
+        border-radius: 100%;
+        overflow: hidden;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        position: absolute;
+        background-color: transparent;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .connect-links a{
+        width: 2.9rem;
+        height: 2.9rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.2rem;
+        color: #FFCD1E;
+        margin: 2rem 1rem 1rem 0;
+    }
+
+    .connect-links{
+        bottom: -10px;
+        left: 10px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 360px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 60px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 20px;
+        top: 750px;
+    }
+
+    .homeContent h3{
+        font-size: 1.6rem;
+    }
+
+    .home{
+        min-height: 115vh;
+    }
 
 }
 
 @media screen and (max-width: 425px){
+    .homeContent h1{
+        font-size: 2rem;
+        left: 10px;
+        top: 660px;
+        position: absolute;
+    }
+
+    .main-pic{
+        width: 350px;
+        height: 460px;
+        border-radius: 100%;
+        overflow: hidden;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        position: absolute;
+        background-color: transparent;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .connect-links a{
+        width: 2.3rem;
+        height: 2.3rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1.2rem;
+        color: #FFCD1E;
+        margin: 2rem 1rem 1rem 0;
+    }
+
+    .connect-links{
+        bottom: -10px;
+        left: 20px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 320px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 60px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 10px;
+        top: 750px;
+    }
+
+    .homeContent h3{
+        font-size: 1.4rem;
+    }
+
+    .home{
+        min-height: 115vh;
+    }
 
 }
 
 @media screen and (max-width: 375px){
+    .homeContent h1{
+        font-size: 1.8rem;
+        left: 20px;
+        top: 660px;
+        position: absolute;
+    }
 
+    .main-pic{
+        width: 350px;
+        height: 460px;
+        border-radius: 100%;
+        overflow: hidden;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        position: absolute;
+        background-color: transparent;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .connect-links a{
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1rem;
+        color: #FFCD1E;
+        margin: 2rem 1rem 1rem 0;
+    }
+
+    .connect-links{
+        bottom: -10px;
+        left: 20px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 300px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 60px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 20px;
+        top: 750px;
+    }
+
+    .homeContent h3{
+        font-size: 1.4rem;
+    }
+
+    .home{
+        min-height: 115vh;
+    }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 345px){
+    .homeContent h1{
+        font-size: 1.6rem;
+        left: 10px;
+        top: 660px;
+        position: absolute;
+    }
 
+    .main-pic{
+        width: 280px;
+        height: 420px;
+        border-radius: 100%;
+        overflow: hidden;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        position: absolute;
+        background-color: transparent;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .connect-links a{
+        width: 1.6rem;
+        height: 1.6rem;
+        background: transparent;
+        border: 3px solid #FFCD1E;
+        border-radius: 100%;
+        font-size: 1rem;
+        color: #FFCD1E;
+        margin: 2rem 1rem 1rem 0;
+    }
+
+    .connect-links{
+        bottom: 80px;
+        left: 20px;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #text-paragraph{
+        width: 280px;
+        height: 160px;
+        background: transparent;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .homeContent p{
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Ubuntu;
+        bottom: 100px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .text-animation{
+        font-size: 2px;
+        font-weight: 800;
+        min-width: 20px;
+        font-family: Ubuntu;
+        position: absolute;
+        left: 10px;
+        top: 720px;
+    }
+
+    .homeContent h3{
+        font-size: 1.2rem;
+    }
+
+    .home{
+        min-height: 100vh;
+    }
 }
