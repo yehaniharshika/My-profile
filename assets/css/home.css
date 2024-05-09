@@ -224,6 +224,12 @@ span{
     font-family: 'nunito',sans-serif;
 }
 
+#text-paragraph{
+    width: 600px;
+    height: 100px;
+    background:transparent;
+}
+
 .homeContent p{
     font-size: 1.5rem;
     font-weight: 600;
