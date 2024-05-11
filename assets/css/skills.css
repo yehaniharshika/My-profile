@@ -25,7 +25,7 @@
 
 .skills-paragraph{
     font-family: Ubuntu;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
     left: 180px;
     top: 130px;
@@ -37,9 +37,9 @@
 
 .development-skills-box .development-skills-content{
     position: absolute;
-    width: 550px;
+    width: 800px;
     top: 240px;
-    left: 180px;
+    left: 400px;
     border:  .3rem solid  #FFCD1E;
     border-radius: .6rem;
     padding: .3rem 20px;
@@ -65,11 +65,11 @@
 
 .design-skills-box .design-skills-content{
     position: absolute;
-    width: 550px;
+    width: 800px;
     height: 620px;
     top: 240px;
-    right:  180px;
-    border:  .2rem solid  #FFCD1E;
+    right:  400px;
+    border:  .3rem solid  #FFCD1E;
     border-radius: .6rem;
     padding: .5rem 20px;
     z-index: 1;
@@ -86,12 +86,21 @@
     background-color: var(--bg-color);
     z-index: -1;
     transition: .6s;
+    box-shadow: 0 0 25px #FFCD1E;
 }
 
 .design-skills-box .design-skills-content:hover::before{
     width: 100%;
+}
+
+.design-skills-content:hover{
     box-shadow: 0 0 25px #FFCD1E;
 }
+
+.development-skills-content:hover{
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
 
 .development-skills-title{
     font-size: 22px;
@@ -178,16 +187,145 @@
     width: 95%;
 }
 
+@media screen and (max-width: 1525px) {
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 520px;
+        top: 240px;
+        left: 170px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .3rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 520px;
+        height: 620px;
+        top: 240px;
+        right:  170px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .5rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 1440px) {
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 500px;
+        top: 240px;
+        left: 60px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .3rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 500px;
+        height: 620px;
+        top: 240px;
+        right:  60px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .5rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 11750px) {
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 460px;
+        top: 240px;
+        left: 30px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .3rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 460px;
+        height: 620px;
+        top: 240px;
+        right:  30px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .5rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
 
 }
 
 @media screen and (max-width: 1024px){
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 640px;
+        top: 240px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .3rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
 
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 640px;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .5rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .my-skills{
+        min-height: 160vh;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 560px;
+        top: 240px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border:  .3rem solid  #FFCD1E;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 560px;
+        height: 560px;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
 
 }
 
