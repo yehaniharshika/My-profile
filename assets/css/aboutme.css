@@ -1,45 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-
-:root{
-    --bg-color: #262A56;
-    --second-bg-color: #3C4767;
-    --text-color: #FFFFFF;
-    --sub-text-color: #000000;
-    --hero-text-color: #00EEFF;
-}
-
-html{
-    /* font-size: 62.5%;*/
-    overflow-x: hidden;
-}
-
-
-body{
-    background: var(--bg-color);
-    color: var(--text-color);
-    overflow: hidden;
-}
 
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--second-bg-color);
-    /*padding-bottom: 6rem;*/
-    gap: 2rem;
-    flex-direction: column;
+    padding-bottom: 6rem;
+    /*gap: 2rem;*/
+    /*flex-direction: column;*/
     position: relative;
     height: 100vh;
 }
@@ -58,11 +28,11 @@ body{
 
 .about-image{
     position: absolute;
-    width: 26rem;
-    height: 26.5rem;
+    width: 24rem;
+    height: 24.5rem;
     left: 0;
     right: 0;
-    top: 150px;
+    top: 130px;
     margin: auto;
     border-radius: 100%;
     display: flex;
@@ -96,7 +66,7 @@ body{
     text-align: center ;
     font-size: 30px;
     font-family: Ubuntu;
-    top: 620px;
+    top: 560px;
     left: 0;
     right: 0;
     margin: auto;
@@ -111,14 +81,14 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    top: 680px;
+    top: 620px;
     background-color: transparent;
 }
 
 .about-content p{
     font-family: 'nunito',sans-serif;
     font-weight: 650;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 
@@ -134,7 +104,7 @@ body{
     box-shadow: 0 0 1px #FFCD1E;
     font-size: 20px;
     color: #262A56;
-    bottom: 60px;
+    bottom: 45px;
     left: 0;
     right: 0;
     margin: auto;
@@ -599,7 +569,7 @@ body{
     }
 
     .about{
-        min-height: 115vh;
+        height: 100vh;
     }
 
     .main-content{
