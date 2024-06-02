@@ -188,7 +188,7 @@
 }
 
 
-@media screen and (max-width: 1750px) {
+@media all and (max-width: 1750px) {
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 530px;
@@ -236,7 +236,7 @@
 
 }
 
-@media screen and (max-width: 1510px) {
+@media all and (max-width: 1510px) {
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 520px;
@@ -263,7 +263,7 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 500px;
@@ -311,7 +311,7 @@
 
 }
 
-@media screen and (max-width: 1245px) {
+@media all and (max-width: 1245px) {
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 450px;
@@ -360,7 +360,11 @@
 }
 
 
-@media screen and (max-width: 1024px){
+@media all and (max-width: 1024px){
+    .my-skills{
+        min-height: 200vh;
+    }
+
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 640px;
@@ -389,9 +393,6 @@
         overflow: hidden;
     }
 
-    .my-skills{
-        min-height: 170vh;
-    }
 
     .development-skills-title{
         position: absolute;
