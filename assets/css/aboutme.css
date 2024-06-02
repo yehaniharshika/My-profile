@@ -274,40 +274,101 @@ body{
 }
 
 @media screen and (max-width: 550px){
+    .about{
+        min-height: 90vh;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 23rem;
+        height: 23.5rem;
+        left: 0;
+        right: 0;
+        top: 130px;
+        margin: auto;
+        border-radius: 100%;
+        display: flex;
+        overflow: hidden;
+        cursor: default;
+    }
+
     .about-content{
         text-align: center ;
-        width: 400px;
-        height: 160px;
+        width: 420px;
+        height: 100px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 650px;
+        top: 600px;
         background-color: transparent;
     }
 
     .about-content p{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .cv-btn{
-        bottom: 80px;
+        bottom: 26px;
         left: 0;
         right: 0;
         margin: auto;
-        width: 230px;
-        height: 60px;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
     }
 
+
+    .main-content{
+        text-align: center ;
+        font-size: 24.5px;
+        font-family: Ubuntu;
+        top: 540px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+
+}
+
+@media screen and (max-width: 475px){
     .about{
-        min-height: 115vh;
+        min-height: 90vh;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 390px;
+        height: 180px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 600px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 18px;
+    }
+
+    .cv-btn{
+        bottom: 26px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
     }
 
     .main-content{
         text-align: center ;
-        font-size: 24px;
+        font-size: 22.5px;
         font-family: Ubuntu;
-        top: 600px;
+        top: 540px;
         left: 0;
         right: 0;
         margin: auto;
@@ -316,8 +377,8 @@ body{
 
     .about-image{
         position: absolute;
-        width: 24rem;
-        height: 24.5rem;
+        width: 20rem;
+        height: 20.3rem;
         left: 0;
         right: 0;
         top: 150px;
@@ -330,40 +391,42 @@ body{
 }
 
 @media screen and (max-width: 425px){
+    .about{
+        min-height: 90vh;
+    }
+
     .about-content{
         text-align: center ;
-        width: 280px;
-        height: 180px;
+        width: 360px;
+        height: 200px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 600px;
+        top: 580px;
         background-color: transparent;
     }
 
     .about-content p{
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .cv-btn{
-        bottom: 60px;
+        bottom: 26px;
         left: 0;
         right: 0;
         margin: auto;
-        width: 220px;
-        height: 56px;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
     }
 
-    .about{
-        min-height: 115vh;
-    }
 
     .main-content{
         text-align: center ;
         font-size: 21px;
         font-family: Ubuntu;
-        top: 540px;
+        top: 520px;
         left: 0;
         right: 0;
         margin: auto;
