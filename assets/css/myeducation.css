@@ -41,7 +41,7 @@ body{
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 #my-education-heading{

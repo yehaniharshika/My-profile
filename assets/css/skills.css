@@ -25,7 +25,7 @@
 
 .skills-paragraph{
     font-family: Ubuntu;
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     left: 180px;
     top: 130px;
@@ -37,9 +37,9 @@
 
 .development-skills-box .development-skills-content{
     position: absolute;
-    width: 800px;
+    width: 600px;
     top: 240px;
-    left: 400px;
+    left: 180px;
     border:  .3rem solid  #FFCD1E;
     border-radius: .6rem;
     padding: .3rem 20px;
@@ -65,10 +65,10 @@
 
 .design-skills-box .design-skills-content{
     position: absolute;
-    width: 800px;
+    width: 600px;
     height: 620px;
     top: 240px;
-    right:  400px;
+    right:  180px;
     border:  .3rem solid  #FFCD1E;
     border-radius: .6rem;
     padding: .5rem 20px;
@@ -106,7 +106,7 @@
     font-size: 22px;
     color: #FFCD1E;
     position: absolute;
-    top: 190px;
+    top: 200px;
     left: 180px;
     font-weight: 650;
     font-family: 'nunito',sans-serif;
@@ -117,8 +117,8 @@
     color: #FFCD1E;
     margin-bottom: 2rem;
     position: absolute;
-    top: 190px;
-    right: 600px;
+    top: 200px;
+    right: 640px;
     font-weight: 650;
     font-family: 'nunito',sans-serif;
 }
@@ -187,12 +187,61 @@
     width: 95%;
 }
 
-@media screen and (max-width: 1525px) {
+
+@media screen and (max-width: 1750px) {
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 530px;
+        top: 240px;
+        left: 100px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .3rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 530px;
+        height: 620px;
+        top: 240px;
+        right:  100px;
+        border:  .3rem solid  #FFCD1E;
+        border-radius: .6rem;
+        padding: .5rem 20px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        font-weight: 700;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        top: 200px;
+        right: 490px;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 100px;
+        top: 130px;
+    }
+
+}
+
+@media screen and (max-width: 1510px) {
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 520px;
         top: 240px;
-        left: 170px;
+        left: 100px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .3rem 20px;
@@ -205,7 +254,7 @@
         width: 520px;
         height: 620px;
         top: 240px;
-        right:  170px;
+        right:  100px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .5rem 20px;
@@ -219,7 +268,7 @@
         position: absolute;
         width: 500px;
         top: 240px;
-        left: 60px;
+        left: 80px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .3rem 20px;
@@ -232,7 +281,7 @@
         width: 500px;
         height: 620px;
         top: 240px;
-        right:  60px;
+        right:  80px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .5rem 20px;
@@ -240,14 +289,34 @@
         overflow: hidden;
     }
 
+    .development-skills-title{
+        position: absolute;
+        top: 200px;
+        left: 80px;
+        font-weight: 700;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        top: 200px;
+        right: 450px;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 80px;
+        top: 130px;
+    }
+
 }
 
-@media screen and (max-width: 11750px) {
+@media screen and (max-width: 1245px) {
     .development-skills-box .development-skills-content{
         position: absolute;
-        width: 460px;
+        width: 450px;
         top: 240px;
-        left: 30px;
+        left: 40px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .3rem 20px;
@@ -257,10 +326,10 @@
 
     .design-skills-box .design-skills-content{
         position: absolute;
-        width: 460px;
+        width: 450px;
         height: 620px;
         top: 240px;
-        right:  30px;
+        right:  40px;
         border:  .3rem solid  #FFCD1E;
         border-radius: .6rem;
         padding: .5rem 20px;
@@ -268,7 +337,28 @@
         overflow: hidden;
     }
 
+    .development-skills-title{
+        position: absolute;
+        top: 200px;
+        left: 40px;
+        font-weight: 700;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        top: 200px;
+        right: 350px;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 40px;
+        top: 130px;
+    }
+
 }
+
 
 @media screen and (max-width: 1024px){
     .development-skills-box .development-skills-content{
@@ -300,7 +390,27 @@
     }
 
     .my-skills{
-        min-height: 160vh;
+        min-height: 170vh;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        top: 200px;
+        left: 180px;
+        font-weight: 700;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        top: 960px;
+        left: 180px;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 40px;
+        top: 130px;
     }
 }
 
@@ -309,7 +419,7 @@
     .development-skills-box .development-skills-content{
         position: absolute;
         width: 560px;
-        top: 240px;
+        top: 300px;
         right: 0;
         left: 0;
         margin: auto;
@@ -320,12 +430,47 @@
         position: absolute;
         width: 560px;
         height: 560px;
-        top: 1000px;
+        top: 1100px;
         right: 0;
         left: 0;
         margin: auto;
     }
 
+    .development-text .development-skills-title{
+        font-family: Ubuntu;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        padding:0;
+        font-weight: 700;
+    }
+
+    .development-text{
+        width: 250px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: red;
+        top: 220px;
+    }
+    .design-skills-title{
+        text-align: center;
+        /*top: 960px;
+        left: 180px;*/
+        position: absolute;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 40px;
+        top: 130px;
+    }
 
 }
 
