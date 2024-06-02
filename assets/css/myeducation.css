@@ -824,8 +824,103 @@ body{
 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 360px){
+    #my-education-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        font-family: 'nunito',sans-serif;
+    }
 
+    .my-education{
+       height: 210vh;
+    }
+
+    .education-list-01{
+        top: 100px;
+        left: 50px;
+        font-size: 18px;
+    }
+
+    .education-list-02{
+        top: 480px;
+        left: 50px;
+        width: 340px;
+        font-size: 18px;
+    }
+
+    .education-list-03{
+        left: 50px;
+        top: 860px;
+        font-size: 18px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1220px;
+        left: 50px;
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .education-list-square-01{
+        width: 310px;
+        height: 300px;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+    }
+
+    .education-list-square-02{
+        width: 310px;
+        height: 300px;
+        position: absolute;
+        top: 530px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    .education-list-square-03{
+        width: 310px;
+        height: 300px;
+        position: absolute;
+        top: 890px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-04{
+        width: 310px;
+        height: 300px;
+        position: absolute;
+        top: 1270px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-01 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 320px){
