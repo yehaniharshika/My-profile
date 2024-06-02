@@ -42,7 +42,7 @@ body{
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    min-height: 180vh;
+    height: 210vh;
 }
 
 #assignment-heading{
