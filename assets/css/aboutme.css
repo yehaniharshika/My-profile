@@ -206,15 +206,29 @@ body{
 }
 
 @media all and (max-width: 1024px){
+    .about-image{
+        position: absolute;
+        width: 24rem;
+        height: 24.3rem;
+        left: 0;
+        right: 0;
+        top: 150px;
+        margin: auto;
+        border-radius: 100%;
+        display: flex;
+        overflow: hidden;
+        cursor: default;
+    }
+
     .about-content{
         text-align: center ;
-        width: 700px;
-        height: 140px;
+        width: 720px;
+        height: 100px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 680px;
+        top: 600px;
         background-color: transparent;
     }
 
@@ -223,12 +237,23 @@ body{
     }
 
     .cv-btn{
-        bottom: 30px;
+        bottom: 20px;
         left: 0;
         right: 0;
         margin: auto;
         width: 230px;
         height: 60px;
+    }
+
+    .main-content{
+        text-align: center ;
+        font-size: 24.5px;
+        font-family: Ubuntu;
+        top: 540px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
     }
 
     .about{
@@ -238,20 +263,34 @@ body{
 
 
 @media all and (max-width: 768px) {
+    .about-image{
+        position: absolute;
+        width: 22rem;
+        height: 22.3rem;
+        left: 0;
+        right: 0;
+        top: 150px;
+        margin: auto;
+        border-radius: 100%;
+        display: flex;
+        overflow: hidden;
+        cursor: default;
+    }
+
     .about-content{
         text-align: center ;
-        width: 540px;
+        width: 580px;
         height: 140px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 680px;
+        top: 600px;
         background-color: transparent;
     }
 
     .about-content p{
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .cv-btn{
@@ -269,45 +308,17 @@ body{
 
     .main-content{
         font-size: 28px;
+        position: absolute;
+        font-family: Ubuntu;
+        top: 540px;
+        left: 0;
+        right: 0;
+        margin: auto;
         font-family: Ubuntu;
     }
 }
 
-/*@media all and (max-width: 768px) {
-    .about-content{
-        text-align: center ;
-        width: 540px;
-        height: 140px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 680px;
-        background-color: transparent;
-    }
 
-    .about-content p{
-        font-size: 23px;
-    }
-
-    .cv-btn{
-        bottom: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 230px;
-        height: 60px;
-    }
-
-    .about{
-        min-height: 100vh;
-    }
-
-    .main-content{
-        font-size: 28px;
-        font-family: Ubuntu;
-    }
-}*/
 
 @media all and (max-width: 680px){
     .about{

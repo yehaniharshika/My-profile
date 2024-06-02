@@ -559,7 +559,7 @@ body{
 @media screen and (max-width: 1024px){
 
     .my-education{
-        min-height: 165vh;
+        min-height: 200vh;
     }
 
     .education-list-01{
@@ -703,9 +703,10 @@ body{
         font-size: 20px;
     }
 }
+
 @media all and (max-width: 768px){
     .my-education{
-        min-height: 165vh;
+        min-height: 200vh;
     }
 
     .education-list-01{
