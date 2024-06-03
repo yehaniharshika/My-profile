@@ -29,9 +29,8 @@ html{
 
 
 body{
-    background: var(--bg-color);
     color: var(--text-color);
-    overflow: hidden;
+    background-color: var(--bg-color);
 }
 
 .header{
@@ -78,7 +77,7 @@ body{
     border-radius: 100%;
     overflow: hidden;
     top: 300px;
-    right: 360px;
+    right: 350px;
     position: absolute;
     background-color: transparent;
     animation: floatImage 4s ease-in-out infinite;
@@ -193,7 +192,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0 9%;
-    min-height: 100vh;
+    height: 90vh;
     gap: 15rem;
 }
 

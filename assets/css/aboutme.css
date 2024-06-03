@@ -3,15 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .about{
+   /* !*display: flex;*!
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    !*padding-bottom: 6rem;*!
+    !*gap: 2rem;*!
+    !*flex-direction: column;*!
+    position: relative;
+    height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--second-bg-color);
-    padding-bottom: 6rem;
-    /*gap: 2rem;*/
-    /*flex-direction: column;*/
+    /*padding-bottom: 6rem;*/
+    gap: 2rem;
+    flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 
 #about-heading{
@@ -116,73 +125,128 @@
     transition: .5s ease;
 }
 
-
-
 .btn-box.buttons a:hover{
     box-shadow: 0 0 25px #FFCD1E;
     color: var(--bg-color);
 
 }
 
-@media all and (max-width: 1550px) {
+/*media query*/
+@media all and (max-width: 320px){
+    #about-heading{
+        font-size: 2.4rem;
+        top: 14px;
+        font-family: 'nunito',sans-serif;
+    }
+
     .about-content{
         text-align: center ;
-        width: 1200px;
-        height: 140px;
+        width: 250px;
+        height: 180px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 680px;
+        top: 390px;
         background-color: transparent;
     }
 
-    .cv-btn{
-        bottom: 40px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 240px;
-        height: 60px;
-    }
-
-}
-
-@media all and (max-width: 1300px) {
-    .about-content{
-        text-align: center ;
-        width: 900px;
-        height: 140px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 680px;
-        background-color: transparent;
+    .about-content p{
+        font-size: 15px;
     }
 
     .cv-btn{
-        bottom: 30px;
+        margin-bottom: 1rem;
         left: 0;
         right: 0;
         margin: auto;
-        width: 240px;
-        height: 60px;
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
     }
 
     .about{
-        min-height: 100vh;
+        height: 90vh;
+    }
+
+    .main-content{
+        text-align: center ;
+        font-size: 17px;
+        font-family: Ubuntu;
+        top: 340px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 15rem;
+        height: 15.2rem;
+        left: 0;
+        right: 0;
+        top: 80px;
+        margin: auto;
+        border-radius: 100%;
     }
 }
 
-@media all and (max-width: 1024px){
-    .about-image{
+@media all and (min-width: 321px) and (max-width: 360px){
+    .about{
+        height: 90vh;
+    }
+
+    #about-heading{
+        font-size: 2.6rem;
+        top: 30px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 300px;
+        height: 180px;
         position: absolute;
-        width: 24rem;
-        height: 24.3rem;
         left: 0;
         right: 0;
-        top: 150px;
+        margin: auto;
+        top: 30px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 14px;
+    }
+
+    .cv-btn{
+        margin-bottom: 2rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 180px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .main-content{
+        text-align: center ;
+        font-size: 19px;
+        font-family: Ubuntu;
+        top: 315px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 13rem;
+        height: 13.2rem;
+        left: 0;
+        right: 0;
+        top: 80px;
         margin: auto;
         border-radius: 100%;
         display: flex;
@@ -190,56 +254,269 @@
         cursor: default;
     }
 
+}
+
+@media all and (min-width: 361px) and (max-width: 380px){
+    #about-heading{
+        font-size: 2.6rem;
+        top: 15px;
+        font-family: 'nunito',sans-serif;
+    }
+
     .about-content{
         text-align: center ;
-        width: 720px;
+        width: 280px;
+        height: 180px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 410px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .cv-btn{
+        margin-bottom: 3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .about{
+        min-height: 90vh;
+    }
+
+    .main-content{
+        text-align: center ;
+        font-size: 19px;
+        font-family: Ubuntu;
+        top: 360px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 16rem;
+        height: 16.2rem;
+        left: 0;
+        right: 0;
+        top: 80px;
+        margin: auto;
+        border-radius: 100%;
+        display: flex;
+        overflow: hidden;
+        cursor: default;
+    }
+}
+
+@media all and (min-width: 381px) and (max-width: 425px){
+    #about-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .about{
+        min-height: 90vh;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 360px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 420px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .cv-btn{
+        margin-bottom: 5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+
+    .main-content{
+        text-align: center ;
+        font-size: 21px;
+        font-family: Ubuntu;
+        top: 360px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 16rem;
+        height: 16.3rem;
+        left: 0;
+        right: 0;
+        top: 70px;
+        margin: auto;
+        border-radius: 100%;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 475px){
+
+    .about{
+        min-height: 100vh;
+    }
+
+    #about-heading{
+        font-size: 2.8rem;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 17rem;
+        height: 17.3rem;
+        left: 0;
+        right: 0;
+        top: 90px;
+        margin: auto;
+        border-radius: 100%;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 390px;
+        height: 180px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 440px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 18px;
+    }
+
+    .cv-btn{
+        margin-bottom: 3rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .main-content{
+        text-align: center ;
+        font-size: 22.5px;
+        font-family: Ubuntu;
+        top: 390px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+}
+
+
+@media all and (min-width: 476px) and (max-width: 680px){
+    #about-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .about{
+        height: 100vh;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 20rem;
+        height: 20.3rem;
+        left: 0;
+        right: 0;
+        top: 100px;
+        margin: auto;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 430px;
         height: 100px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 600px;
+        top: 490px;
         background-color: transparent;
     }
 
     .about-content p{
-        font-size: 23px;
+        font-size: 19px;
     }
 
     .cv-btn{
-        bottom: 20px;
+        margin-bottom: 4rem;
         left: 0;
         right: 0;
         margin: auto;
-        width: 230px;
-        height: 60px;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
     }
+
 
     .main-content{
         text-align: center ;
         font-size: 24.5px;
         font-family: Ubuntu;
-        top: 540px;
+        top: 445px;
         left: 0;
         right: 0;
         margin: auto;
         position: absolute;
     }
-
-    .about{
-        min-height: 100vh;
-    }
 }
 
-
-@media all and (max-width: 768px) {
+@media all and (min-width: 681px) and (max-width: 768px) {
     .about-image{
         position: absolute;
-        width: 22rem;
-        height: 22.3rem;
+        width: 19rem;
+        height: 19.3rem;
         left: 0;
         right: 0;
-        top: 150px;
+        top: 100px;
         margin: auto;
         border-radius: 100%;
         display: flex;
@@ -255,77 +532,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        top: 600px;
-        background-color: transparent;
-    }
-
-    .about-content p{
-        font-size: 22px;
-    }
-
-    .cv-btn{
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 230px;
-        height: 60px;
-    }
-
-    .about{
-        min-height: 110vh;
-    }
-
-    .main-content{
-        font-size: 28px;
-        position: absolute;
-        font-family: Ubuntu;
-        top: 540px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-family: Ubuntu;
-    }
-}
-
-
-
-@media all and (max-width: 680px){
-    #about-heading{
-        font-size: 3.5rem;
-        text-align: center;
-        position: absolute;
-        top: 30px;
-        font-family: 'nunito',sans-serif;
-    }
-
-    .about{
-        min-height: 110vh;
-    }
-
-    .about-image{
-        position: absolute;
-        width: 23rem;
-        height: 23.5rem;
-        left: 0;
-        right: 0;
-        top: 130px;
-        margin: auto;
-        border-radius: 100%;
-        display: flex;
-        overflow: hidden;
-        cursor: default;
-    }
-
-    .about-content{
-        text-align: center ;
-        width: 420px;
-        height: 100px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 600px;
+        top: 500px;
         background-color: transparent;
     }
 
@@ -334,199 +541,108 @@
     }
 
     .cv-btn{
-        bottom: 26px;
+        bottom: 4rem;
         left: 0;
         right: 0;
         margin: auto;
-        width: 200px;
-        height: 50px;
-        font-size: 18px;
+        width: 230px;
+        height: 60px;
     }
 
+    .about{
+        min-height: 100vh;
+    }
+
+    .main-content{
+        font-size: 28px;
+        position: absolute;
+        font-family: Ubuntu;
+        top: 440px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: Ubuntu;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .about{
+        height: 100vh;
+    }
+
+    #about-heading{
+        font-size: 3.3rem;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .about-image{
+        position: absolute;
+        width: 20rem;
+        height: 20.3rem;
+        left: 0;
+        right: 0;
+        top: 100px;
+        margin: auto;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 720px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 500px;
+        background-color: transparent;
+    }
+
+    .about-content p{
+        font-size: 20px;
+    }
+
+    .cv-btn{
+        bottom: 4rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 230px;
+        height: 60px;
+    }
 
     .main-content{
         text-align: center ;
         font-size: 24.5px;
         font-family: Ubuntu;
-        top: 540px;
+        top: 450px;
         left: 0;
         right: 0;
         margin: auto;
         position: absolute;
     }
 
-
-}
-
-@media all and (max-width: 475px){
     .about{
         min-height: 100vh;
     }
-
-    .about-content{
-        text-align: center ;
-        width: 390px;
-        height: 180px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 600px;
-        background-color: transparent;
-    }
-
-    .about-content p{
-        font-size: 18px;
-    }
-
-    .cv-btn{
-        bottom: 26px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 200px;
-        height: 50px;
-        font-size: 18px;
-    }
-
-    .main-content{
-        text-align: center ;
-        font-size: 22.5px;
-        font-family: Ubuntu;
-        top: 540px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-    }
-
-    .about-image{
-        position: absolute;
-        width: 20rem;
-        height: 20.3rem;
-        left: 0;
-        right: 0;
-        top: 150px;
-        margin: auto;
-        border-radius: 100%;
-        display: flex;
-        overflow: hidden;
-        cursor: default;
-    }
 }
 
-@media all and (max-width: 425px){
+
+@media all and (min-width: 1025px) and (max-width: 1300px){
     .about{
-        min-height: 100vh;
-    }
-
-    .about-content{
-        text-align: center ;
-        width: 360px;
-        height: 200px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 580px;
-        background-color: transparent;
-    }
-
-    .about-content p{
-        font-size: 18px;
-    }
-
-    .cv-btn{
-        bottom: 26px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 200px;
-        height: 50px;
-        font-size: 18px;
-    }
-
-
-    .main-content{
-        text-align: center ;
-        font-size: 21px;
-        font-family: Ubuntu;
-        top: 520px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
+        height: 100vh;
     }
 
     .about-image{
         position: absolute;
-        width: 20rem;
-        height: 20.3rem;
+        width: 21rem;
+        height: 21.5rem;
         left: 0;
         right: 0;
-        top: 150px;
-        margin: auto;
-        border-radius: 100%;
-        display: flex;
-        overflow: hidden;
-        cursor: default;
-    }
-}
-
-@media all and (max-width: 375px){
-    #about-heading{
-        font-size: 3.2rem;
-        top: 30px;
-        font-family: 'nunito',sans-serif;
-    }
-
-    .about-content{
-        text-align: center ;
-        width: 280px;
-        height: 180px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 600px;
-        background-color: transparent;
-    }
-
-    .about-content p{
-        font-size: 21px;
-    }
-
-    .cv-btn{
-        bottom: 60px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 220px;
-        height: 56px;
-    }
-
-    .about{
-        min-height: 115vh;
-    }
-
-    .main-content{
-        text-align: center ;
-        font-size: 21px;
-        font-family: Ubuntu;
-        top: 540px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-    }
-
-    .about-image{
-        position: absolute;
-        width: 18rem;
-        height: 18.2rem;
-        left: 0;
-        right: 0;
-        top: 150px;
+        top: 116px;
         margin: auto;
         border-radius: 100%;
         display: flex;
@@ -534,87 +650,19 @@
         cursor: default;
     }
 
-}
-
-@media all and (max-width: 360px){
-    #about-heading{
-        font-size: 3.2rem;
-        top: 30px;
-        font-family: 'nunito',sans-serif;
-    }
-
-    .about-content{
-        text-align: center ;
-        width: 300px;
-        height: 180px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 460px;
-        background-color: transparent;
-    }
-
-    .about-content p{
-        font-size: 18px;
-    }
-
-    .cv-btn{
-        bottom: 50px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 220px;
-        height: 56px;
-    }
-
-    .about{
-        min-height: 115vh;
-    }
-
     .main-content{
-        text-align: center ;
-        font-size: 21px;
-        font-family: Ubuntu;
-        top: 400px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-    }
-
-    .about-image{
-        position: absolute;
-        width: 16rem;
-        height: 16.2rem;
-        left: 0;
-        right: 0;
-        top: 100px;
-        margin: auto;
-        border-radius: 100%;
-        display: flex;
-        overflow: hidden;
-        cursor: default;
-    }
-
-}
-
-@media all and (max-width: 320px){
-    #about-heading{
-        font-size: 3.2rem;
-        top: 30px;
-        font-family: 'nunito',sans-serif;
+        top: 490px;
     }
 
     .about-content{
         text-align: center ;
-        width: 250px;
-        height: 180px;
+        width: 920px;
+        height: 120px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        top: 540px;
+        top: 560px;
         background-color: transparent;
     }
 
@@ -623,42 +671,47 @@
     }
 
     .cv-btn{
-        bottom: 50px;
+        bottom: 3rem;
         left: 0;
         right: 0;
         margin: auto;
-        width: 220px;
-        height: 56px;
+        width: 240px;
+        height: 60px;
     }
 
     .about{
         height: 100vh;
     }
+}
+
+@media all and (min-width: 1301px) and (max-width: 1550px){
+    .about{
+        height: 100vh;
+    }
+
+    .about-content{
+        text-align: center ;
+        width: 1200px;
+        height: 140px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 620px;
+        background-color: transparent;
+    }
+
+    .cv-btn{
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 240px;
+        height: 60px;
+    }
 
     .main-content{
-        text-align: center ;
-        font-size: 23px;
-        font-family: Ubuntu;
-        top: 460px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
+        top: 540px;
     }
-
-    .about-image{
-        position: absolute;
-        width: 15rem;
-        height: 15.2rem;
-        left: 0;
-        right: 0;
-        top: 150px;
-        margin: auto;
-        border-radius: 100%;
-        display: flex;
-        overflow: hidden;
-        cursor: default;
-    }
-
 
 }
