@@ -9,6 +9,7 @@
     flex-direction: column;
     position: relative;
     height: 100vh;
+    margin-bottom: -20px;
 }
 
 #skills-heading{
@@ -501,8 +502,87 @@
     }
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 360px){
+    .my-skills{
+        min-height: 180vh;
+    }
 
+    #skills-heading{
+        font-size: 2.4rem;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .development-skills-box .development-skills-content{
+        position: absolute;
+        width: 300px;
+        top: 170px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border:  .2rem solid  #FFCD1E;
+    }
+
+    .design-skills-box .design-skills-content{
+        position: absolute;
+        width: 300px;
+        height: 450px;
+        top: 870px;
+        right: 0;
+        left: 0;
+        margin: auto;
+       /* padding: .4rem 10px;
+        z-index: 1;
+        overflow: hidden;*/
+    }
+
+    .development-text .development-skills-title{
+        font-family: Ubuntu;
+        left: 0;
+        right: 0;
+        top: -80px;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        padding:0;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .development-text{
+        width: 250px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: transparent;
+        top: 220px;
+    }
+
+    .design-skills-title{
+        text-align: center;
+        top: 840px;
+        width: 250px;
+        height: 60px;
+        position: absolute;
+        font-size: 15px;
+        left: -150px;
+        right: 0;
+        margin: auto;
+        background: transparent;
+        position: absolute;
+        font-weight: 700;
+    }
+
+    .skills-paragraph{
+        position: absolute;
+        left: 40px;
+        top: 90px;
+        font-size: 15px;
+    }
 }
 
 @media all and (max-width: 320px){

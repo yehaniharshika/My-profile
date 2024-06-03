@@ -40,7 +40,8 @@ body{
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    min-height: 110vh;
+    min-height: 100vh;
+    margin-bottom: -20px;
 }
 
 #my-education-heading{
@@ -825,7 +826,7 @@ body{
 
 @media screen and (max-width: 360px){
     #my-education-heading{
-        font-size: 3rem;
+        font-size: 2.4rem;
         text-align: center;
         position: absolute;
         top: 10px;
@@ -838,34 +839,34 @@ body{
 
     .education-list-01{
         top: 100px;
-        left: 50px;
-        font-size: 18px;
+        left: 40px;
+        font-size: 15px;
     }
 
     .education-list-02{
-        top: 480px;
-        left: 50px;
+        top: 500px;
+        left: 40px;
         width: 340px;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .education-list-03{
-        left: 50px;
-        top: 860px;
-        font-size: 18px;
+        left: 40px;
+        top: 870px;
+        font-size: 15px;
     }
 
     .education-list-04{
         position: absolute;
-        top: 1220px;
-        left: 50px;
+        top: 1240px;
+        left: 40px;
         width: 300px;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .education-list-square-01{
-        width: 310px;
-        height: 300px;
+        width: 300px;
+        height: 290px;
         position: absolute;
         top: 150px;
         right: 0;
@@ -875,8 +876,8 @@ body{
     }
 
     .education-list-square-02{
-        width: 310px;
-        height: 300px;
+        width: 300px;
+        height: 290px;
         position: absolute;
         top: 530px;
         right: 0;
@@ -886,18 +887,18 @@ body{
 
 
     .education-list-square-03{
-        width: 310px;
-        height: 300px;
+        width: 300px;
+        height: 290px;
         position: absolute;
-        top: 890px;
+        top: 900px;
         right: 0;
         left: 0;
         margin: auto;
     }
 
     .education-list-square-04{
-        width: 310px;
-        height: 300px;
+        width: 300px;
+        height: 290px;
         position: absolute;
         top: 1270px;
         right: 0;
@@ -906,19 +907,91 @@ body{
     }
 
     .education-list-square-01 p{
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .education-list-square-02 p{
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .education-list-square-03 p{
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .education-list-square-04 p{
-        font-size: 19px;
+        font-size: 15px;
+    }
+
+    .school-pic{
+        width: 100px; /* Adjust the width and height as needed */
+        height: 100px;
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        border-radius: 100%;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    .open-university-pic{
+        width: 100px; /* Adjust the width and height as needed */
+        height: 100px;
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        border-radius: 100%;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    .english-course-pic{
+        width: 100px; /* Adjust the width and height as needed */
+        height: 100px;
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        border-radius: 100%;
+        overflow: hidden;
+        cursor: default;
+    }
+
+    .ijse-pic{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .year{
+        position: absolute;
+        color: white;
+        top: 50px;
+        left: 150px;
+        font-weight: 650;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+    }
+
+    .year-ijse{
+        position: absolute;
+        color: white;
+        top: 80px;
+        left: 30px;
+        font-weight: 650;
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+    }
+
+    .year-english{
+        top: 50px;
+        left: 150px;
+        width: 140px;
+        font-weight: 650;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+    }
+
+    .it-center-name{
+        font-size: 16px;
     }
 }
 
