@@ -3,15 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .about{
-   /* !*display: flex;*!
-    justify-content: center;
-    align-items: center;
-    background-color: var(--second-bg-color);
-    !*padding-bottom: 6rem;*!
-    !*gap: 2rem;*!
-    !*flex-direction: column;*!
-    position: relative;
-    height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +12,7 @@
     flex-direction: column;
     position: relative;
     height: 90vh;
-    margin-bottom: -37px;
+    margin-bottom: -6px;
 }
 
 #about-heading{
@@ -39,8 +30,8 @@
 
 .about-image{
     position: absolute;
-    width: 24rem;
-    height: 24.5rem;
+    width: 23rem;
+    height: 23.5rem;
     left: 0;
     right: 0;
     top: 130px;
@@ -115,7 +106,7 @@
     box-shadow: 0 0 1px #FFCD1E;
     font-size: 20px;
     color: #262A56;
-    bottom: 45px;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin: auto;
@@ -489,7 +480,7 @@
     }
 
     .cv-btn{
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
         left: 0;
         right: 0;
         margin: auto;
@@ -543,7 +534,7 @@
     }
 
     .cv-btn{
-        bottom: 4rem;
+        bottom: 5rem;
         left: 0;
         right: 0;
         margin: auto;
@@ -608,7 +599,7 @@
     }
 
     .cv-btn{
-        bottom: 4rem;
+        bottom: 5rem;
         left: 0;
         right: 0;
         margin: auto;
@@ -673,7 +664,7 @@
     }
 
     .cv-btn{
-        bottom: 3rem;
+        bottom: 80px;
         left: 0;
         right: 0;
         margin: auto;
@@ -704,7 +695,7 @@
     }
 
     .cv-btn{
-        bottom: 40px;
+        bottom: 70px;
         left: 0;
         right: 0;
         margin: auto;

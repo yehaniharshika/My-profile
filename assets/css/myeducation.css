@@ -44,13 +44,6 @@ body{
     margin-bottom: -20px;
 }
 
-#my-education-heading{
-    font-size: 4rem;
-    text-align: center;
-    position: absolute;
-    top: 40px;
-    font-family: 'nunito',sans-serif;
-}
 
 #education-last{
     color: #00EEFF;
@@ -59,7 +52,7 @@ body{
 .education-list-01{
     color: #FFCD1E;
     position: absolute;
-    top: 180px;
+    top: 150px;
     left: 230px;
     font-size: 20px;
     font-family: 'nunito',sans-serif;
@@ -68,7 +61,7 @@ body{
 .education-list-02{
     color: #FFCD1E;
     position: absolute;
-    top: 180px;
+    top: 150px;
     right: 400px;
     font-size: 20px;
     font-family: 'nunito',sans-serif;
@@ -78,7 +71,7 @@ body{
     color: #FFCD1E;
     position: absolute;
     left: 230px;
-    top: 610px;
+    top: 580px;
     font-size: 20px;
     font-family: 'nunito',sans-serif;
 }
@@ -86,8 +79,8 @@ body{
 .education-list-04{
     color: #FFCD1E;
     position: absolute;
-    right: 400px;
-    top: 610px;
+    right: 460px;
+    top: 580px;
     font-size: 20px;
     font-family: 'nunito',sans-serif;
 }
@@ -96,7 +89,7 @@ body{
     width: 600px;
     height: 300px;
     position: absolute;
-    top: 220px;
+    top: 180px;
     left: 220px;
     background-color: #1E2245;
     border-radius: 30px;
@@ -121,7 +114,7 @@ body{
     width: 600px;
     height: 300px;
     position: absolute;
-    top: 220px;
+    top: 180px;
     right: 220px;
     background-color: #1E2245;
     border-radius: 30px;
@@ -155,7 +148,7 @@ body{
     width: 600px;
     height: 300px;
     position: absolute;
-    top: 650px;
+    top: 610px;
     left: 220px;
     background-color: #1E2245;
     border-radius: 30px;
@@ -179,7 +172,7 @@ body{
     width: 600px;
     height: 300px;
     position: absolute;
-    top: 650px;
+    top: 610px;
     right: 220px;
     background-color: #1E2245;
     border-radius: 30px;
@@ -286,545 +279,14 @@ body{
     font-size: 20px;
 }
 
-@media screen and (max-width: 1685px) {
-    .education-list-01{
-        left: 160px;
-    }
 
-    .education-list-02{
-        right: 350px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 160px;
-        top: 610px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        right: 350px;
-    }
-
-    .education-list-square-01{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        left: 160px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-02{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        right: 160px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-
-    .education-list-square-03{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        left: 160px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-04{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        right: 160px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
+/*media query*/
+@media screen and (max-width: 320px){
 
 }
 
-@media screen and (max-width: 1560px) {
-    .education-list-01{
-        left: 100px;
-    }
 
-    .education-list-02{
-        right: 300px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 100px;
-        top: 610px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        right: 300px;
-    }
-
-    .education-list-square-01{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        left: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-02{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        right: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-
-    .education-list-square-03{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        left: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-04{
-        width: 600px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        right: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-}
-
-@media screen and (max-width: 1440px) {
-    .education-list-01{
-        left: 100px;
-    }
-
-    .education-list-02{
-        right: 200px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 100px;
-        top: 610px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        right: 200px;
-    }
-
-    .education-list-square-01{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        left: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-02{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        right: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-
-    .education-list-square-03{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        left: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-04{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        right: 100px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-}
-
-@media screen and (max-width: 1270px) {
-    .education-list-01{
-        left: 50px;
-        font-size: 18px;
-        font-family: 'nunito',sans-serif;
-    }
-
-    .education-list-02{
-        right: 114px;
-        font-size: 18px;
-    }
-
-    .education-list-03{
-        left: 50px;
-        top: 610px;
-        font-size: 18px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        right: 114px;
-        font-size: 18px;
-    }
-
-    .education-list-square-01{
-        width: 430px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        left: 50px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-02{
-        width: 430px;
-        height: 300px;
-        position: absolute;
-        top: 220px;
-        right: 50px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-
-    .education-list-square-03{
-        width: 430px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        left: 50px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-04{
-        width: 430px;
-        height: 300px;
-        position: absolute;
-        top: 650px;
-        right: 50px;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-01 p{
-        font-size: 18px;
-    }
-
-    .education-list-square-02 p{
-        font-size: 18px;
-    }
-
-    .education-list-square-03 p{
-        font-size: 18px;
-    }
-
-    .education-list-square-04 p{
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 1024px){
-
-    .my-education{
-        min-height: 200vh;
-    }
-
-    .education-list-01{
-        top: 165px;
-        left: 160px;
-    }
-
-    .education-list-02{
-        top: 560px;
-        left: 160px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 160px;
-        top: 960px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        top: 1360px;
-        left: 160px;
-    }
-
-    .education-list-square-01{
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        top: 200px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-02{
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        top: 600px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-
-    .education-list-square-03{
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        top: 1000px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-04{
-        width: 700px;
-        height: 300px;
-        position: absolute;
-        top: 1400px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background-color: #1E2245;
-        border-radius: 30px;
-    }
-
-    .education-list-square-01 p{
-        font-size: 20px;
-    }
-
-    .education-list-square-02 p{
-        font-size: 20px;
-    }
-
-    .education-list-square-03 p{
-        font-size: 20px;
-    }
-
-    .education-list-square-04 p{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 980px){
-    .education-list-01{
-        top: 165px;
-        left: 126px;
-        font-size: 20px;
-    }
-
-    .education-list-02{
-        top: 560px;
-        left: 126px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 126px;
-        top: 960px;
-        font-size: 20px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        top: 1360px;
-        left: 126px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 910px){
-    .education-list-01{
-        top: 165px;
-        left: 102px;
-        font-size: 20px;
-    }
-
-    .education-list-02{
-        top: 560px;
-        left: 102px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 102px;
-        top: 960px;
-        font-size: 20px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        top: 1360px;
-        left: 102px;
-        font-size: 20px;
-    }
-}
-
-@media all and (max-width: 768px){
-    .my-education{
-        min-height: 200vh;
-    }
-
-    .education-list-01{
-        top: 165px;
-        left: 140px;
-        font-size: 20px;
-    }
-
-    .education-list-02{
-        top: 560px;
-        left: 140px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 140px;
-        top: 960px;
-        font-size: 20px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        top: 1360px;
-        left: 140px;
-        font-size: 20px;
-    }
-
-    .education-list-square-01{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 200px;
-        right: 0;
-        left: 0;
-        margin: auto;
-
-    }
-
-    .education-list-square-02{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 600px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-
-    .education-list-square-03{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 1000px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    .education-list-square-04{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 1400px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    .education-list-square-01 p{
-        font-size: 19px;
-    }
-
-    .education-list-square-02 p{
-        font-size: 19px;
-    }
-
-    .education-list-square-03 p{
-        font-size: 19px;
-    }
-
-    .education-list-square-04 p{
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 700px){
-    .education-list-01{
-        top: 165px;
-        left: 100px;
-        font-size: 20px;
-    }
-
-    .education-list-02{
-        top: 560px;
-        left: 100px;
-        font-size: 20px;
-    }
-
-    .education-list-03{
-        left: 100px;
-        top: 960px;
-        font-size: 20px;
-    }
-
-    .education-list-04{
-        position: absolute;
-        top: 1360px;
-        left: 100px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 425px){
-
-}
-
-@media screen and (max-width: 360px){
+@media screen and (min-width: 321px) and (max-width: 360px){
     #my-education-heading{
         font-size: 2.4rem;
         text-align: center;
@@ -834,34 +296,34 @@ body{
     }
 
     .my-education{
-       height: 210vh;
+        height: 170vh;
     }
 
     .education-list-01{
         top: 100px;
-        left: 40px;
-        font-size: 15px;
+        left: 20px;
+        font-size: 14px;
     }
 
     .education-list-02{
         top: 500px;
-        left: 40px;
+        left: 20px;
         width: 340px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .education-list-03{
-        left: 40px;
+        left: 20px;
         top: 870px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .education-list-04{
         position: absolute;
         top: 1240px;
-        left: 40px;
+        left: 20px;
         width: 300px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .education-list-square-01{
@@ -995,7 +457,882 @@ body{
     }
 }
 
-@media screen and (max-width: 320px){
+@media all and (min-width: 361px) and (max-width: 488px){
+    .my-education{
+        min-height: 180vh;
+    }
+
+    #my-education-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 30px;
+        font-size: 17px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 30px;
+        font-size: 17px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-03{
+        left: 30px;
+        top: 960px;
+        font-size: 17px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 30px;
+        font-size: 17px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-square-01{
+        width: 340px;
+        height: 310px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+    }
+
+    .education-list-square-02{
+        width: 340px;
+        height: 310px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    .education-list-square-03{
+        width: 340px;
+        height: 310px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-04{
+        width: 340px;
+        height: 310px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    .education-list-square-01 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 18px;
+    }
 
 }
+
+
+@media all and (min-width: 489px) and (max-width: 600px){
+    .my-education{
+        min-height: 180vh;
+    }
+
+    #my-education-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 80px;
+        font-size: 17px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 80px;
+        font-size: 17px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-03{
+        left: 80px;
+        top: 960px;
+        font-size: 17px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 80px;
+        font-size: 17px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-square-01{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+    }
+
+    .education-list-square-02{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    .education-list-square-03{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-04{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-01 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 768px){
+    .my-education{
+        min-height: 180vh;
+    }
+
+    #my-education-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 140px;
+        font-size: 18px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 140px;
+        font-size: 18px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-03{
+        left: 140px;
+        top: 960px;
+        font-size: 18px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 140px;
+        font-size: 18px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-square-01{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+    }
+
+    .education-list-square-02{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    .education-list-square-03{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-04{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .education-list-square-01 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 19px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 19px;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 910px){
+    .my-education{
+        min-height: 170vh;
+    }
+
+    #my-education-heading{
+        font-size: 3.2rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 160px;
+        font-size: 18px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 160px;
+        font-size: 18px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-03{
+        left: 160px;
+        top: 960px;
+        font-size: 18px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 160px;
+        font-size: 18px;
+        width: 700px;
+        height: 30px;
+        background-color: transparent;
+    }
+
+    .education-list-square-01{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+}
+
+@media all and (min-width: 911px) and (max-width: 980px){
+    .my-education{
+        min-height: 180vh;
+    }
+
+    #my-education-heading{
+        font-size: 3.2rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 126px;
+        font-size: 18px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 126px;
+        font-size: 18px;
+    }
+
+    .education-list-03{
+        left: 126px;
+        top: 960px;
+        font-size: 18px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 126px;
+        font-size: 18px;
+    }
+
+    .education-list-square-01{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+}
+
+
+
+@media all and (min-width: 981px) and (max-width: 1024px){
+
+    .my-education{
+        min-height: 180vh;
+    }
+
+    #my-education-heading{
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-01{
+        top: 165px;
+        left: 160px;
+    }
+
+    .education-list-02{
+        top: 560px;
+        left: 160px;
+        font-size: 20px;
+    }
+
+    .education-list-03{
+        left: 160px;
+        top: 960px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        top: 1360px;
+        left: 160px;
+    }
+
+    .education-list-square-01{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 1000px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 1400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-01 p{
+        font-size: 20px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 20px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 20px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1270px){
+    .education-list-01{
+        left: 50px;
+        font-size: 18px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    #my-education-heading{
+        font-size: 3.3rem;
+        text-align: center;
+        position: absolute;
+        top: 40px;
+        font-family: 'nunito',sans-serif;
+    }
+
+    .education-list-02{
+        right: 114px;
+        font-size: 18px;
+    }
+
+    .education-list-03{
+        left: 50px;
+        top: 580px;
+        font-size: 18px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        right: 160px;
+        font-size: 18px;
+    }
+
+    .education-list-square-01{
+        width: 430px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        left: 50px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 430px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        right: 50px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 430px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        left: 50px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 430px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        right: 50px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-01 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-02 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-03 p{
+        font-size: 18px;
+    }
+
+    .education-list-square-04 p{
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 1271px) and (max-width: 1440px){
+    .education-list-01{
+        left: 100px;
+    }
+
+    .education-list-02{
+        right: 200px;
+        font-size: 20px;
+    }
+
+    .education-list-03{
+        left: 100px;
+        top: 580px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        right: 250px;
+    }
+
+    .education-list-square-01{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        left: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        right: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        left: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        right: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+}
+
+
+@media all and (min-width: 1441px) and (max-width: 1560px){
+    .education-list-01{
+        left: 100px;
+    }
+
+    .education-list-02{
+        right: 300px;
+        font-size: 20px;
+    }
+
+    .education-list-03{
+        left: 100px;
+        top: 580px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        right: 350px;
+    }
+
+    .education-list-square-01{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        left: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        right: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        left: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        right: 100px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+}
+
+
+@media all and (min-width: 1561px) and (max-width: 1685px){
+    .education-list-01{
+        left: 170px;
+    }
+
+    .education-list-02{
+        right: 350px;
+        font-size: 20px;
+    }
+
+    .education-list-03{
+        left: 170px;
+        top: 580px;
+    }
+
+    .education-list-04{
+        position: absolute;
+        right: 400px;
+    }
+
+    .education-list-square-01{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        left: 160px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-02{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 180px;
+        right: 160px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+
+    .education-list-square-03{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        left: 160px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+    .education-list-square-04{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 610px;
+        right: 160px;
+        background-color: #1E2245;
+        border-radius: 30px;
+    }
+
+}
+
 
