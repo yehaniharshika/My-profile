@@ -42,7 +42,8 @@ body{
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    margin-bottom: -4px;
 }
 
 #my-project-heading{
@@ -64,57 +65,39 @@ body{
 
 /*my-project square style*/
 .project-square-01{
-    width: 460px;
-    height: 340px;
+    width: 500px;
+    height: 360px;
     position: absolute;
     background-color: #1E2245;
     top: 130px;
-    left: 220px;
+    left: 320px;
 }
 
 .project-square-02{
-    width: 460px;
-    height: 340px;
+    width: 500px;
+    height: 360px;
     position: absolute;
     background-color: #1E2245;
     top: 130px;
-    left: 830px;
+    right: 320px;
 }
 
 .project-square-03{
-    width: 460px;
-    height: 340px;
+    width: 500px;
+    height: 360px;
     position: absolute;
     background-color: #1E2245;
-    top: 130px;
-    right: 220px;
+    bottom: 150px;
+    right: 320px;
 }
 
 .project-square-04{
-    width: 460px;
-    height: 340px;
+    width: 500px;
+    height: 360px;
     position: absolute;
     background-color: #1E2245;
-    bottom: 100px;
-    left: 220px;
-}
-
-.project-square-05{
-    width: 460px;
-    height: 340px;
-    position: absolute;
-    background-color: #1E2245;
-    bottom: 100px;
-    left: 830px;
-}
-
-.project-square-06{
-    width: 460px;
-    height: 340px;
-    position: absolute;
-    background-color: #1E2245;
-    bottom: 100px;
-    right: 220px;
+    bottom: 150px;
+    left: 320px;
 }
 
 /*project section image style*/
@@ -155,42 +138,6 @@ body{
 }
 
 .chat-project-image img{
-    height: auto;
-    width: 100%;
-    display: block;
-}
-
-.pos-project-image{
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    overflow: hidden;
-    border-radius: .5rem;
-    width: 430px;
-    height: 270px;
-}
-
-.pos-project-image img{
-    height: auto;
-    width: 100%;
-    display: block;
-}
-
-.extra-project-image{
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    overflow: hidden;
-    border-radius: .5rem;
-    width: 430px;
-    height: 270px;
-}
-
-.extra-project-image img{
     height: auto;
     width: 100%;
     display: block;
@@ -243,7 +190,7 @@ body{
     font-size: 20px;
     position: absolute;
     bottom: 15px;
-    left: 20px;
+    left: 30px;
     color: white;
     font-family: Ubuntu;
     font-weight: 500;
@@ -253,7 +200,7 @@ body{
     font-size: 20px;
     position: absolute;
     bottom: 15px;
-    left: 20px;
+    left: 30px;
     color: white;
     font-family: Ubuntu;
     font-weight: 500;
@@ -263,7 +210,7 @@ body{
     font-size: 20px;
     position: absolute;
     bottom: 15px;
-    left: 20px;
+    left: 30px;
     color: white;
     font-family: Ubuntu;
     font-weight: 500;
@@ -273,7 +220,7 @@ body{
     font-size: 20px;
     position: absolute;
     bottom: 15px;
-    left: 20px;
+    left: 30px;
     color: white;
     font-family: Ubuntu;
     font-weight: 500;
@@ -324,19 +271,293 @@ body{
     bottom: 0;
 }
 
-@media screen and (max-width: 1440px) {
+/*media query*/
+@media screen and (max-width: 320px){
 
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 321px) and (max-width: 360px){
+
+}
+
+@media screen and (min-width: 361px) and (max-width: 445px){
+
+}
+
+@media screen and (min-width: 446px) and (max-width: 578px){
+
+}
+
+@media screen and (min-width: 579px) and (max-width: 768px){
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px){
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1082px){
+    .project-square-01{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        left: 100px;
+    }
+
+    .project-square-02{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        right: 100px;
+    }
+
+    .project-square-03{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 200px;
+        right: 100px;
+    }
+
+    .project-square-04{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 200px;
+        left: 100px;
+    }
+
+    .mvc-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+    .layered-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+    .chat-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+
+    .portfolio-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (min-width: 1083px) and (max-width: 1346px){
+    .project-square-01{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        left: 100px;
+    }
+
+    .project-square-02{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        right: 100px;
+    }
+
+    .project-square-03{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 200px;
+        right: 100px;
+    }
+
+    .project-square-04{
+        width: 420px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 200px;
+        left: 100px;
+    }
+
+    .mvc-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+    .layered-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+    .chat-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+
+
+    .portfolio-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 395px;
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 1347px) and (max-width: 1700px){
+    .project-square-01{
+        width: 450px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        left: 200px;
+    }
+
+    .project-square-02{
+        width: 450px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        top: 130px;
+        right: 200px;
+    }
+
+    .project-square-03{
+        width: 450px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 150px;
+        right: 200px;
+    }
+
+    .project-square-04{
+        width: 450px;
+        height: 360px;
+        position: absolute;
+        background-color: #1E2245;
+        bottom: 150px;
+        left: 200px;
+    }
+
+    .mvc-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 420px;
+        height: 270px;
+    }
+
+    .layered-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 420px;
+        height: 270px;
+    }
+
+    .chat-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 420px;
+        height: 270px;
+    }
+
+
+    .portfolio-project-image{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+        width: 420px;
+        height: 270px;
+    }
 
 }
 
 
-@media screen and (max-width: 768px) {
 
-}
-
-@media screen and (max-width: 425px){
-
-}

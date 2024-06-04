@@ -1,30 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-
-:root{
-    --bg-color: #262A56;
-    --second-bg-color: #3C4767;
-    --text-color: #FFFFFF;
-    --sub-text-color: #000000;
-    --hero-text-color: #00EEFF;
-}
-
-html{
-    !* font-size: 62.5%;*!
-    overflow-x: hidden;
-}
-*/
 
 body{
 
@@ -44,6 +17,12 @@ body{
     margin-bottom: -20px;
 }
 
+#my-education-heading{
+    font-size: 4rem;
+    top: 30px;
+    position: absolute;
+    font-family: 'nunito', sans-serif;
+}
 
 #education-last{
     color: #00EEFF;
