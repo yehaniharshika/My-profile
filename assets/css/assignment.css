@@ -1,6 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.my-assignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    position: relative;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+#assignment-heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem; /* Use margin instead of absolute positioning */
+    font-family: 'Nunito', sans-serif;
+}
+
+#assignment-last {
+    color: #00EEFF;
+}
+
+.assignment-description {
+    margin-bottom: 2rem; /* Use margin instead of absolute positioning */
+}
+
+.assignment-description h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 21.5px;
+}
+
+.my-assignment-container-it {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 90%;
+    background-color: lightpink;
+    max-width: 1680px; /* Optional: Limit the maximum width for better centering */
+}
+
+.assignment-square {
+    position: relative;
+    border-radius: 5px;
+    height: 260px;
+    box-shadow: 0 0 1rem #1E2245;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Ensure content stays inside the div */
+}
+
+.assignment-square img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.assignment-square:hover img {
+    transform: scale(1.1);
+}
+
+.assignment-data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem; /* Adjust padding for responsiveness */
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.assignment-square:hover .assignment-data {
+    transform: translateY(0);
+}
+
+.assignment-data h4 {
+    font-weight: 600;
+    font-family: Ubuntu;
+    font-size: 23px;
+    position: absolute;
+    top: 20px; /* Adjust position if necessary */
+    color: #FFCD1E;
+}
+
+.assignment-data p {
+    font-size: 21px;
+    font-weight: bold;
+    margin: .3rem 0 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.assignment-data a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem; /* Adjust margin for spacing */
+}
+
+.assignment-link-01 {
+    font-size: 20px;
+    color: darkred;
+    background-color: transparent;
+    border-radius: .25rem;
+    padding: .25rem;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.assignment-link-02 {
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: .25rem;
+    padding: .25rem;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .my-assignment-container-it {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .my-assignment-container-it {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .my-assignment-container-it {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /*
 *{
     margin: 0;
@@ -34,7 +182,8 @@ body{
 }
 */
 
-/*my assignment section style*/
+/*
+!*my assignment section style*!
 .my-assignment{
     display: flex;
     justify-content: center;
@@ -179,4 +328,6 @@ body{
 
 @media screen and (max-width: 425px){
 
-}
+*/
+/*
+}*/

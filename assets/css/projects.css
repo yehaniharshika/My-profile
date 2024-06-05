@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Global Styles */
+!* Global Styles *!
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@ html {
 
 body {
     color: var(--text-color);
-}
+}*/
 
 /* Project Section Styles */
 .my-project {
@@ -36,7 +36,7 @@ body {
     justify-content: center; /* Center content vertically */
     background-color: var(--bg-color);
     padding-bottom: 6rem;
-    padding-top: 150px;
+    padding-top: 30px;
     position: relative;
     min-height: 100vh;
 }
