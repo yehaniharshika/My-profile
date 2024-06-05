@@ -123,6 +123,11 @@
 #about-heading {
     font-size: 4rem;
     text-align: center;
+    font-family: 'nunito', sans-serif;
+}
+
+.about-last{
+    color: #00EEFF;
 }
 
 .about-image {
