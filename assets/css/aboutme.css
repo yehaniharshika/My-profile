@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-.about{
+/*.about{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    height: 90vh;
+    min-height: 90vh;
     margin-bottom: -6px;
 }
 
@@ -49,19 +49,7 @@
     box-shadow: 0 0 25px var(--bg-color);
 }
 
-/*.about-image .circle-rotate{
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%) rotate(0);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-top: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--bg-color);
-    border-right: .2rem solid var(--bg-color);
-}*/
+
 
 .main-content{
     text-align: center ;
@@ -121,9 +109,108 @@
     box-shadow: 0 0 25px #FFCD1E;
     color: var(--bg-color);
 
+}*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding: 2rem 1rem;
+    gap: 2rem;
+    min-height: 60vh;
 }
 
+#about-heading {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about-image {
+    width: 23rem;
+    height: 23.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--bg-color);
+    box-shadow: 0 0 25px var(--bg-color);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 80%;
+    background-color: yellow;
+}
+
+.about-content p {
+    font-weight: 650;
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.cv-btn {
+    padding: 1rem 2.5rem;
+    background: #FFCD1E;
+    border-radius: 30px;
+    color: #262A56;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: box-shadow 0.5s ease;
+}
+
+.cv-btn:hover {
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #about-heading {
+        font-size: 2.4rem;
+    }
+
+    .about-image {
+        width: 15rem;
+        height: 15.5rem;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .cv-btn {
+        width: 180px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-heading {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        width: 12rem;
+        height: 12.5rem;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .cv-btn {
+        width: 150px;
+        font-size: 14px;
+    }
+}
 /*media query*/
+/*
 @media all and (max-width: 320px){
     #about-heading{
         font-size: 2.4rem;
@@ -158,7 +245,7 @@
     }
 
     .about{
-        height: 90vh;
+        min-height: 90vh;
     }
 
     .main-content{
@@ -186,7 +273,7 @@
 
 @media all and (min-width: 321px) and (max-width: 360px){
     .about{
-        height: 90vh;
+        min-height: 90vh;
     }
 
     #about-heading{
@@ -196,13 +283,9 @@
     }
 
     .about-content{
-        text-align: center ;
         width: 300px;
         height: 180px;
         position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
         top: 350px;
         background-color: transparent;
     }
@@ -437,8 +520,9 @@
     }
 
 }
+*/
 
-
+/*
 @media all and (min-width: 476px) and (max-width: 680px){
     #about-heading{
         font-size: 3rem;
@@ -449,7 +533,7 @@
     }
 
     .about{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .about-image{
@@ -568,7 +652,7 @@
 
 @media all and (min-width: 769px) and (max-width: 1024px){
     .about{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #about-heading{
@@ -634,7 +718,7 @@
 
 @media all and (min-width: 1025px) and (max-width: 1300px){
     .about{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #about-heading{
@@ -696,7 +780,7 @@
 
 @media all and (min-width: 1301px) and (max-width: 1550px){
     .about{
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #about-heading{
@@ -733,4 +817,4 @@
         top: 540px;
     }
 
-}
+}*/
