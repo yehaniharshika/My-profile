@@ -175,7 +175,7 @@ body {
 }
 
 
-/*@media screen and (min-width: 400px) and (max-width: 810px){
+@media screen and (min-width: 400px) and (max-width: 810px){
     .my-project-container {
         grid-template-columns:  1fr;
         width: 40%;
@@ -208,7 +208,7 @@ body {
         padding: 10px;
     }
 
-}*/
+}
 
 @media screen and (min-width: 811px) and (max-width: 1460px){
     .my-project-container {
