@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f0f0f0; /* Fallback color */
+}
+
+
+.container::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.596);
+}
+
+.calculator{
+    background: linear-gradient(to right,black,gray);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100;
+    box-shadow: 0 0 15px black;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    background: #1b2f38;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+}
+
+/*all calculator button hover style*/
+.calculator form input:hover {
+    transform: scale(1.1);
+}
+
+/* dark theme calculator */
+.calculator form .display-field{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.calculator form .display-field input{
+    text-align: right;
+    background: transparent;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    color: white;
+}
+
+/*equal button style*/
+form input.equal-btn{
+    width: 145px;
+    background:  #72beff;
+}
+
+form input.equal-btn:hover{
+    box-shadow: 0 0 15px 2px #72beff;
+}
+
+/*dark theme operator button*/
+.calculator form input.operator-button-01{
+    color: #00ffd0;
+    background-color: #00ffd021;
+    box-shadow: none;
+}
+
+.calculator form input.operator-button-01:hover{
+    box-shadow: 0 0 15px 2px #00ffd021;
+}
+
+
+/*light,dark operator button 02*/
+form input.operator-button-02{
+    color: #d345bc;
+    background-color:  #541c4b;
+    box-shadow: none;
+    font-size: 25px;
+}
+
+form input.operator-button-02:hover{
+    box-shadow: 0 0 15px 2px #541c4b;
+}
+
+.footer{
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+}
+
+.footer a{
+    color: white;
+}
