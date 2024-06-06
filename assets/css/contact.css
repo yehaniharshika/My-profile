@@ -1,4 +1,194 @@
 /*contact me section style*/
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    padding: 2rem;
+    min-height: 90vh;
+}
+
+#contactMe-heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: bold;
+}
+
+.contactMe-last {
+    color: #00EEFF;
+}
+
+.info-text {
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00EEFF;
+    margin-bottom: 2rem;
+}
+
+.contact-my-info {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.contact-my-info i {
+    font-size: 2rem;
+    color: #FFCD1E;
+    margin-right: 0.5rem;
+}
+
+.contact-my-info span {
+    font-weight: 700;
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.contact-my-info span:hover {
+    color: #FFCD1E;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--second-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-box input,
+.contact-me form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 3px solid #FFCD1E;
+    font-family: 'nunito', sans-serif;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.contact-me form .input-box input:hover,
+.contact-me form textarea:hover {
+    box-shadow: 0 0 10px #FFCD1E;
+}
+
+.contact-me form textarea {
+    resize: vertical;
+}
+
+.contact-me form .btn {
+    padding: 0.75rem;
+    background-color: #FFCD1E;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-family: Ubuntu;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.contact-me form .btn:hover {
+    background-color: #e6b800;
+    box-shadow: 0 0 25px #e6b800;
+}
+
+@media (max-width: 768px) {
+    #contactMe-heading {
+        font-size: 2.5rem;
+    }
+
+    .info-text {
+        font-size: 1.2rem;
+    }
+
+    .contact-my-info {
+        font-size: 1rem;
+    }
+
+    .contact-my-info i {
+        font-size: 1.5rem;
+    }
+
+    .input-box input,
+    .contact-me form textarea {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-me form .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #contactMe-heading {
+        font-size: 2rem;
+    }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+    .contact-my-info {
+        font-size: 0.8rem;
+    }
+
+    .contact-my-info i {
+        font-size: 1.2rem;
+    }
+
+    .input-box {
+        gap: 0.5rem;
+    }
+
+    .input-box input,
+    .contact-me form textarea {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .contact-me form .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+}
+
+/*
 .contact-me{
     display: flex;
     justify-content: center;
@@ -8,8 +198,8 @@
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    height: 90vh;
-    margin-bottom: -4px;
+    min-height: 90vh; !* Use min-height instead of fixed height *!
+    padding-top: 6rem; /
 }
 
 #contactMe-heading{
@@ -140,6 +330,7 @@
 .contact-me form .btn:hover{
     box-shadow: 0 0 25px #FFCD1E;
 }
+*/
 
 /*footer style*/
 .footer {
@@ -174,8 +365,8 @@
     font-size: 2.4rem;
     color:#FFCD1E ;
 }
-
-/*media query*/
+/*
+!*media query*!
 @media all and (max-width: 320px){
 
 }
@@ -488,7 +679,7 @@
         color: var(--text-color);
         cursor: pointer;
     }
-}
+}*/
 
 
 
