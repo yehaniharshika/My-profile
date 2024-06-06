@@ -8,7 +8,8 @@
     gap: 2rem;
     flex-direction: column;
     position: relative;
-    height:  120vh;
+    min-height: 100vh;
+    padding-top: 6rem; /
 }
 
 #my-gallery-heading{
@@ -98,6 +99,9 @@
     border-radius: 10px;
 }
 
+.photo-gallery .pic:hover{
+   box-shadow: 0 0 25px  #FFCD1E;
+}
 #check1:checked ~ .gallery-container .photo-gallery .pic{
     transform: scale(1);
     opacity: 1;
