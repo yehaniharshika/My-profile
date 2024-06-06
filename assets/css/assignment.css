@@ -17,6 +17,7 @@
 
 #assignment-heading {
     font-size: 4rem;
+    margin-top: 2rem;
     text-align: center;
     margin-bottom: 2rem; /* Use margin instead of absolute positioning */
     font-family: 'Nunito', sans-serif;
@@ -32,7 +33,7 @@
 
 .assignment-description h5 {
     font-family: 'Nunito', sans-serif;
-    font-size: 21.5px;
+    font-size: 21px;
 }
 
 .my-assignment-container-it {
@@ -137,23 +138,53 @@
 }
 
 /*Media Queries */
-@media (max-width: 1200px) {
-    .my-assignment-container-it {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .my-assignment-container-it {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .my-assignment-container-it {
         grid-template-columns: 1fr;
     }
+
+    .assignment-description h5 {
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
+
+@media (min-width: 701px) and (max-width: 900px){
+    .my-assignment-container-it {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .assignment-description h5 {
+        font-size: 18px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 901px ) and(max-width: 1200px) {
+    .my-assignment-container-it {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .assignment-description h5 {
+        font-size: 19px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1295px){
+    .assignment-description h5 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
 
 
 /*
