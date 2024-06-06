@@ -38,26 +38,15 @@
                     </li>
 
                 </ul>
-                <a href="signup.html" class="btn btn-outline-primary log-out-btn">LogOut</a>
+                <a href="dashboard.html" class="btn btn-outline-primary log-out-btn">LogOut</a>
             </div>
         </div>
     </nav>
 </header>
 
 
-<main class="main-part container">
+<section class="main-part container" id="customer-section">
     <section class="row">
-        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="customer-part">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h1>
-                        <i class="fa-solid fa-users img-customer"></i>
-                        Manage Customer
-                    </h1>
-                </div>
-            </div>
-        </section>
-
         <section class="Customer_Details_Form col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <div class="card cardSize">
                 <div id="Card-Header-back-colour" class="card-header">
@@ -66,31 +55,34 @@
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Customer ID</label>
-                            <input type="text" class="form-control">
+                            <label for="customer-Id" class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="customer-Id">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter customer name">
+                            <label for="customer-name" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="customer-name" placeholder="Enter customer name">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Address</label>
-                            <textarea class="form-control" placeholder="Enter customer address" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="customer-address" class="form-label">Address</label>
+                            <textarea class="form-control" placeholder="Enter customer address" id="customer-address" style="height: 100px"></textarea>
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contact Number</label>
-                            <input type="tel" class="form-control" id="floatingInput7" placeholder="07********">
+                            <label for="contact-number" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contact-number" placeholder="07********">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Here">
                         </div>
 
-
-                        <div class="text-end ">
-                            <button type="submit" class="btn btn-success">Save</button>
-                            <button type="reset" class="btn btn-primary">Update</button>
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                            <button type="reset" class="btn btn-warning">Reset</button>
+                        <div class="mt-3 mb-5">
+                            <button type="button" class="btn btn-success" id="customer-save">Save</button>
+                            <button type="button" class="btn btn-primary" id="customer-update">Update</button>
+                            <button type="button" class="btn btn-danger" id="customer-delete">Delete</button>
+                            <button type="reset" class="btn btn-warning" id="customer-reset">Reset</button>
                         </div>
 
                     </form>
@@ -99,194 +91,52 @@
             </div>
         </section>
 
-        <section>
-            <!--customer modal-->
-            <div class="modal fade" id="addCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel addCustomerLabel">Customer Registration Form</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body cus-card">
-                            <!--customer add form-->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInputModal" class="form-label label-customerID">customer ID</label>
-                                    <input type="text" class="form-control input-id" id="formGroupExampleInputModalId" placeholder="Enter customer ID">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInputModal" class="form-label label-customerName">customer Name</label>
-                                    <input type="text" class="form-control name-text" id="formGroupExampleInputModal" placeholder="Enter customer Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1Modal" class="form-label label-customerAddress">customer Address</label>
-                                    <textarea class="form-control text-address" id="exampleFormControlTextarea1Modal" placeholder="Enter address" rows="3"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInput2Modal" class="form-label label-customerTel">phone number</label>
-                                    <input type="tel" class="form-control telNumber" id="formGroupExampleInput2Modal" placeholder="Enter phone number">
-                                </div>
-
-                                <br>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close-from">Close</button>
-                            <button type="button" class="btn btn-primary" id="customer-save">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel updateDeleteCustomerLabel">Customer Form</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body cus-card">
-                            <!--customer search form-->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInputModal" class="form-label label-customerID">customer ID</label>
-                                    <input type="text" class="form-control input-id" id="formGroupExampleInputModalCustomerId" placeholder="Enter customer ID">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInputModal" class="form-label label-customerName">customer Name</label>
-                                    <input type="text" class="form-control name-text" id="formGroupExampleInputModalName" placeholder="Enter customer Name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1Modal" class="form-label label-customerAddress">customer Address</label>
-                                    <textarea class="form-control text-address" id="exampleFormControlTextarea1ModalAddress" placeholder="Enter address" rows="3"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInput2Modal" class="form-label label-customerTel">phone number</label>
-                                    <input type="tel" class="form-control telNumber" id="formGroupExampleInput2ModalTelNumber" placeholder="Enter phone number">
-                                </div>
-
-                                <br>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="customer-close">Close</button>
-                            <button type="button" class="btn btn-warning" id="customer-update">update</button>
-                            <button type="button" class="btn btn-primary" id="customer-delete">delete</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class=" search-customer col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="card cardSize-customer">
-                <div id=" " class="card-header Card-header-colour">
-                    search customer
-                </div>
-
-                <div class="card-body">
-                    <form>
-                        <input class="form-control customer-search-text-field" type="text" placeholder="input customer ID/customer Name here..." aria-label="readonly input example" readonly>
-
-                        <button type="button" class="btn btn-success btn-customer-search"  data-bs-toggle="modal" data-bs-target="#customerModal">search</button>
-
-                        <!--<select class="form-select form-select-lg mb-3 customer-name-box" aria-label="Large select example">
-                            <option selected>customer Name</option>
-                            <option value="1">Yehani Harshika</option>
-                            <option value="2">Rumesh Chamoda</option>
-                            <option value="3">Pavindu Eranga</option>
-                        </select>-->
+        <section class="Custom_Search_Customer col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="card" >
+                <div  class="card-body">
+                    <h5 id="search-bar" class="card-title">Search Customer</h5>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Enter customer Id here" id="customer-search-by-id" aria-label="Search" >
+                        <button class="btn btn-outline-primary" type="button" id="customer-search">Search</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="customer-table-view col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10" >
-            <table class="table caption-top tbl-customer">
-                <caption id="table-topic">List of customers</caption>
+        <section class="Customer-Table-View col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+
+            <table class="table table-secondary table-striped" >
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">customer ID</th>
-                    <th scope="col">customer name</th>
+                    <th scope="col">Customer name</th>
                     <th scope="col">address</th>
-                    <th scope="col">phone number</th>
-                    <th scope="col">salary</th>
+                    <th scope="col">contact number</th>
+                    <th scope="col">Email address</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody  id="customer-tbl-tbody">
                 <tr>
-                    <th scope="row">1</th>
                     <td>C-001</td>
                     <td>Yehani Harshika</td>
                     <td>Polonnaruwa</td>
                     <td>076-4450928</td>
-                    <td>30000</td>
+                    <td>yehanipamunuwa@gmail.com</td>
+
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
                     <td>C-002</td>
                     <td>Pavindu Eranga</td>
                     <td>Panadura</td>
                     <td>076-8371849</td>
-                    <td>25000</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>C-003</td>
-                    <td>Dewmini Pabasara</td>
-                    <td>2/R, Gonapala</td>
-                    <td>0782323123</td>
-                    <td>50000</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>pavindueranga@gmail.com</td>
                 </tr>
                 </tbody>
             </table>
         </section>
     </section>
-</main>
+</section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

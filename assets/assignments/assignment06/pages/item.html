@@ -37,104 +37,77 @@
                         <a class="nav-link" href="orderDetails.html">Order Details</a>
                     </li>
                 </ul>
-                <a href="signup.html" class="btn btn-outline-primary log-out-btn">LogOut</a>
+                <a href="dashboard.html" class="btn btn-outline-primary log-out-btn">LogOut</a>
             </div>
         </div>
     </nav>
 </header>
 
-<main class="main-part container">
+<!--item section-->
+<section class="main-part container" id="item-section">
     <section class="row">
-        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="item-part">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h1>
-                        <i class="fa-solid fa-business-time img-item"></i>
-                        Manage item
-                    </h1>
-                </div>
-            </div>
-        </section>
-
         <section class="Items_Details_Form col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <div class="card cardSize">
-                <div id="Card-Header-back-colour" class="card-header">
+                <div id="Card-Header-back-colour-item" class="card-header">
                     Items Details
                 </div>
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Item ID</label>
-                            <input type="text" class="form-control">
+                            <label for="item-code" class="form-label">Item code</label>
+                            <input type="text" class="form-control" id="item-code">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Item name">
+                            <label for="item-name" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="item-name" placeholder="Enter Item name">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Unit Price</label>
-                            <input type="number" class="form-control" placeholder="Enter price">
+                            <label for="unit-price" class="form-label">Unit Price</label>
+                            <input type="number" class="form-control" placeholder="Enter price" id="unit-price">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Quantity On Hand</label>
-                            <input type="number" class="form-control" placeholder="Enter qty">
+                            <label for="qty-on-hand" class="form-label">Quantity On Hand</label>
+                            <input type="number" class="form-control" placeholder="Enter qty" id="qty-on-hand">
                         </div>
 
                         <div class="text-end ">
-                            <button type="submit" class="btn btn-success">Save</button>
-                            <button type="reset" class="btn btn-primary">Update</button>
-                            <button type="reset" class="btn btn-danger">Delete</button>
-                            <button type="reset" class="btn btn-warning">Reset</button>
+                            <button type="button" class="btn btn-success" id="item-save">Save</button>
+                            <button type="button" class="btn btn-primary" id="item-update">Update</button>
+                            <button type="button" class="btn btn-danger" id="item-delete">Delete</button>
+                            <button type="reset" class="btn btn-warning" id="item-reset">Reset</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </section>
 
-
-        <section class=" search-item col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="card cardSize-item">
-                <div id=" " class="card-header Card-header-colour">
-                    search item
-                </div>
-
-                <div class="card-body">
-                    <form>
-                        <input class="form-control item-search-text-field" type="text" placeholder="Input Item code/item name here..." aria-label="readonly input example" readonly>
-                        <button type="button" class="btn btn-success btn-item-search"  data-bs-toggle="modal" data-bs-target="#ItemModal">search</button>
+        <section class="Custom_Search_Items col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="card" >
+                <div  class="card-body">
+                    <h5 id="search-bar-item" class="card-title">Search Items</h5>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Enter Item Code" id="item-search-code" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="button" id="item-search">Search</button>
                     </form>
                 </div>
-
-                <!--<select class="form-select form-select-lg mb-3 customer-name-box" aria-label="Large select example">
-                    <option selected>Item code</option>
-                    <option value="1">I-001</option>
-                    <option value="2">I-002</option>
-                    <option value="3">I-003</option>
-                    <option value="3">I-004</option>
-                </select>-->
             </div>
         </section>
 
-        <section class="customer-table-view col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10" >
-            <table class="table caption-top tbl-customer">
-                <caption id="item-table-topic">List of items</caption>
+        <section class="Item-Table-View col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+            <table class="table table-secondary table-striped" >
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Item Code</th>
                     <th scope="col">Item name</th>
                     <th scope="col">Item price</th>
                     <th scope="col">Item quantity</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody  id="item-tbl-tbody">
                 <tr>
-                    <th scope="row">1</th>
                     <td>I-001</td>
                     <td>Milk powder</td>
                     <td>750.00</td>
@@ -142,19 +115,16 @@
 
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
                     <td>I-002</td>
                     <td>Diana-Chocolate Biscuit</td>
                     <td>130.00</td>
                     <td>24</td>
-
                 </tr>
                 </tbody>
             </table>
         </section>
     </section>
-</main>
-
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

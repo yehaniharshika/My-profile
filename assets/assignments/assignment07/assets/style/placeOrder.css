@@ -28,6 +28,7 @@ header {
 }
 
 
+
 .Card-header-colour {
     background-color: #133a75;
     color: white;
@@ -36,7 +37,7 @@ header {
 }
 
 .Order-Details {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #purchase-position {
@@ -59,13 +60,14 @@ header {
     font-weight: 600;
 }
 
-.Order_Details_Form{
-    margin-top: 6rem;
+#sub-total-label {
+    color: red;
 }
 
-.select-item-Form{
-    margin-top: 6rem;
+#total-label {
+    color: blue;
 }
+
 .Order-Table-View {
     position: relative;
     top: 3rem;
