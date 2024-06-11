@@ -41,7 +41,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     width: 90%;
-    background-color: lightpink;
+    background-color:transparent;
     max-width: 1750px; /* Optional: Limit the maximum width for better centering */
 }
 
