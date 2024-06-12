@@ -61,7 +61,7 @@
 .service-information h3 {
     font-size: 32px;
     font-weight: bold;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     line-height: 2;
     color: #FFCD1E;
 }
@@ -73,12 +73,12 @@
 
 .service-box .service-information p {
     font-size: 22px;
-    font-family: Ubuntu;
+    font-family:"Ubuntu", sans-serif;
     font-weight: 400;
     padding: 8px;
 }
 
-/* Responsive Styles */
+/*Responsive styles*/
 @media screen and (max-width: 1024px) {
     .service-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
@@ -110,11 +110,11 @@
 
     #my-services-heading {
         font-size: 3rem;
-        padding-top: 4rem; /* Adjusted padding for smaller screens */
+        padding-top: 4rem; /*adjusted padding for smaller screens*/
     }
 
     .service-box {
-        min-height: 300px; /* Adjusted minimum height for smaller screens */
+        min-height: 300px; /*adjusted minimum height for smaller screens*/
     }
 }
 
@@ -140,7 +140,7 @@
     }
 
     .service-box {
-        min-height: 250px; /* Adjusted minimum height for smallest screens */
+        min-height: 250px; /*adjusted minimum height for smallest screens*/
     }
 }
 

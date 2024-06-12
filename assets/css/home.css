@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rowdies:wght@300;400;700&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *{
     margin: 0;
@@ -57,7 +58,7 @@ body{
     color: var(--text-color);
     text-shadow: 0 0 25px white;
     font-weight: bold;
-    font-family: Ubuntu;
+    font-family:"Ubuntu", sans-serif;
     cursor: pointer;
     transition: 0.3s ease;
     position: absolute;
@@ -196,7 +197,7 @@ body{
 .text-animation {
     font-size: 2.1rem;
     font-weight: 800;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     position: relative;
     margin-top: 1rem;
     min-width: 280px;
@@ -236,16 +237,16 @@ body{
         content: "Software Engineering Student";
     }
     21%, 40% {
-        content: "Future Frontend Designer";
+        content: "Frontend Developer";
     }
     41%, 60% {
-        content: "Future Web Designer";
+        content: "Web Designer";
     }
     61%, 80% {
         content: "Future Mobile App Developer";
     }
     81%, 100% {
-        content: "Future Full-stack Developer";
+        content: "Full-stack Developer";
     }
 }
 

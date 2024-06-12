@@ -28,7 +28,7 @@
 
 .education-contents ul {
     width: 100%;
-    font-family: Ubuntu;
+    font-family:"Ubuntu", sans-serif;
     color: #FFCD1E;
 }
 
@@ -113,5 +113,5 @@ p{
 .it-center-name {
     margin: 1rem 0;
     color: white;
-    font-family: Ubuntu;
+    font-family:"Ubuntu", sans-serif;
 }
