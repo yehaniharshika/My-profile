@@ -1,5 +1,4 @@
-
-/* My Education Section Styles */
+/* My Education section styles */
 .my-education {
     display: flex;
     flex-direction: column;
@@ -107,11 +106,43 @@ p{
     text-align: center;
     font-size: 1.3rem;
     color: white;
-    font-family: "Lato", sans-serif;
+    font-family: 'nunito', sans-serif;
+    font-weight: 600;
 }
 
 .it-center-name {
     margin: 1rem 0;
     color: white;
     font-family:"Ubuntu", sans-serif;
+}
+
+/*media queries*/
+@media (max-width: 810px) {
+    #my-education-heading {
+        font-size: 3rem;
+    }
+
+    .education-contents h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 474px) {
+    #my-education-heading {
+        font-size: 2.6rem;
+    }
+
+    .education-contents h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
 }
