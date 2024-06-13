@@ -1,30 +1,4 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-
-:root {
-    --bg-color: #262A56;
-    --second-bg-color: #3C4767;
-    --text-color: #FFFFFF;
-    --sub-text-color: #000000;
-    --hero-text-color: #00EEFF;
-}
-
-html {
-    overflow-x: hidden;
-}
-
-body {
-    color: var(--text-color);
-}
-
-/* Skills Section Styles */
+/* Skills section styles */
 .my-skills {
     display: flex;
     flex-direction: column;
@@ -49,7 +23,7 @@ body {
 }
 
 .skills-paragraph {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-size: 22px;
     text-align: center;
     margin-bottom: 3rem;
@@ -60,7 +34,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     width: 80%;
-    background-color: #00EEFF;
+    background-color: salmon;
 }
 
 .development-skills-box, .design-skills-box {
@@ -97,6 +71,7 @@ body {
 .design-skills-box .design-skills-content {
     width: 100%;
     border: .3rem solid #FFCD1E;
+    height: 578px;
     border-radius: .6rem;
     padding: .14rem 24px;
     position: relative;
@@ -203,7 +178,94 @@ body {
     }
 }
 
+@media (max-width: 1360px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
 
+    .skills-container{
+        width: 60%;
+        background-color: #00ffd0;
+    }
+
+    .skills-paragraph {
+        font-family: 'nunito', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        font-weight: 650;
+        margin-bottom: 6rem;
+    }
+
+    .development-skills-title{
+        font-size: 22px;
+        color: #FFCD1E;
+        font-weight: 900;
+        font-family: 'Nunito', sans-serif;
+        position: absolute;
+        left: 21rem;
+        top: 14.1rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+
+    .design-skills-title{
+        font-size: 22px;
+        position: absolute;
+        left: 21rem;
+        top: 56.5rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+}
+
+@media (max-width: 862px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        left: 10.5rem;
+        top: 14.1rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        left: 10.5rem;
+        top: 56.5rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+}
+
+@media (max-width: 545px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        left: 6.5rem;
+        top: 16.1rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        left: 3.5rem;
+        top: 58.5rem;
+        margin-bottom: 1rem;
+        background-color: skyblue;
+    }
+
+    .skills-container{
+        width: 68%;
+        background-color: #00ffd0;
+    }
+}
 /*
 !*skills style*!
 !* Global Styles *!
