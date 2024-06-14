@@ -41,7 +41,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     width: 90%;
-    background-color:transparent;
+    background-color: transparent;
     max-width: 1750px; /* Optional: Limit the maximum width for better centering */
 }
 
@@ -93,7 +93,7 @@
     font-size: 22px;
     position: absolute;
     top: 3px; /* Adjust position if necessary */
-    color: #FFCD1E;
+    color: transparent;
 }
 
 .assignment-data p {
@@ -113,7 +113,7 @@
 .assignment-link-01 {
     font-size: 19px;
     color: darkred;
-    background-color: yellow;
+    background-color: transparent;
     border-radius: .25rem;
     /*padding: .25rem;*/
     padding: 0;
@@ -138,19 +138,31 @@
 }
 
 /*Media Queries */
-@media (max-width: 700px) {
+@media all and (max-width: 500px){
+    #assignment-heading {
+        font-size: 2.8rem;
+    }
+
+    .assignment-square{
+        height: 240px;
+    }
+}
+@media all and (max-width: 840px) {
     .my-assignment-container-it {
         grid-template-columns: 1fr;
+        width: 80%;
+        max-width: 500px;
     }
 
     .assignment-description h5 {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
     }
+
 }
 
-@media (min-width: 701px) and (max-width: 900px){
+@media (min-width: 841px) and (max-width: 1170px){
     .my-assignment-container-it {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -160,9 +172,17 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    #assignment-heading {
+        font-size: 3.2rem;
+        margin-top: 2rem;
+        text-align: center;
+        margin-bottom: 2rem; /* Use margin instead of absolute positioning */
+        font-family: 'Nunito', sans-serif;
+    }
 }
 
-@media (min-width: 901px ) and(max-width: 1200px) {
+@media (min-width: 1171px ) and (max-width: 1460px) {
     .my-assignment-container-it {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -174,7 +194,7 @@
     }
 }
 
-@media all and (min-width: 1201px) and (max-width: 1295px){
+@media all and (min-width: 1461px) and (max-width: 1295px){
     .assignment-description h5 {
         font-size: 20px;
         padding-left: 20px;
