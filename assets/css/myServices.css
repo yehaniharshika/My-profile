@@ -79,9 +79,9 @@
 }
 
 /*Responsive styles*/
-@media screen and (max-width: 1024px) {
+@media all and (max-width: 1145px) {
     .service-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Adjust columns for smaller screens */
         gap: 2rem;
     }
 
@@ -102,23 +102,38 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 648px) {
     .service-container {
-        width: 90%;
+        width: 86%;
+        background-color: transparent;
+        grid-template-columns: repeat(1, 1fr); /* Adjust columns for smaller screens */
+        gap: 2rem;
         padding: 0 1rem;
     }
 
     #my-services-heading {
         font-size: 3rem;
-        padding-top: 4rem; /*adjusted padding for smaller screens*/
+        padding-top: 2rem; /*adjusted padding for smaller screens*/
     }
 
     .service-box {
         min-height: 300px; /*adjusted minimum height for smaller screens*/
     }
+
+    .service-information h3 {
+        font-size: 23px;
+    }
+
+    .service-information i {
+        font-size: 35px;
+    }
+
+    .service-box .service-information p {
+        font-size: 18px;
+    }
 }
 
-@media screen and (max-width: 425px) {
+/*@media all and (max-width: 565px) {
     .service-container {
         width: 100%;
     }
@@ -140,9 +155,9 @@
     }
 
     .service-box {
-        min-height: 250px; /*adjusted minimum height for smallest screens*/
+        min-height: 250px; !*adjusted minimum height for smallest screens*!
     }
-}
+}*/
 
 /*
 .my-services{

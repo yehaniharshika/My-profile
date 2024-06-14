@@ -147,11 +147,16 @@
         height: 240px;
     }
 }
+
 @media all and (max-width: 840px) {
     .my-assignment-container-it {
         grid-template-columns: 1fr;
         width: 80%;
         max-width: 500px;
+    }
+
+    #assignment-heading {
+        font-size: 3rem;
     }
 
     .assignment-description h5 {
