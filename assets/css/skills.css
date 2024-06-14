@@ -167,25 +167,95 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr;
+
+@media all and (max-width: 516px) {
+    #skills-heading {
+        font-size: 3rem;
     }
 
-    .development-skills-title,
-    .design-skills-title {
-        text-align: center;
+
+    .development-skills-title{
+        position: absolute;
+        top: 16.1rem;
+        font-size: 18px;
+        background-color: skyblue;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        left: 1rem;
+        top: 60rem;
+        /*width: 200px;*/
+        font-size: 1px;
+        background-color: skyblue;
+        margin-bottom: 1rem;
+        margin-right: 4rem;
+    }
+
+    .skills-container{
+        width: 40%;
+        background-color: #00ffd0;
+    }
+
+    .skills-paragraph {
+        font-size: 17px;
     }
 }
 
-@media (max-width: 1360px) {
+
+@media all and (max-width: 545px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        left: 6.5rem;
+        top: 16.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        left: 3.5rem;
+        top: 58.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills-container{
+        width: 68%;
+        background-color: transparent;
+    }
+}
+
+@media all and (max-width: 862px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+    .development-skills-title{
+        position: absolute;
+        left: 10.5rem;
+        top: 14.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .design-skills-title{
+        position: absolute;
+        left: 10.5rem;
+        top: 56.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (max-width: 1360px) {
     .skills-container {
         grid-template-columns: 1fr;
     }
 
     .skills-container{
         width: 60%;
-        background-color: #00ffd0;
+        background-color: transparent;
     }
 
     .skills-paragraph {
@@ -205,7 +275,6 @@
         left: 21rem;
         top: 14.1rem;
         margin-bottom: 1rem;
-        background-color: skyblue;
     }
 
     .design-skills-title{
@@ -214,58 +283,11 @@
         left: 21rem;
         top: 56.5rem;
         margin-bottom: 1rem;
-        background-color: skyblue;
     }
 }
 
-@media (max-width: 862px) {
-    #skills-heading {
-        font-size: 3.5rem;
-    }
 
-    .development-skills-title{
-        position: absolute;
-        left: 10.5rem;
-        top: 14.1rem;
-        margin-bottom: 1rem;
-        background-color: skyblue;
-    }
 
-    .design-skills-title{
-        position: absolute;
-        left: 10.5rem;
-        top: 56.5rem;
-        margin-bottom: 1rem;
-        background-color: skyblue;
-    }
-}
-
-@media (max-width: 545px) {
-    #skills-heading {
-        font-size: 3.5rem;
-    }
-
-    .development-skills-title{
-        position: absolute;
-        left: 6.5rem;
-        top: 16.1rem;
-        margin-bottom: 1rem;
-        background-color: skyblue;
-    }
-
-    .design-skills-title{
-        position: absolute;
-        left: 3.5rem;
-        top: 58.5rem;
-        margin-bottom: 1rem;
-        background-color: skyblue;
-    }
-
-    .skills-container{
-        width: 68%;
-        background-color: #00ffd0;
-    }
-}
 /*
 !*skills style*!
 !* Global Styles *!

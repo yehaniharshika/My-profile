@@ -30,7 +30,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-
 </head>
 <body class="body">
 <!--header design-->
@@ -129,7 +128,7 @@
         <div class="education-contents">
             <ul>
                 <li class="education-list-01"><h4>Studied PL/Aththanakadawala National College</h4></li>
-                <div class="education-list-square-01">
+                <div data-aos="flip-right" class="education-list-square-01">
                     <div class="school-pic">
                         <img src="assets/images/school.jpg" title="" alt="">
                     </div>
@@ -144,7 +143,7 @@
 
 
                 <li  class="education-list-02"><h4>Studied Diploma in Information Technology</h4></li>
-                <div class="education-list-square-02">
+                <div data-aos="flip-right" class="education-list-square-02">
                     <div class="open-university-pic">
                         <img src="assets/images/openuniversity.jpg" title="" alt="" width="150" height="150" >
                     </div>
@@ -163,7 +162,7 @@
 
 
                 <li class="education-list-03"><h4>Studied Diploma in English</h4></li>
-                <div class="education-list-square-03">
+                <div data-aos="flip-right" class="education-list-square-03">
                     <div class="english-course-pic">
                         <img src="assets/images/englishcourse.jpg" title="" alt="" width="150" height="150" >
                     </div>
@@ -177,7 +176,7 @@
 
 
                 <li  class="education-list-04"><h4>Studied HND In Software Engineering</h4></li>
-                <div class="education-list-square-04">
+                <div data-aos="flip-right" class="education-list-square-04">
                     <div class="ijse-pic">
                         <img src="assets/images/ijse.png" title="" alt="">
                     </div>
@@ -707,20 +706,21 @@
         </div>
 
         <div class="form-box">
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="417a5ac8-37b9-4690-9a88-4329eb7d691b">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Your Email Address">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Your Email Address" name="email" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="tel" placeholder="Mobile Number">
-                    <input type="text" placeholder="subject">
+                    <input type="tel" placeholder="Mobile Number" name="phone" required>
+                    <input type="text" placeholder="subject" name="subject" required>
                 </div>
 
-                <textarea id="" name="" placeholder="Your Message" rows="10" cols="30"></textarea>
+                <textarea id=""  placeholder="Your Message" rows="5" cols="30" name="message" required></textarea>
 
-                <button type="submit"  class="btn">Send Message</button>
+                <button type="submit" >Send Message</button>
             </form>
         </div>
     </section>
