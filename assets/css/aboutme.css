@@ -142,3 +142,9 @@
         font-weight: bold;
     }
 }
+
+@media all and (max-width: 840px){
+    #about-heading {
+        font-size: 3rem;
+    }
+}

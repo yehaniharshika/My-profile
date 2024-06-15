@@ -225,7 +225,7 @@
 
 @media screen and (min-width: 561px) and (max-width: 810px){
     #my-project-heading {
-        font-size: 3.2rem;
+        font-size: 3rem;
         text-align: center;
         margin-bottom: 2rem; /* Add margin to separate the heading from the content */
         font-family: 'Nunito', sans-serif;
@@ -263,15 +263,24 @@
         padding: 10px;
     }
 }
+@media screen and (min-width: 811px) and  (max-width: 840px){
+    #my-project-heading {
+        font-size: 3rem;
+    }
 
-@media screen and (min-width: 811px) and (max-width: 1460px){
+    .my-project-container {
+        grid-template-columns: 1fr;
+        width: 45%;
+    }
+}
+@media screen and (min-width: 841px) and (max-width: 1460px){
     .my-project-container {
         grid-template-columns: 1fr;
         width: 45%;
     }
 
     #my-project-heading {
-        font-size: 3.3rem;
+        font-size: 3.8rem;
         text-align: center;
         margin-bottom: 2rem; /* Add margin to separate the heading from the content */
         font-family: 'Nunito', sans-serif;
