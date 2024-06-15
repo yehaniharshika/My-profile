@@ -113,7 +113,7 @@
 
 .skill-name,
 .skill-percentage {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
@@ -186,7 +186,7 @@
         left: 1rem;
         top: 60rem;
         /*width: 200px;*/
-        font-size: 1px;
+        font-size: 17px;
         background-color: skyblue;
         margin-bottom: 1rem;
         margin-right: 4rem;
@@ -202,29 +202,132 @@
     }
 }
 
+@media all and (max-width: 556px) {
+    #skills-heading {
+        font-size: 2.8rem;
+    }
 
-@media all and (max-width: 545px) {
+    .skills-paragraph {
+        font-family: 'nunito', sans-serif;
+        font-size: 18px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skill-name,
+    .skill-percentage {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .development-skills-title,
+    .design-skills-title {
+        position: absolute;
+        left: -8rem;
+        font-size: 17px;
+        margin-bottom: 1rem;
+    }
+
+    .development-skills-title {
+        top: 16.1rem;
+        width: 240px;
+        font-size: 15px;
+    }
+
+    .design-skills-title {
+        top: 58.5rem;
+    }
+
+    .skills-container {
+        width: 68%;
+        background-color: transparent;
+    }
+}
+
+@media all and (max-width: 694px) {
     #skills-heading {
         font-size: 3.5rem;
     }
 
+    .skills-container {
+        width: 60%;
+        margin-top: -3rem;
+        grid-template-columns: 1fr;
+        background-color: #00ffd0;
+    }
+
+    .skills-paragraph {
+        font-family: 'nunito', sans-serif;
+        font-size: 20px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    .development-skills-title,
+    .design-skills-title {
+        text-align: center;
+        background-color: #00ffd0; /* assuming the same background for consistency */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .development-skills-title {
+        top: 20.1rem;
+    }
+
+    .design-skills-title {
+        top: 60.5rem;
+        width: 180px;
+        background-color: yellow;
+        margin-bottom: 1rem;
+    }
+
+    .skills-paragraph {
+        font-size: 20px;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+
+@media all and (max-width: 762px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+    .skills-container{
+        width: 60%;
+        margin-top: -3rem;
+        grid-template-columns: 1fr;
+        background-color: #00ffd0;
+    }
+
+    .skills-paragraph {
+        font-family: 'nunito', sans-serif;
+        font-size: 20px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
     .development-skills-title{
         position: absolute;
-        left: 6.5rem;
-        top: 16.1rem;
-        margin-bottom: 1rem;
+        left: 7rem;
+        top: 20.1rem;
+        background-color: #00ffd0;
     }
 
     .design-skills-title{
         position: absolute;
-        left: 3.5rem;
-        top: 58.5rem;
+        left: 7rem;
+        top: 60.5rem;
         margin-bottom: 1rem;
     }
 
-    .skills-container{
-        width: 68%;
-        background-color: transparent;
+    .skills-paragraph {
+        font-size: 20px;
+        text-align: center;
+        padding: 2rem;
     }
 }
 
@@ -233,29 +336,46 @@
         font-size: 3.5rem;
     }
 
+    .skills-container{
+        width: 60%;
+        margin-top: -4rem;
+        grid-template-columns: 1fr;
+        background-color: #00ffd0;
+    }
+
+    .skills-paragraph {
+        font-family: 'nunito', sans-serif;
+        font-size: 20px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
     .development-skills-title{
         position: absolute;
         left: 10.5rem;
-        top: 14.1rem;
-        margin-bottom: 1rem;
+        top: 20.1rem;
+        background-color: #00ffd0;
     }
 
     .design-skills-title{
         position: absolute;
         left: 10.5rem;
-        top: 56.5rem;
+        top: 60.5rem;
         margin-bottom: 1rem;
+    }
+
+    .skills-paragraph {
+        font-size: 20px;
+        text-align: center;
+        padding: 2rem;
     }
 }
 
 @media all and (max-width: 1360px) {
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
     .skills-container{
         width: 60%;
-        background-color: transparent;
+        grid-template-columns: 1fr;
+        background-color: #00ffd0;
     }
 
     .skills-paragraph {
