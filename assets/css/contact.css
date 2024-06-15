@@ -127,9 +127,17 @@
     box-shadow: 0 0 25px #e6b800;
 }
 
+/*media query*/
+@media (max-width: 856px){
+    #contactMe-heading {
+        font-size: 3.2rem;
+    }
+
+}
+
 @media (max-width: 768px) {
     #contactMe-heading {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .info-text {
@@ -157,7 +165,7 @@
 
 @media (max-width: 425px) {
     #contactMe-heading {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .info-text {

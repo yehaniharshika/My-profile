@@ -102,6 +102,11 @@
     }
 }
 
+@media all and (max-width: 856px){
+    #my-services-heading {
+        font-size: 3.2rem;
+    }
+}
 @media all and (max-width: 648px) {
     .service-container {
         width: 86%;
