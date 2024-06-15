@@ -33,7 +33,7 @@
     gap: 2rem;
     width: 63.6%;
     justify-content: center;
-    background-color: lightgreen;
+    background-color: transparent;
 }
 
 .project-square-01,
@@ -150,7 +150,7 @@
         grid-template-columns:  1fr;
         width: 40%;
         justify-content: center;
-        background-color: lightgreen;
+        background-color: transparent;
     }
 
     .project-square-01,
@@ -192,7 +192,6 @@
         grid-template-columns:  1fr;
         width: 40%;
         justify-content: center;
-        background-color: lightgreen;
     }
 
     .project-square-01,
@@ -236,7 +235,6 @@
         grid-template-columns:  1fr;
         width: 40%;
         justify-content: center;
-        background-color: lightgreen;
     }
 
     .project-square-01,

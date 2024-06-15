@@ -34,7 +34,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     width: 80%;
-    background-color: salmon;
+    background-color: transparent;
 }
 
 .development-skills-box, .design-skills-box {
@@ -194,7 +194,7 @@
 
     .skills-container{
         width: 40%;
-        background-color: #00ffd0;
+        background-color: transparent;
     }
 
     .skills-paragraph {
