@@ -9,7 +9,7 @@
     flex-direction: column;
     position: relative;
     min-height: 100vh;
-    padding-top: 6rem; /
+    padding-top: 6rem;
 }
 
 #my-gallery-heading{
@@ -54,7 +54,7 @@
     padding: 0 50px;
     color: black;
     font-size: 20px;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .gallery-top-content label{
@@ -65,13 +65,13 @@
     color: white;
     cursor: pointer;
     transition: .5s;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 600;
 }
 
 .gallery-top-content label:hover{
     color: black;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .photo-gallery{
@@ -149,19 +149,131 @@
 }
 
 
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1315px) {
+    .photo-gallery{
+        width: 82%;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .gallery-top-content{
+        top: 120px;
+    }
+
+    .gallery-top-content h3{
+        padding: 0 30px;
+        font-size: 18px;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .gallery-top-content label{
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+        line-height: 60px;
+    }
+}
+
+@media all and (max-width: 990px){
+    .photo-gallery{
+        width: 82%;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 5rem;
+    }
+
+    #my-gallery-heading{
+        font-size: 3.2rem;
+    }
+
+    .gallery-top-content{
+        background-color: #676A89;
+        width: 82%;
+        margin: 0 auto 20px auto;
+    }
+
+    .gallery-top-content h3{
+        padding: 0 10px;
+        color: black;
+        font-size: 17px;
+    }
+
+    .gallery-top-content label{
+        margin: 0 6px;
+        line-height: 60px;
+        font-size: 16px;
+    }
 
 }
 
-@media screen and (max-width: 1024px){
 
+@media all and (max-width: 800px) {
+    .photo-gallery{
+        width: 58%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 25px;
+    }
+
+    #my-gallery-heading{
+        font-size: 3.2rem;
+    }
+
+    .gallery-top-content{
+        background-color: #676A89;
+        width: 82%;
+        margin: 0 auto 20px auto;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: 3px 3px 5px #676A89;
+    }
+
+    .gallery-top-content h3{
+        height: 100%;
+        background-color: var(--bg-color);
+        line-height: 30px;
+        padding: 0 10px;
+        color: black;
+        font-size: 17px;
+    }
+
+    .gallery-top-content label{
+        display: inline-block;
+        height: 100%;
+        margin: 0 6px;
+        line-height: 30px;
+        font-size: 16px;
+    }
 }
 
+@media all and (max-width: 500px){
 
-@media screen and (max-width: 768px) {
+    #my-gallery-heading{
+        font-size: 3rem;
+    }
 
-}
+    .photo-gallery{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+    }
 
-@media screen and (max-width: 425px){
+    .gallery-top-content{
+        background-color: #676A89;
+        width: 83%;
+        margin: 0 auto 10px auto;
+    }
 
+    .gallery-top-content h3{
+        line-height: 30px;
+        padding: 0 5px;
+        font-size: 14px;
+    }
+
+    .gallery-top-content label{
+        margin: 0 6px;
+        line-height: 30px;
+        font-size: 15px;
+    }
 }
