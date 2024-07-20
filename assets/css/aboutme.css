@@ -9,7 +9,7 @@
     background-color: var(--second-bg-color);
     padding: 2rem 1rem;
     gap: 2rem;
-    min-height: 60vh;
+    min-height: 82vh;
     margin-bottom: -5px;
 }
 
@@ -31,7 +31,7 @@
 
 .about-image {
     width: 23rem;
-    height: 23.5rem;
+    height: 23rem;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--bg-color);
