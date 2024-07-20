@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 body{
     overflow: hidden;
     background-color: #364651;
@@ -45,7 +48,7 @@ section{
 }
 
 .heading{
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     font-size: 25px;
     position: absolute;
@@ -87,7 +90,7 @@ section{
 
 #start_btn{
     font-weight: bold;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     width: 100px;
     height: 35px;
     border-radius: 8px;
@@ -97,7 +100,7 @@ section{
 
 #stop_btn{
     font-weight: bold;
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     width: 100px;
     height: 35px;
     border-radius: 8px;
