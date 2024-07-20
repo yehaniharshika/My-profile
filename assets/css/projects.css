@@ -126,12 +126,12 @@
 
 
 /*media query*/
-@media screen and (max-width: 350px){
+@media all and (max-width: 350px){
 
 }
 
 
-@media screen and (min-width: 351px) and (max-width: 450px){
+@media all and (min-width: 351px) and (max-width: 450px){
     #my-project-heading {
         font-size: 2.6rem;
         text-align: center;
@@ -180,7 +180,7 @@
     }
 }
 
-@media screen and (min-width: 451px) and (max-width: 560px){
+@media all and (min-width: 451px) and (max-width: 560px){
     #my-project-heading {
         font-size: 3rem;
         text-align: center;
@@ -222,10 +222,9 @@
 
 }
 
-
-@media screen and (min-width: 561px) and (max-width: 810px){
+@media all and (min-width: 561px) and (max-width: 720px){
     #my-project-heading {
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-align: center;
         margin-bottom: 2rem; /* Add margin to separate the heading from the content */
         font-family: 'Nunito', sans-serif;
@@ -263,9 +262,49 @@
         padding: 10px;
     }
 }
-@media screen and (min-width: 811px) and  (max-width: 840px){
+@media all and (min-width: 721px) and (max-width: 810px){
     #my-project-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 2rem; /* Add margin to separate the heading from the content */
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .my-project-container {
+        grid-template-columns:  1fr;
+        width: 40%;
+        justify-content: center;
+    }
+
+    .project-square-01,
+    .project-square-02,
+    .project-square-03,
+    .project-square-04 {
+        width: 520px;
+        height: 360px;
+    }
+
+    .mvc-project-image,
+    .layered-project-image,
+    .chat-project-image,
+    .portfolio-project-image {
+        width: 490px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project-link {
+        font-size: 19px;
+    }
+
+    .project-data p{
+        font-size: 17px;
+        padding: 10px;
+    }
+}
+@media all and (min-width: 811px) and  (max-width: 840px){
+    #my-project-heading {
+        font-size: 3.5rem;
     }
 
     .my-project-container {
@@ -273,7 +312,7 @@
         width: 45%;
     }
 }
-@media screen and (min-width: 841px) and (max-width: 1460px){
+@media all and (min-width: 841px) and (max-width: 1460px){
     .my-project-container {
         grid-template-columns: 1fr;
         width: 45%;

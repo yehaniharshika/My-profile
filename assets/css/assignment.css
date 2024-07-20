@@ -148,6 +148,11 @@
     }
 }
 
+@media all and (max-width: 720px){
+    #assignment-heading {
+        font-size: 3.2rem;
+    }
+}
 @media all and (max-width: 840px) {
     .my-assignment-container-it {
         grid-template-columns: 1fr;
@@ -156,7 +161,7 @@
     }
 
     #assignment-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .assignment-description h5 {

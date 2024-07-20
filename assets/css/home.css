@@ -131,7 +131,6 @@ body{
     font-size: 30px;
     float: right;
     line-height: 80px;
-    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
@@ -699,7 +698,7 @@ body{
 
     .navbar ul li a{
         position: relative;
-        font-size: 11px;
+        font-size: 13px;
         color: var(--text-color);
         font-weight: 700;
         text-transform: uppercase;

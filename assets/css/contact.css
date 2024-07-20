@@ -128,17 +128,22 @@
 }
 
 /*media query*/
-@media (max-width: 856px){
+@media (max-width: 840px){
     #contactMe-heading {
-        font-size: 3.2rem;
+        font-size: 3.5rem;
     }
 
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 720px){
     #contactMe-heading {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
+}
+@media (max-width: 768px) {
+    /*#contactMe-heading {*/
+    /*    font-size: 3.2rem;*/
+    /*}*/
 
     .info-text {
         font-size: 1.2rem;
@@ -281,16 +286,6 @@
     }
 }
 
-@media (max-width: 568px) {
-    .footer {
-        flex-direction: column;
-    }
-
-    .footer-text {
-        margin-bottom: 1rem; /* add spacing below text */
-        font-size: 15px;
-    }
-}
 
 @media (max-width: 568px) {
     .footer {

@@ -102,12 +102,18 @@
     }
 }
 
-@media all and (max-width: 856px){
+@media all and (max-width: 840px){
+    #my-services-heading {
+        font-size: 3.5rem;
+    }
+}
+
+@media all and (max-width: 720px){
     #my-services-heading {
         font-size: 3.2rem;
     }
 }
-@media all and (max-width: 648px) {
+@media all and (max-width: 740px) {
     .service-container {
         width: 86%;
         background-color: transparent;

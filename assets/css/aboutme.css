@@ -143,8 +143,14 @@
     }
 }
 
+@media all and (max-width: 720px){
+    #about-heading {
+        font-size: 3.2rem;
+    }
+}
+
 @media all and (max-width: 840px){
     #about-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }

@@ -27,6 +27,7 @@
     font-size: 22px;
     text-align: center;
     margin-bottom: 3rem;
+    padding: 20px;
 }
 
 .skills-container {
@@ -45,7 +46,7 @@
 .skills-title {
     font-size: 22px;
     color: #FFCD1E;
-    font-weight: 900;
+    font-weight: 700;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     margin-bottom: 2rem; /* Space between the title and the grid */
@@ -115,17 +116,6 @@
 }
 
 /* Media Queries */
-
-@media all and (max-width: 530px) {
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Three columns */
-        gap: 2rem; /* Space between grid items */
-        width: 100%;
-    }
-}
-
-
 @media all and (max-width: 940px) {
     .skills-grid {
         display: grid;
@@ -135,6 +125,81 @@
     }
 
 }
+
+@media all and (max-width: 840px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+}
+@media all and (max-width: 720px){
+    #skills-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 21px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .skills-title {
+        font-size: 20px;
+        padding: 2rem;
+    }
+}
+
+@media all and (max-width: 688px) {
+
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+    }
+
+    .skills-title {
+        font-size: 19px;
+    }
+
+
+    #skills-heading {
+        font-size: 3rem;
+    }
+
+    .skills-data img {
+        width: 90px; /* Adjust to the desired image size */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns */
+        gap: 2rem; /* Space between grid items */
+        width: 100%;
+    }
+
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+    }
+
+    .skills-title {
+        font-size: 19px;
+    }
+
+
+    #skills-heading {
+        font-size: 3rem;
+    }
+}
+
+
 
 
 

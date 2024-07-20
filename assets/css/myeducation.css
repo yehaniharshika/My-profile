@@ -117,16 +117,18 @@ p{
 }
 
 /*media queries*/
-@media all and (max-width: 856px){
+@media all and (max-width: 840px){
     #my-education-heading {
-        font-size: 3.3rem;
+        font-size: 3.5rem;
+    }
+}
+@media all and (max-width: 720px){
+    #my-education-heading {
+        font-size: 3.2rem;
     }
 }
 
 @media (max-width: 810px) {
-    #my-education-heading {
-        font-size: 3rem;
-    }
 
     .education-contents h4 {
         font-size: 1.2rem;
