@@ -594,11 +594,11 @@ body{
 }
 
 
-@media all and (min-width: 581px) and (max-width: 820px){
+@media all and (min-width: 581px) and (max-width: 825px){
     .logo{
         font-size: 1.8rem;
-        left: 15px;
-        top: 17px;
+        left: 8px;
+        top: 8px;
         line-height: 50px;
     }
 
@@ -678,7 +678,7 @@ body{
     }
 }
 
-@media  all and (min-width: 821px) and (max-width: 884px){
+@media  all and (min-width: 826px) and (max-width: 890px){
 
     .header{
         position: fixed;
@@ -697,16 +697,9 @@ body{
 
 
     .logo{
-        font-size: 1.2rem;
-        color: var(--text-color);
-        text-shadow: 0 0 25px white;
-        font-weight: bold;
-        font-family: Ubuntu;
-        cursor: pointer;
-        transition: 0.3s ease;
-        position: absolute;
-        left: 5px;
-        top: 17px;
+        font-size: 1.4rem;
+        left: 8px;
+        top: 8px;
         line-height: 50px;
     }
 
@@ -742,12 +735,12 @@ body{
 }
 
 
-@media  all and (min-width: 885px) and (max-width: 1040px){
+@media  all and (min-width: 891px) and (max-width: 1040px){
 
     .logo{
         font-size: 1.2rem;
         left: 5px;
-        top: 14px;
+        top: 10px;
         line-height: 50px;
     }
 
@@ -781,7 +774,7 @@ body{
 
     .navbar ul li a{
         position: relative;
-        font-size: 14px;
+        font-size: 13.5px;
         padding: 3px;
     }
 
@@ -807,7 +800,7 @@ body{
     .logo{
         font-size: 1.5rem;
         left: 5px;
-        top: 17px;
+        top: 10px;
         line-height: 50px;
     }
 
@@ -855,7 +848,7 @@ body{
         font-size: 2rem;
         position: absolute;
         left: 30px;
-        top: 14px;
+        top: 12px;
         line-height: 50px;
     }
 
@@ -868,7 +861,7 @@ body{
 
     .navbar ul li a{
         position: relative;
-        font-size: 17px;
+        font-size: 16px;
         color: var(--text-color);
         font-weight: 700;
         text-transform: uppercase;
