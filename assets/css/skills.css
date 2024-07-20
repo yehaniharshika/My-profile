@@ -30,56 +30,39 @@
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     background-color: transparent;
 }
 
 .development-skills-box, .design-skills-box {
+    width: 100%;
+    margin-bottom: 4rem; /* Space between sections */
+}
+
+.skills-title {
+    font-size: 22px;
+    color: #FFCD1E;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem; /* Space between the title and the grid */
+}
+
+.development-skills-content, .design-skills-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.development-skills-title{
-    font-size: 22px;
-    color: #FFCD1E;
-    font-weight: 900;
-    font-family: 'Nunito', sans-serif;
-    position: absolute;
-    left: 13.2rem;
-    top: 12rem;
-    margin-bottom: 1rem;
-    background-color: transparent;
-}
-
-.design-skills-title{
-    font-size: 22px;
-    color: #FFCD1E;
-    font-weight: 900;
-    font-family: 'Nunito', sans-serif;
-    position: absolute;
-    right: 13.2rem;
-    top: 12rem;
-    margin-bottom: 1rem;
-    background-color: transparent;
-}
-
-.development-skills-box .development-skills-content,
-.design-skills-box .design-skills-content {
-    width: 100%;
     border: .3rem solid #FFCD1E;
-    height: 578px;
     border-radius: .6rem;
-    padding: .14rem 24px;
+    padding: 2rem;
     position: relative;
     z-index: 1;
     overflow: hidden;
     background-color: var(--second-bg-color);
 }
-
 .development-skills-box .development-skills-content::before,
 .design-skills-box .design-skills-content::before {
     content: '';
@@ -103,357 +86,57 @@
     box-shadow: 0 0 25px #FFCD1E;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Space between grid items */
+    width: 100%;
+}
+
 .skills-data {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    margin-bottom: 2.5rem;
-    position: relative;
+    text-align: center;
 }
 
-.skill-name,
-.skill-percentage {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+.skills-data img {
+    width: 100px; /* Adjust to the desired image size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.skills-bar {
-    position: absolute;
-    bottom: -.75rem;
-    height: 10px;
-    border-radius: 6px;
-    background-color: #FFCD1E;
+.item-text {
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
 }
 
-.skill-java {
-    width: 82%;
-}
-
-.skill-mysql {
-    width: 92%;
-}
-
-.skill-html {
-    width: 85%;
-}
-
-.skill-hql {
-    width: 62%;
-}
-
-.skill-css {
-    width: 75%;
-}
-
-.skill-javascript {
-    width: 72%;
-}
-
-.skill-webDesign {
-    width: 90%;
-}
-
-.skill-photoshop {
-    width: 70%;
-}
-
-.skill-figma {
-    width: 80%;
-}
-
-.skill-draw-io {
-    width: 95%;
+.skills-data h2 {
+    font-size: 1.2em;
+    margin: 0;
 }
 
 /* Media Queries */
 
-/*
-@media all and (max-width: 416px) {
-    #skills-heading {
-        font-size: 3rem;
-    }
-
-
-    .development-skills-title{
-        position: absolute;
-        top: 16.1rem;
-        font-size: 18px;
-        width: 220px;
-        display: none;
-        background-color: skyblue;
-    }
-
-    .design-skills-title{
-        position: absolute;
-        left: 1rem;
-        top: 60rem;
-        !*width: 200px;*!
-        font-size: 17px;
-        display: none;
-        background-color: skyblue;
-        margin-bottom: 1rem;
-        margin-right: 4rem;
-    }
-
-    .skills-container{
-        width: 40%;
-        background-color: transparent;
-    }
-
-    .skills-paragraph {
-        font-size: 17px;
-    }
-}
-
-@media all and (max-width: 556px) {
-    #skills-heading {
-        font-size: 2.8rem;
-    }
-
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 18px;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-
-    .skill-name,
-    .skill-percentage {
-        font-family: "Ubuntu", sans-serif;
-        font-size: 17px;
-        font-weight: bold;
-    }
-
-    .development-skills-title,
-    .design-skills-title {
-        position: absolute;
-        left: -8rem;
-        font-size: 17px;
-        margin-bottom: 1rem;
-    }
-
-    .development-skills-title {
-        top: 16.1rem;
-        width: 240px;
-        font-size: 15px;
-    }
-
-    .design-skills-title {
-        top: 58.5rem;
-    }
-
-    .skills-container {
-        width: 68%;
-        background-color: transparent;
-    }
-}
-*/
-/* Media query for max-width 416px */
-@media all and (max-width: 400px) {
-    #skills-heading {
-        font-size: 2.8rem;
-    }
-
-    .skills-container {
-        width: 40%;
-        background-color: transparent;
-    }
-
-    .my-skills p {
-        font-size: 18px;
-    }
-}
-
-/* Media query for max-width 556px */
-@media all and (max-width: 556px) {
-    #skills-heading {
-        font-size: 2.8rem;
-    }
-
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 18px;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-
-    .skill-name,
-    .skill-percentage {
-        font-family: "Ubuntu", sans-serif;
-        font-size: 17px;
-        font-weight: bold;
-    }
-
-    .development-skills-title,
-    .design-skills-title {
-        position: absolute;
-        left: -8rem;
-        font-size: 17px;
-        margin-bottom: 1rem;
-        display: block; /* Ensure they are displayed within this range */
-    }
-
-    .my-skills p {
-        font-size: 19px;
-    }
-
-    .skills-container {
-        width: 68%;
-        background-color: transparent;
-    }
-}
-
-/*!* Media query for min-width 557px *!
-@media all and (min-width: 557px) {
-    .development-skills-title,
-    .design-skills-title {
-        display: none; !* Hide elements for widths greater than 556px *!
-    }
-}
-
-@media all and (min-width: 516px) {
-    .development-skills-title,
-    .design-skills-title {
-        display: none; !* Hide elements for widths greater than 556px *!
-    }
-}
-
-@media all and (min-width: 451px) {
-    .development-skills-title,
-    .design-skills-title {
-        display: none; !* Hide elements for widths greater than 556px *!
-    }
-}*/
-
-@media all and (max-width: 694px) {
-    #skills-heading {
-        font-size: 3.5rem;
-    }
-
-    .skills-container {
-        width: 60%;
-        margin-top: -3rem;
-        grid-template-columns: 1fr;
-        background-color: transparent;
-    }
-
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 20px;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-
-
-    .skills-paragraph {
-        font-size: 20px;
-        text-align: center;
-        padding: 2rem;
+@media all and (max-width: 530px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns */
+        gap: 2rem; /* Space between grid items */
+        width: 100%;
     }
 }
 
 
-@media all and (max-width: 762px) {
-    #skills-heading {
-        font-size: 3.5rem;
-    }
-
-    .skills-container{
-        width: 60%;
-        margin-top: -6rem;
-        grid-template-columns: 1fr;
-    }
-
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 20px;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-
-    .development-skills-title{
-        position: absolute;
-        left: 7rem;
-        top: 20.1rem;
-    }
-
-    .design-skills-title{
-        position: absolute;
-        left: 7rem;
-        top: 60.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .skills-paragraph {
-        font-size: 20px;
-        text-align: center;
-        padding: 2rem;
-    }
-}
-
-@media all and (max-width: 862px) {
-    #skills-heading {
-        font-size: 3.5rem;
-    }
-
-    .skills-container{
-        width: 60%;
-        margin-top: -2.6rem;
-        grid-template-columns: 1fr;
-        background-color: transparent;
-    }
-
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 20px;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-
-    .development-skills-title{
-        position: absolute;
-        left: 10.5rem;
-        top: 20.1rem;
-
+@media all and (max-width: 940px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+        gap: 2rem; /* Space between grid items */
+        width: 100%;
     }
 
 }
 
-@media all and (max-width: 1360px) {
-    .skills-container{
-        width: 60%;
-        grid-template-columns: 1fr;
-        background-color: transparent;
-    }
 
-    .skills-paragraph {
-        font-family: 'nunito', sans-serif;
-        font-size: 21px;
-        text-align: center;
-        font-weight: 650;
-        margin-bottom: 6rem;
-    }
-
-    .development-skills-title{
-        font-size: 22px;
-        color: #FFCD1E;
-        font-weight: 900;
-        font-family: 'Nunito', sans-serif;
-        position: absolute;
-        left: 21rem;
-        top: 14.1rem;
-        margin-bottom: 1rem;
-    }
-
-    .design-skills-title{
-        font-size: 22px;
-        position: absolute;
-        left: 21rem;
-        top: 56.5rem;
-        margin-bottom: 1rem;
-    }
-}
 
 
 
