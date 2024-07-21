@@ -138,6 +138,55 @@
 }
 
 /*Media Queries */
+
+@media all and (max-width: 1480px){
+    .assignment-description h5 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .my-assignment-container-it {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (max-width: 1171px ){
+    .assignment-description h5 {
+        font-size: 19px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media all and (max-width: 1171px ){
+    .my-assignment-container-it {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 762px ){
+    .my-assignment-container-it {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .assignment-description h5 {
+        font-size: 18px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #assignment-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media all and (max-width: 450px ){
+    .my-assignment-container-it {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media all and (max-width: 500px){
     #assignment-heading {
         font-size: 2.8rem;
@@ -147,255 +196,3 @@
         height: 240px;
     }
 }
-
-@media all and (max-width: 720px){
-    #assignment-heading {
-        font-size: 3.2rem;
-    }
-}
-@media all and (max-width: 840px) {
-    .my-assignment-container-it {
-        grid-template-columns: 1fr;
-        width: 80%;
-        max-width: 500px;
-    }
-
-    #assignment-heading {
-        font-size: 3.5rem;
-    }
-
-    .assignment-description h5 {
-        font-size: 18px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-}
-
-@media (min-width: 841px) and (max-width: 1170px){
-    .my-assignment-container-it {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .assignment-description h5 {
-        font-size: 18px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    #assignment-heading {
-        font-size: 3.2rem;
-        margin-top: 2rem;
-        text-align: center;
-        margin-bottom: 2rem; /* Use margin instead of absolute positioning */
-        font-family: 'Nunito', sans-serif;
-    }
-}
-
-@media (min-width: 1171px ) and (max-width: 1460px) {
-    .my-assignment-container-it {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .assignment-description h5 {
-        font-size: 19px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-@media all and (min-width: 1461px) and (max-width: 1295px){
-    .assignment-description h5 {
-        font-size: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-
-
-
-
-
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-
-:root{
-    --bg-color: #262A56;
-    --second-bg-color: #3C4767;
-    --text-color: #FFFFFF;
-    --sub-text-color: #000000;
-    --hero-text-color: #00EEFF;
-}
-
-html{
-    !* font-size: 62.5%;*!
-    overflow-x: hidden;
-}
-
-
-body{
-    background: var(--bg-color);
-    color: var(--text-color);
-    overflow: hidden;
-}
-*/
-
-/*
-!*my assignment section style*!
-.my-assignment{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--second-bg-color);
-    padding-bottom: 6rem;
-    gap: 2rem;
-    flex-direction: column;
-    position: relative;
-    height: 210vh;
-}
-
-#assignment-heading{
-    font-size: 4rem;
-    text-align: center;
-    position: absolute;
-    top: 40px;
-    font-family: 'nunito',sans-serif;
-}
-
-#assignment-last{
-    color: #00EEFF;
-}
-
-.assignment-description{
-    position: absolute;
-    top: 150px;
-}
-
-.assignment-description h5{
-    font-family: 'nunito',sans-serif;
-    font-size: 21.5px;
-}
-.my-assignment-container-it{
-    display: grid;
-    grid-template-columns: repeat(4,1fr );
-    align-items: center;
-    width: 90%;
-    position: absolute;
-    top: 220px;
-    margin: auto;
-    grid-gap: 40px;
-    row-gap: 80px;
-}
-
-.my-assignment-container-it .assignment-square{
-    position: relative;
-    border-radius: 5px;
-    height: 250px;
-    box-shadow: 0 0 1rem #1E2245;
-    overflow: hidden;
-    display: flex;
-}
-
-.assignment-square img{
-    width: 100%;
-    height: 100%;
-    transition: .5s ease;
-    opacity: 0.7;
-    display: block;
-}
-
-.assignment-square:hover img{
-    transform: scale(1.1);
-}
-
-.assignment-square .assignment-data{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1), var(--bg-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.assignment-square:hover .assignment-data{
-    transform: translateY(0);
-}
-
-.assignment-data h4{
-    font-weight: 600;
-    font-family: Ubuntu;
-    font-size: 23px;
-    position: absolute;
-    top: 40px;
-    color: #FFCD1E;
-}
-
-.assignment-data p{
-    font-size: 21px;
-    font-weight: bold;
-    margin: .3rem 0 1rem;
-    font-family: 'nunito',sans-serif;
-}
-
-.assignment-data a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.assignment-link-01{
-    font-size: 20px;
-    color: darkred;
-    background-color: transparent;
-    border-radius: .25rem;
-    padding: .25rem;
-    font-family: Ubuntu;
-    font-weight: bold;
-}
-
-.assignment-link-02{
-    font-size: 20px;
-    color: white;
-    background-color: transparent;
-    border-radius: .25rem;
-    padding: .25rem;
-    font-family: Ubuntu;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 1440px) {
-
-}
-
-@media screen and (max-width: 1024px){
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 425px){
-
-*/
-/*
-}*/

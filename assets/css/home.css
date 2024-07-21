@@ -112,6 +112,7 @@ body{
     background: transparent;
     height: 80px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar ul{
@@ -163,6 +164,7 @@ body{
     font-size: 30px;
     float: right;
     line-height: 80px;
+    margin-right: 5px;
     cursor: pointer;
     display: none;
 }
@@ -186,8 +188,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
+    padding-bottom: 6rem;
+    padding-top: 150px;
     background-color: var(--bg-color);
     position: relative;
 }
@@ -208,7 +211,7 @@ body{
     max-width: 700px;
     background: transparent;
     text-align: center;
-    padding: 1rem;
+    /*padding: 1rem;*/
 }
 
 .home-content h1 {
@@ -347,7 +350,7 @@ body{
 }
 
 /* Responsive Styles */
-@media  all and (min-width: 310px)and (max-width: 350px){
+/*@media  all and (min-width: 310px)and (max-width: 350px){
     .menu-list #btn{
         display: block;
     }
@@ -406,7 +409,7 @@ body{
 
     .home-content {
         width: 100%;
-        max-width: 280px; /* Ensure content width doesn't exceed this value */
+        max-width: 280px; !* Ensure content width doesn't exceed this value *!
         background: transparent;
     }
 
@@ -491,7 +494,7 @@ body{
 
     .home-content {
         width: 100%;
-        max-width: 340px; /* Ensure content width doesn't exceed this value */
+        max-width: 340px; !* Ensure content width doesn't exceed this value *!
         background: transparent;
     }
 
@@ -569,7 +572,7 @@ body{
 
     .home-content {
         width: 100%;
-        max-width: 460px; /* Ensure content width doesn't exceed this value */
+        max-width: 460px; !* Ensure content width doesn't exceed this value *!
         background: transparent;
     }
 
@@ -657,7 +660,7 @@ body{
 
     .home-content {
         width: 100%;
-        max-width: 500px; /* Ensure content width doesn't exceed this value */
+        max-width: 500px; !* Ensure content width doesn't exceed this value *!
         background: transparent;
     }
 
@@ -676,44 +679,59 @@ body{
     .connect-links a {
         font-size: 1.4rem;
     }
-}
+}*/
 
-@media  all and (min-width: 826px) and (max-width: 890px){
 
-    .header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background: var(--bg-color);
-        height: 80px;
-        display: flex;
-        padding: 2rem 9%;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }
 
+
+
+
+
+@media  all and (max-width: 1420px){
 
     .logo{
-        font-size: 1.4rem;
-        left: 8px;
-        top: 8px;
+        font-size: 2rem;
+        position: absolute;
+        left: 30px;
+        top: 12px;
         line-height: 50px;
     }
 
-    .navbar{
-        background: transparent;
-        height: 80px;
-        width: 100vw;
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 5px;
     }
+
+    .navbar ul li a{
+        position: relative;
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px;
+        transition: 1s;
+        font-family: 'nunito',sans-serif;
+    }
+}
+
+
+@media  all and (max-width: 1300px){
+
+    .logo{
+        font-size: 1.5rem;
+        left: 5px;
+        top: 7px;
+        line-height: 50px;
+    }
+
 
     .navbar ul{
         float: right;
         margin-right: 1px;
         position: absolute;
-        right: 4px;
+        right: 0;
     }
 
     .navbar ul li{
@@ -723,19 +741,15 @@ body{
     }
 
     .navbar ul li a{
-        position: relative;
-        font-size: 13px;
-        color: var(--text-color);
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 1px;
-        transition: 1s;
-        font-family: 'nunito',sans-serif;
+        font-size: 15px;
+        padding: 4px;
     }
+
+
 }
 
 
-@media  all and (min-width: 891px) and (max-width: 1040px){
+@media  all and (max-width: 990px){
 
     .logo{
         font-size: 1.2rem;
@@ -780,30 +794,21 @@ body{
 
 }
 
-@media  all and (min-width: 1041px)  and (max-width: 1300px){
-    /*.header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background: var(--bg-color);
-        height: 100px;
-        display: flex;
-        padding: 2rem 9%;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }*/
-
+@media  all and (max-width: 880px){
 
     .logo{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         left: 5px;
-        top: 10px;
+        top: 8px;
         line-height: 50px;
     }
 
+
+    .navbar{
+        background: transparent;
+        height: 80px;
+        width: 100vw;
+    }
 
     .navbar ul{
         float: right;
@@ -819,58 +824,157 @@ body{
     }
 
     .navbar ul li a{
-        font-size: 15px;
-        padding: 8px;
+        position: relative;
+        font-size: 12.5px;
+        padding: 2px;
     }
-
 
 }
 
-@media  all and (min-width: 1301px) and (max-width: 1420px){
-
-    /*.header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background: var(--bg-color);
-        height: 100px;
-        display: flex;
-        padding: 2rem 9%;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }*/
-
+@media  all and (max-width: 800px){
 
     .logo{
-        font-size: 2rem;
-        position: absolute;
-        left: 30px;
-        top: 12px;
+        font-size: 1.6rem;
+        left: 8px;
+        top: 8px;
         line-height: 50px;
     }
 
-
-    .navbar ul li{
-        display: inline-block;
-        line-height: 70px;
-        margin: 0 5px;
+    .navbar{
+        overflow-x: hidden;
     }
 
     .navbar ul li a{
-        position: relative;
-        font-size: 16px;
-        color: var(--text-color);
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 10px;
-        transition: 1s;
-        font-family: 'nunito',sans-serif;
+        color: white;
+        font-size: 17px;
+    }
+
+    .menu-list #btn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ .menu-list #btn{
+        display: none;
+    }
+
+    #check:checked ~ .menu-list #cancel{
+        display: block;
+    }
+
+    .home-pic {
+        width: 100%;
+        max-width: 350px;
+        height: 450px;
+        border-radius: 50%;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 500px; /*Ensure content width doesn't exceed this value*/
+        background: transparent;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .connect-links a {
+        font-size: 1.4rem;
     }
 }
 
+@media all and (min-width: 570px){
+    .home-pic {
+        width: 100%;
+        max-width: 350px;
+        height: 450px;
+        border-radius: 50%;
+    }
 
+    .home-content {
+        width: 100%;
+        max-width: 500px;
+        background: transparent;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .connect-links a {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width: 470px){
+    .home-pic {
+        width: 100%;
+        max-width: 320px;
+        height: 420px;
+        border-radius: 50%;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .home-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .connect-links a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+}
 
 
