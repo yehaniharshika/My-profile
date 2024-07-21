@@ -1,0 +1,275 @@
+/*my services section style*/
+/* My Services Section Style */
+.my-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    min-height: 70vh;
+    padding-top: 2rem; /* Added padding to the top */
+}
+
+#my-services-heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: -1rem;
+    font-family: 'nunito', sans-serif;
+    margin-bottom: 2rem; /* Adjusted margin for spacing */
+}
+
+#service-last {
+    color: #00EEFF;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*apply grid layout*/
+    gap: 4rem;
+    width: 80%;
+    padding: 0 2rem; /* added padding for depaththen ida ganna*/
+}
+
+.service-box {
+    background: #1E2245;
+    border-radius: 15px;
+    border: .3rem solid var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    min-height: 350px; /* Ensuring a minimum height */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.service-box:hover {
+    border-color: #FFCD1E;
+    transform: scale(1.04);
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.service-box .service-information {
+    text-align: center;
+}
+
+.service-information h3 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 2;
+    color: #FFCD1E;
+}
+
+.service-information i {
+    font-size: 50px;
+    color: #FFCD1E;
+}
+
+.service-box .service-information p {
+    font-size: 22px;
+    font-family:"Ubuntu", sans-serif;
+    font-weight: 400;
+    padding: 8px;
+}
+
+/*Responsive styles*/
+@media all and (max-width: 1145px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust columns for smaller screens */
+        gap: 2rem;
+    }
+
+    .service-box {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .service-information h3 {
+        font-size: 28px;
+    }
+
+    .service-information i {
+        font-size: 40px;
+    }
+
+    .service-box .service-information p {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 840px){
+    #my-services-heading {
+        font-size: 3.5rem;
+    }
+}
+
+@media all and (max-width: 720px){
+    #my-services-heading {
+        font-size: 3.2rem;
+    }
+}
+@media all and (max-width: 740px) {
+    .service-container {
+        width: 86%;
+        background-color: transparent;
+        grid-template-columns: repeat(1, 1fr); /* Adjust columns for smaller screens */
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    #my-services-heading {
+        font-size: 3rem;
+        padding-top: 2rem; /*adjusted padding for smaller screens*/
+    }
+
+    .service-box {
+        min-height: 300px; /*adjusted minimum height for smaller screens*/
+    }
+
+    .service-information h3 {
+        font-size: 23px;
+    }
+
+    .service-information i {
+        font-size: 35px;
+    }
+
+    .service-box .service-information p {
+        font-size: 18px;
+    }
+}
+
+/*@media all and (max-width: 565px) {
+    .service-container {
+        width: 100%;
+    }
+
+    #my-services-heading {
+        font-size: 2.5rem;
+    }
+
+    .service-information h3 {
+        font-size: 24px;
+    }
+
+    .service-information i {
+        font-size: 35px;
+    }
+
+    .service-box .service-information p {
+        font-size: 18px;
+    }
+
+    .service-box {
+        min-height: 250px; !*adjusted minimum height for smallest screens*!
+    }
+}*/
+
+/*
+.my-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-bottom: 6rem;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    min-height: 80vh;
+}
+
+#my-services-heading{
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    font-family: 'nunito',sans-serif;
+}
+
+#service-last{
+    color: #00EEFF;
+}
+
+.service-container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+    width: 80%;
+    position: absolute;
+    top: 250px;
+}
+
+.service-box{
+    height: 350px;
+    background: #1E2245;
+    border-radius: 15px;
+    border: .3rem solid var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.service-box:hover{
+    border-color: #FFCD1E;
+    transform: scale(1.04);
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.service-box .service-information{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 150px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.service-information h3{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Ubuntu;
+    line-height: 2;
+    color: #FFCD1E;
+}
+
+.service-information i{
+    font-size: 50px;
+    color: #FFCD1E;
+}
+
+.service-box .service-information p{
+    font-size: 22px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px){
+
+}*/

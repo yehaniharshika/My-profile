@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding: 2rem 1rem;
+    gap: 2rem;
+    min-height: 82vh;
+    margin-bottom: -5px;
+}
+
+#about-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'nunito', sans-serif;
+}
+
+.about-last{
+    color: #00EEFF;
+}
+
+.main-content{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-image {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--bg-color);
+    box-shadow: 0 0 25px var(--bg-color);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 80%;
+    background-color: transparent;
+}
+
+.about-content p {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'nunito', sans-serif;
+}
+
+.cv-btn {
+    padding: 1rem 2.5rem;
+    background: #FFCD1E;
+    border-radius: 30px;
+    color: #262A56;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: box-shadow 0.5s ease;
+}
+
+.cv-btn:hover {
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+/*media queries */
+@media (max-width: 810px) {
+    #about-heading {
+        font-size: 3rem;
+    }
+
+    .about-image {
+        width: 15rem;
+        height: 15.5rem;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .cv-btn {
+        width: 180px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-heading {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        width: 12rem;
+        height: 12.5rem;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .cv-btn {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .main-content{
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 365px) {
+    #about-heading {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        width: 12rem;
+        height: 12.5rem;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .cv-btn {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .main-content{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+@media all and (max-width: 720px){
+    #about-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media all and (max-width: 840px){
+    #about-heading {
+        font-size: 3.5rem;
+    }
+}

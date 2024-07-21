@@ -1,0 +1,207 @@
+/* Skills section styles */
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding-bottom: 6rem;
+    padding-top: 150px;
+    position: relative;
+    min-height: 100vh;
+}
+
+#skills-heading {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#my-skill-last {
+    color: #00EEFF;
+}
+
+.skills-paragraph {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: transparent;
+}
+
+.development-skills-box, .design-skills-box {
+    width: 100%;
+    margin-bottom: 4rem; /* Space between sections */
+}
+
+.skills-title {
+    font-size: 22px;
+    color: #FFCD1E;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem; /* Space between the title and the grid */
+}
+
+.development-skills-content, .design-skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .3rem solid #FFCD1E;
+    border-radius: .6rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--second-bg-color);
+}
+.development-skills-box .development-skills-content::before,
+.design-skills-box .design-skills-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: -1;
+    transition: .6s;
+}
+
+.development-skills-box .development-skills-content:hover::before,
+.design-skills-box .design-skills-content:hover::before {
+    width: 100%;
+}
+
+.development-skills-content:hover,
+.design-skills-content:hover {
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Space between grid items */
+    width: 100%;
+}
+
+.skills-data {
+    text-align: center;
+}
+
+.skills-data img {
+    width: 100px; /* Adjust to the desired image size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-text {
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.skills-data h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Media Queries */
+@media all and (max-width: 940px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+        gap: 2rem; /* Space between grid items */
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 840px) {
+    #skills-heading {
+        font-size: 3.5rem;
+    }
+
+}
+@media all and (max-width: 720px){
+    #skills-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 21px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .skills-title {
+        font-size: 20px;
+        padding: 2rem;
+    }
+}
+
+@media all and (max-width: 688px) {
+
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+    }
+
+    .skills-title {
+        font-size: 19px;
+    }
+
+
+    #skills-heading {
+        font-size: 3rem;
+    }
+
+    .skills-data img {
+        width: 90px; /* Adjust to the desired image size */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns */
+        gap: 2rem; /* Space between grid items */
+        width: 100%;
+    }
+
+    .skills-paragraph {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+    }
+
+    .skills-title {
+        font-size: 19px;
+    }
+
+
+    #skills-heading {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+

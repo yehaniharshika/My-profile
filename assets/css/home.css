@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rowdies:wght@300;400;700&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #262A56;
+    --second-bg-color: #3C4767;
+    --text-color: #FFFFFF;
+    --sub-text-color: #000000;
+    --hero-text-color: #00EEFF;
+}
+
+html{
+    /* font-size: 62.5%;*/
+    overflow-x: hidden;
+}
+
+/*section{
+    height: auto;
+}*/
+
+body{
+    color: var(--text-color);
+    /*background-color: var(--bg-color);*/
+}
+
+#cursor{
+    z-index:10000;
+    padding: -10px;
+    position:fixed;
+    pointer-events: none;
+    border-radius:100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cursor>div{
+    width:10px;
+    height:10px;
+    background-color:  #FFCD1E ;
+    border-radius:100%;
+    animation: bubble 2s ease-out infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0);
+        opacity: 9;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    background: var(--bg-color);
+    height: 80px;
+    display: flex;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    font-size: 2.3rem;
+    color: var(--text-color);
+    text-shadow: 0 0 25px white;
+    font-weight: bold;
+    font-family:"Ubuntu", sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    line-height: 55px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    text-shadow: 0 0 25px #FFCD1E;
+    color: #FFCD1E;
+}
+
+.navbar{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navbar ul li a{
+    position: relative;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 1s;
+    font-family: 'nunito',sans-serif;
+}
+
+.navbar ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #FFCD1E;
+    transform: scale(0);
+    transform-origin: right;
+    transition: .4s linear;
+}
+
+.navbar ul li a:hover:before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+
+.menu-list #btn,
+.menu-list #cancel{
+    color: var(--text-color);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #FFCD1E;
+}
+
+
+.all-main-content {
+    /*margin-top: 80px;*/ /* height of header */
+    /*padding: 2rem;*/
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    padding-top: 150px;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.home::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1000vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.home-content {
+    width: 100%;
+    max-width: 700px;
+    background: transparent;
+    text-align: center;
+    /*padding: 1rem;*/
+}
+
+.home-content h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    text-shadow: 0 0 5px white;
+    margin: 20px 0;
+    margin-top: 2px;
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+}
+
+.text-animation {
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    margin-top: 1rem;
+    min-width: 280px;
+}
+
+.text-animation span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.text-animation span::before {
+    content: "Software Engineering Student";
+    color: #00EEFF;
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: 0;
+    animation: cursor 0.6s infinite, typing 20s steps(20) infinite;
+}
+
+@keyframes cursor {
+    50% {
+        border-left: 2px solid #00EEFF;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Software Engineering Student";
+    }
+    21%, 40% {
+        content: "Frontend Developer";
+    }
+    41%, 60% {
+        content: "Web Designer";
+    }
+    61%, 80% {
+        content: "Future Mobile App Developer";
+    }
+    81%, 100% {
+        content: "Full-stack Developer";
+    }
+}
+
+@keyframes typing {
+    0%, 10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: 100%;
+    }
+}
+
+.home-content p {
+    font-size: 1.26rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+    color: white;
+}
+
+.home-pic {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: transparent;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-content .connect-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.connect-links a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.1rem;
+    height: 3.1rem;
+    background: transparent;
+    border: 3px solid #FFCD1E;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    color: #FFCD1E;
+    margin: 0 1rem;
+    transition: .5s ease;
+}
+
+.connect-links a:hover {
+    background-color: #FFCD1E;
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem #FFCD1E;
+    transform: scale(1.3) translateY(-5px);
+}
+
+/* Responsive Styles */
+@media  all and (max-width: 1420px){
+
+    .logo{
+        font-size: 2rem;
+        position: absolute;
+        left: 30px;
+        top: 12px;
+        line-height: 50px;
+    }
+
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 5px;
+    }
+
+    .navbar ul li a{
+        position: relative;
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px;
+        transition: 1s;
+        font-family: 'nunito',sans-serif;
+    }
+}
+
+
+@media  all and (max-width: 1300px){
+
+    .logo{
+        font-size: 1.5rem;
+        left: 5px;
+        top: 7px;
+        line-height: 50px;
+    }
+
+
+    .navbar ul{
+        float: right;
+        margin-right: 1px;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 1px;
+    }
+
+    .navbar ul li a{
+        font-size: 15px;
+        padding: 4px;
+    }
+
+
+}
+
+
+@media  all and (max-width: 990px){
+
+    .logo{
+        font-size: 1.2rem;
+        left: 5px;
+        top: 10px;
+        line-height: 50px;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+    }
+
+    .logo span{
+        text-shadow: 0 0 25px #FFCD1E;
+        color: #FFCD1E;
+    }
+
+    .navbar{
+        background: transparent;
+        height: 80px;
+        width: 100vw;
+    }
+
+    .navbar ul{
+        float: right;
+        margin-right: 1px;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 1px;
+    }
+
+    .navbar ul li a{
+        position: relative;
+        font-size: 13.5px;
+        padding: 3px;
+    }
+}
+
+@media  all and (max-width: 880px){
+    .logo{
+        font-size: 1.2rem;
+        left: 5px;
+        top: 8px;
+        line-height: 50px;
+    }
+
+
+    .navbar{
+        background: transparent;
+        height: 80px;
+        width: 100vw;
+    }
+
+    .navbar ul{
+        float: right;
+        margin-right: 1px;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 1px;
+    }
+
+    .navbar ul li a{
+        position: relative;
+        font-size: 12.5px;
+        padding: 2px;
+    }
+}
+
+@media  all and (max-width: 800px){
+
+    .logo{
+        font-size: 1.6rem;
+        left: 8px;
+        top: 8px;
+        line-height: 50px;
+    }
+
+    .navbar{
+        overflow-x: hidden;
+    }
+
+    .navbar ul li a{
+        color: white;
+        font-size: 17px;
+    }
+
+    .menu-list #btn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 18px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ .menu-list #btn{
+        display: none;
+    }
+
+    #check:checked ~ .menu-list #cancel{
+        display: block;
+    }
+
+    .home-pic {
+        width: 100%;
+        max-width: 350px;
+        height: 450px;
+        border-radius: 50%;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 500px; /*Ensure content width doesn't exceed this value*/
+        background: transparent;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .connect-links a {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (min-width: 570px){
+    .home-pic {
+        width: 100%;
+        max-width: 350px;
+        height: 450px;
+        border-radius: 50%;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 500px;
+        background: transparent;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .connect-links a {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width: 470px){
+    .home-pic {
+        width: 100%;
+        max-width: 320px;
+        height: 420px;
+        border-radius: 50%;
+        margin: 10px auto;
+        margin-top: 1rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .home-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .connect-links a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .home {
+        min-height: 90vh;
+        padding-bottom: 6rem;
+    }
+
+}
+
+

@@ -2,462 +2,831 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Hi! I'm Yehani Harshika,a software engineering student.This is my portfolio">
+    <meta name="keywords" content="yehani harshika software engineer fullstack developer programming java javascript js typescript ts spring spring boot nodejs ts-node css lecture ijse ceyentra lingo lingoinstitute institute zaara zaaratours travel">
+    <meta name="author" content="Yehani Harshika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Yehani Harshika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/aboutme.css">
+    <link rel="stylesheet" href="assets/css/myeducation.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/assignment.css">
+    <link rel="stylesheet" href="assets/css/myServices.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
-<body>
-<header>
-    <div>
-        <img src="assets/images/logo.jpg" title="logo" alt="Yehani Harshika" height="150" width="150">
-    </div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#aboutme">About me</a>
-        <a href="#myEducation">My Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#myProjects">Projects</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#myServices">My Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contactMe"><button type="button" >Contact</button></a>
+<body class="body">
+<div id="cursor">
+    <div></div>
+</div>
+<!--header design-->
+<header class="header">
+    <!--<div class="box-menu" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>-->
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-list">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+        <a href="#home" class="logo">Port<span>folio</span></a>
+
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#my-education">My Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-project">Projects</a></li>
+            <li><a href="#assignment">Assignments</a></li>
+            <li><a href="#services">My Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
     </nav>
 </header>
-<!--hero section-->
-<section>
-    <!--    hero section left side-->
-    <div>
-        <h1 id="home"><span>Hello,,,</span></h1>
-        <h3>I'm Yehani Harshika</h3>
-        <div>
-            <h3>Software Engineering Student</h3>
-        </div>
-    </div>
-    <!--    hero section right side-->
-    <img src="assets/images/mainpic.png" title="my profile" alt="Yehani Harshika" width="400" height="400">
-    <br><br>
-    <div>
-        <a href="https://web.facebook.com/yehani.hpamunuwa"><img src="assets/icon/facebook.png" title="" alt="" width="31" height="31"></a>
-        <a href="https://www.linkedin.com/in/yehani-harshika-pamunuwa-5b64a1283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/icon/linkedin.png" title="" alt="" width="35" height="37"></a>
-        <a href="https://www.instagram.com/hpamunuwa/"><img src="assets/icon/instagram.png" title=""alt="" width="32" height="32"></a>
-        <a href="https://github.com/yehaniharshika"><img src="assets/icon/github.png" title=""alt="" width="35" height="35"></a>
-        <a href="https://medium.com/@pamunuwayehaniharshika"><img src="assets/icon/medium.png" title=""alt="" width="38" height="40"></a>
-    </div>
-</section>
-<br><br>
-<section>
-    <h2 id="aboutme">
-        <span>About</span>
-        <span>Me</span>
-    </h2>
-    <!-- About me section Left side-->
-    <h3>Beginner in Software Engineering</h3>
-    <div>
-        <p> I am studying software engineering perfectly.I like
-            <br>front end web development..and I can do back-end
-            <br> web development,Figma proto type design and
-            <br> website design.I have completed java,
-            <br>java FX,mysql,HTML. ,CSS,java script,cyber security.
-        </p>
-    </div>
-    <div>
-        <p>
-            <br>
-            Name: H.M. Yehani Harshika Pamunuwa
-            <br><br>
-            Age: 22
-            <br><br>
-            Date Of Birth: 2001-10-21
-            <br><br>
-            Email: pamunuwayehaniharshika@gmail.com
-        </p>
-    </div>
-    <div>
-        <button type="button">Download CV</button>
-    </div>
 
-    <br>
-    <!--About me section Right side-->
-    <div>
-        <img src="assets/images/Aboutme%20myPic.jpeg" title="" alt="" width="400" height="500">
-    </div>
-</section>
-<br><br>
-<section>
-    <h2 id="myEducation">
-        <span>My</span>
-        <span>Education</span>
-    </h2>
-    <ul>
-        <li><h4>Studied PL/Aththanakadawala National College</h4></li>
-        <br>
-        <img src="assets/images/school.jpg" title="" alt="" width="150" height="150">
-        <p>
-            2006-2021
-            <br>
-            I got my basic education from
-            <br>Pl/Aththanakadawala National College
-        </p>
-        <li><h4>Studied Diploma in Information Technology</h4></li>
-        <br>
-        <img src="assets/images/openuniversity.jpg" title="" alt="" width="150" height="150" >
-        <p>
-            2022.07 - 2023.02
-            <br>
-            Acquired basic knowledge of
-            <br>information technology and in-depth
-            <br>knowledge of word, excel, power point
-        </p>
-        <li><h4>Studied Diploma in English</h4></li>
-        <br>
-        <p>
-            2022.07 - 2023.02
-            <br>
-            Acquired in-depth knowledge of English
-            <br>grammar and knowledge needed to handle
-            <br>spoken English
-        </p>
-        <li><h4>Studied Diploma in Information Technology</h4></li>
-        <br>
-        <img src="assets/images/ijse.png" title="" alt="">
-        <p>
-            2023 - 2025
-            <br>
-            Good understanding of programming languages
-            <br>(Java, Python etc), query languages(MY SQL, HQL),
-            <br>software design tools, UI/UX design tools (Figma) and
-            <br>web designing.Learning about modern software technologies
-            <br>that need to be known more
-        </p>
-    </ul>
-</section>
-<br>
-<section>
-    <h2 id="skills">
-        <span>Ski</span><span>lls</span>
-    </h2>
-    <p>See fully what skills I have and perform , to develop the projects for you</p>
-    <ul>
-        <li><h4>Development Skills</h4></li>
-        <div>
-            <label for="java"><small>JAVA</small></label><br>
-            <input type="range" id="java" value="77">
+    <section class="home" id="home">
+        <div class="home-pic">
+            <img src="assets/images/yehacolor-removebg-preview.png" title="my profile" alt="Yehani Harshika">
         </div>
 
-        <div>
-            <label for="my sql"><small>MY SQL</small></label><br>
-            <input type="range" id="my sql" value="98">
+        <div class="home-content">
+            <h1>Hi,I'm <span> Yehani Harshika</span></h1>
+
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p id="text-paragraph">
+                I am a  passionate software engineering student that
+                trying to be a full-stack software engineer...
+            </p>
+
+            <div class="connect-links">
+                <a href="https://web.facebook.com/yehani.hpamunuwa"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/yehani-harshika-pamunuwa-5b64a1283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hpamunuwa/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/yehaniharshika"><i class="fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@pamunuwayehaniharshika"><i class="fa-brands fa-medium"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="aboutme">
+        <h2 id="about-heading">
+            <span>About</span>
+            <span class="about-last">Me</span>
+        </h2>
+
+        <!-- About me section right side-->
+        <div class="about-image">
+            <img src="assets/images/Aboutme%20myPic.jpeg" title="" alt="" width="400" height="500">
+            <span class="circle-rotate"></span>
         </div>
 
+        <!-- About me section Left side-->
         <div>
-            <label for="html"><small>HTML</small></label><br>
-            <input type="range" id="html" value="85">
+            <h3 class="main-content">Beginner in Software Engineering</h3>
         </div>
-
-        <div>
-            <label for="css"><small>CSS</small></label><br>
-            <input type="range" id="css" value="75">
+        <div class="about-content" data-aos="fade-up">
+            <p>
+                A passionate software engineering student specializing in Java.
+                I am studying software engineering perfectly.With a keen interest
+                in crafting efficient and  modern technology solutions, I’m
+                constantly exploring the deep world of software development.
+                I like front-end web development.and I can do back-end web development,
+                Figma mockup design and website design.I have completed java, java FX , mysql , HTML , CSS , java Script , Cyber security currently.
+            </p>
         </div>
-
-        <div>
-            <label for="java script"><small>JAVA SCRIPT</small></label><br>
-            <input type="range" id="java script" value="73">
+        <div class="btn-box buttons">
+            <a href="assets/pdf/cv.pdf" class="cv-btn">Download CV</a>
         </div>
+    </section>
 
-        <div>
-            <label for="hql"><small>HQL</small></label><br>
-            <input type="range" id="hql" value="48">
-        </div>
 
-        <li><h4>Design Skills</h4></li>
-        <div>
-            <label for="figma"><small>FIGMA</small></label><br>
-            <input type="range" id="figma" value="80">
-        </div>
-
-        <div>
-            <label for="photoshop"><small>PHOTOSHOP</small></label><br>
-            <input type="range" id="photoshop" value="70">
-        </div>
-
-        <div>
-            <label for="drawio"><small>DRAW.IO</small></label><br>
-            <input type="range" id="drawio" value="95">
-        </div>
-    </ul>
-</section>
-<br>
-<section>
-    <h2 id="myProjects">
-        <span>My</span>
-        <span>Projects</span>
-    </h2>
-    <div>
-        <img src="assets/images/mvcarchitecture.jpg" title="MVC Architecture Project" alt="MVC Architecture Project" width="421.93" height="263.46">
-        <p>
-            MVC Architecture Software Project
-            <br>
-            <a href="https://github.com/yehaniharshika/LibraSys-LibraryManagementSystem">View Project<img src="assets/icon/next.png" title="" alt="" width="24" height="24"></a>
-        </p>
-    </div>
-
-    <br>
-    <div>
-        <img src="assets/images/layeredArchitecture.jpg" title="Layered Architecture Project" alt="Layered Architecture Project" width="421.93" height="263.46">
-        <p>
-            Layered Architecture Software Project
-            <br>
-            <a href="https://github.com/yehaniharshika/LayeredArchitecture-LibraSys-LibraryManagementSystem">View Project<img src="assets/icon/next.png" title="" alt="" width="24" height="24"></a>
-        </p>
-    </div>
-
-    <br>
-    <div>
-        <img src="assets/images/chatApplicationproject.jpg" title="Live Chat Application" alt="Live Chat Application" width="421.93" height="263.46">
-        <p>
-            Live Chat-Application Project
-            <br>
-            <a href="https://github.com/yehaniharshika/chat-room-applications">View Project<img src="assets/icon/next.png" title="" alt="" width="24" height="24"></a>
-        </p>
-    </div>
-
-    <br>
-    <div>
-        <img src="assets/images/webDesign.jpg" title="Web Design Project" alt="Web Design Project" width="421.93" height="263.46">
-        <p>
-            Live Chat-Application Project
-            <br>
-            <a href="https://github.com/yehaniharshika/My-profile">View Project<img src="assets/icon/next.png" title="" alt="" width="24" height="24"></a>
-        </p>
-    </div>
-</section>
-    <h2 id="assignments">
-        <span>Assign</span><span>ments</span>
-    </h2>
-    <div>
+    <!--my education HTML code-->
+    <section class="my-education" id="my-education">
+        <h2 id="my-education-heading">
+            <span>My</span>
+            <span id="education-last">Education</span>
+        </h2>
+        <div class="education-contents">
             <ul>
-                <li>Programming fundermentals Assignments</li><br>
-                <div>
-                    <div>
-                        <p>Assignment 01</p>
-                        <img src="assets/images/assignment2.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/PRF%20Assignment%20(Yehani%20Harshika%20Pamunuwa).pdf" download><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
+                <li class="education-list-01"><h4>Studied PL/Aththanakadawala National College</h4></li>
+                <div data-aos="flip-right" class="education-list-square-01">
+                    <div class="school-pic">
+                        <img src="assets/images/school.jpg" title="" alt="">
                     </div>
+                    <div class="year"><i class="fa-solid fa-calendar-days"></i>
+                        2006-2021
+                    </div>
+                    <p>
+                        I got my basic education from Pl/Aththanakadawala National College and
+                        I hava successfully passed  <br>G.C.E O/L and G.C.E A/L.
+                    </p>
                 </div>
 
-                <br>
 
-                <div>
-                    <div>
-                        <p>Assignment 02</p>
-                        <img src="assets/images/assignment2.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/PRF%20Assignment%204(H.M.%20Yehani%20Harshika%20Pamunuwa%20-%20GDSE67).pdf" download><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
+                <li  class="education-list-02"><h4>Studied Diploma in Information Technology</h4></li>
+                <div data-aos="flip-right" class="education-list-square-02">
+                    <div class="open-university-pic">
+                        <img src="assets/images/openuniversity.jpg" title="" alt="" width="150" height="150" >
                     </div>
+
+                    <div class="year"><i class="fa-solid fa-calendar-days"></i>
+                        2022.07 - 2023.02
+                    </div>
+                    <h4 class="it-center-name">
+                        OUSL-Open University of Sri lanka
+                    </h4>
+                    <p>
+                        Acquired basic knowledge of information technology and in-depth knowledge
+                        of word, excel, power point,network and Web Browsing etc.
+                    </p>
                 </div>
 
-                <br>
 
-                <div>
-                    <div>
-                        <p>Assignment 03</p>
-                        <img src="assets/images/assignment2.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/SORTING%20ALGORITHMS(Assignment%2008).pdf" download><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
+                <li class="education-list-03"><h4>Studied Diploma in English</h4></li>
+                <div data-aos="flip-right" class="education-list-square-03">
+                    <div class="english-course-pic">
+                        <img src="assets/images/englishcourse.jpg" title="" alt="" width="150" height="150" >
                     </div>
+                    <div class="year"><i class="fa-solid fa-calendar-days"></i>
+                        2022.03 - 2022.06
+                    </div>
+                    <p>
+                        Acquired in-depth knowledge of English grammar and <br>knowledge needed to handle spoken English
+                    </p>
                 </div>
 
-                <br>
 
-                <div>
-                    <div>
-                        <p>Assignment 04</p>
-                        <img src="assets/images/assignment2.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/[GDSEBatch_ITS1010_H.M Yehani Harshika Pamunuwa].pdf" download><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
+                <li  class="education-list-04"><h4>Studied HND In Software Engineering</h4></li>
+                <div data-aos="flip-right" class="education-list-square-04">
+                    <div class="ijse-pic">
+                        <img src="assets/images/ijse.png" title="" alt="">
                     </div>
-                </div>
-                <br>
-                <li>Object-Oriented Programming Assignments</li><br>
-                <div>
-                    <div>
-                        <p>Assignment 01</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/OOP%20Assignment%2001-(H.M.%20Yehani%20Harshika%20Pamunuwa).pdf"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
+                    <div class="year"><i class="fa-solid fa-calendar-days"></i>
+                        2023 - 2025
                     </div>
-                    <br>
-                    <div>
-                        <p>Assignment 02</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
-                    <br>
-                    <div>
-                        <p>Assignment 03</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
-                </div>
-                <br>
-                <li>Introduction to Network Programming Assignments</li><br>
-                <div>
-                    <div>
-                        <p>Assignment 01</p>
-                        <img src="assets/images/assignment2.jpg" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/INP-Assignment01-Yehani%20Harshika(GDSE67).pdf" download><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
-                </div>
-                <br>
-                <li>Internet-Technologies Assignments</li><br>
-                <div>
-                    <div>
-                        <p>Assignment 01</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
-                    <br>
-
-                    <div>
-                        <p>Assignment 02</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
-                    <br>
-
-                    <div>
-                        <p>Assignment 03</p>
-                        <img src="assets/images/assignment1.jpg" title="" alt="" width="225.73" height="124.42">
-                        <br>
-                        <a href="assets/pdf/"><small>View Assignment<img src="assets/icon/view.png" title="" alt="" width="24" height="24"></small></a>
-                    </div>
+                    <p>
+                        Good understanding of programming languages (Java, Python etc), query languages(MY SQL, HQL), software design tools, UI/UX design tools (Figma) and web designing.Learning about
+                        modern software technologies that need to be known more.
+                    </p>
                 </div>
             </ul>
-    </div>
-
-<section>
-    <h2 id="myServices">
-        <span>My</span>
-        <span>Services</span>
-    </h2>
-    <div>
-        <h3><img src="assets/icon/html.png" title="Web Design" alt="Web Design" width="24" height="24">Web Design</h3>
-        <p>This service that I offer  is of high
-            <br>quality.I have studied web design
-            <br>development with excellence.It is up to
-            <br>me to develop to your web Application
-            <br>successfully.
-        </p>
-    </div>
-    <div>
-        <h3><img src="assets/icon/pen.png" title="UI/UX Design" alt="UI/UX Design" width="24" height="20" >UI/UX Design</h3>
-        <p>
-            This service that I offer  is of high
-            <br>quality.I have studied UI/UX design
-            <br>development with excellence.It is up to
-            <br>me to develop to your software
-            <br>Application successfully.
-        </p>
-    </div>
-
-    <div>
-        <h3><img src="assets/icon/backend-development.png" title="Back end Development" alt="Back end Development" width="38" height="38" >Back end Development</h3>
-        <p>
-            This service that I offer  is of high
-            <br>quality.I have studied back-end
-            <br>development styles and back-end
-            <br>development tools very well.It is up to
-            <br>me to develop to your software
-            <br>Application successfully.
-        </p>
-    </div>
-</section>
-<section>
-    <h2 id="gallery">
-        <span>Gall</span><span>ery</span>
-    </h2>
-
-    <div>
-        <ul>
-            <li><h4>professional photos</h4></li>
-            <div>
-                <img src="assets/images/ProfessionalPhoto1..jpg" title="" alt="" width="400" height="360">
-            </div>
-            <br>
-
-            <div>
-                <img src="assets/images/ProfessionalPhoto2.jpg" title="" alt="" width="400" height="360">
-            </div>
-            <br>
-
-            <div>
-                <img src="assets/images/ProfessionalPhoto3.jpg" title="" alt="" width="400" height="360">
-            </div>
-            <li><h4>Travelling photos</h4></li>
-            <div>
-                <img src="assets/images/TravellingPhoto1.jpg" title="" alt="" width="400" height="380">
-            </div>
-            <br>
-
-            <div>
-                <img src="assets/images/TravellingPhoto2.jpg" title="" alt="" width="400" height="380">
-            </div>
-            <br>
-
-            <div>
-                <img src="assets/images/TravellingPhoto3.jpg" title="" alt="" width="400" height="380">
-            </div>
-            <br>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2 id="contactMe">
-        <span>Contact</span>
-        <span>Me</span>
-    </h2>
-    <div>
-        <h4>Get in touch,,, talk to me</h4>
-
-        <p><img src="assets/icon/call.png" title="Telephone number" alt="Telephone number" width="30" height="30">076-4450928</p>
-        <p><img src="assets/icon/mail.png" title="Email" alt="Email address" width="30" height="30">Pamunuwayehaniharshika@gmail.com</p>
-        <p><img src="assets/icon/watsapp.png" title="Whatsapp" alt="Whatsapp number"> 076-4450928</p>
-        <p><img src="assets/icon/location.png" title="Location" alt="Location" width="27" height="27"> 257/6,Batadombathuduwa,Alubomulla</p>
-
-    </div>
-    <br>
-    <div>
-        <input type="text" placeholder="Your Name">
-        <br><br>
-        <input type="text" placeholder="Your Email">
-        <br><br>
-        <input type="text" placeholder="Your Mobile Number">
-        <br><br>
-        <div>
-            <textarea
-                    id="message"
-                    placeholder="Your message"
-                    rows="16"
-                    cols="80"
-            ></textarea>
         </div>
-        <br>
-        <button type="submit">Submit</button>
-    </div>
+    </section>
 
-</section>
-<footer>
-    <div>
-        <p>
-            Copyright © 2024,All rights reserved
-        </p>
-    </div>
-</footer>
+    <!--skills section html code-->
+    <section id="skills" class="my-skills">
+        <h2 id="skills-heading">
+            <span>My</span>
+            <span id="my-skill-last">Skills</span>
+        </h2>
+        <p class="skills-paragraph">See fully what skills I have and perform , to develop the projects for you</p>
 
+        <div class="skills-container">
+            <div data-aos="fade-up-left" class="development-skills-box">
+                <div class="development-skills-content">
+                    <h2 class="skills-title">
+                         Development Skills(Front-end & Back-end Development)
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/html.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>HTML</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/css.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>CSS</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/js.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Java Script</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/jquary.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>JQuery</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/bootstrap.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Bootstrap</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/react.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>React</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/java.png" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Java</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/python.png" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Python</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/c%23.png" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>C#</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/mysql.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>MySQL</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/angularjs.png" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Angular Js</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/frontend-and-Backend-DevelopmentImages/nodejs.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Node Js</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div data-aos="fade-down-right" class="design-skills-box">
+                <div class="design-skills-content">
+                    <h2 class="skills-title">
+                        Software Skills
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skills-data">
+                            <img src="assets/softwareImages/figma.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Figma</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/softwareImages/photoshop.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Photoshop</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/softwareImages/premierpro.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Premier-pro</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/softwareImages/github.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Github</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img src="assets/softwareImages/intellij.png" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>Intellij</h2>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <img class="vs" src="assets/softwareImages/vscode.webp" alt="angularjs" title="angularjs">
+                            <div class="item-text">
+                                <h2>VS code</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--my projects section html code-->
+    <section id="my-project" class="my-project">
+        <h2 id="my-project-heading">
+            <span>My</span>
+            <span id="project-last" >Projects</span>
+        </h2>
+
+        <div class="my-project-container">
+            <div  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000" class="project-square-01">
+                <div class="mvc-project-image">
+                    <img src="assets/images/4.jpg" title="MVC Architecture Project" alt="MVC Architecture Project" >
+                    <div class="project-data">
+                        <a href="https://github.com/yehaniharshika/LibraSys-LibraryManagementSystem" class="project-link">View Project<i class="fa-solid fa-link link-icon"></i></a>
+                        <p>This my first semester final project,I create smart library system to manage registration fees,members,books,suppliers,reservations ,and authors,I used MVC software architecture to build this project</p>
+                    </div>
+                </div>
+                <span class="mvc-project-title">MVC Architecture Software Project</span>
+            </div>
+
+
+            <div  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000" class="project-square-02">
+                <div class="layered-project-image">
+                    <img src="assets/images/1.jpg" title="Layered Architecture Project" alt="Layered Architecture Project">
+                    <div class="project-data">
+                        <a href="https://github.com/yehaniharshika/LayeredArchitecture-LibraSys-LibraryManagementSystem" class="project-link">View Project<i class="fa-solid fa-link link-icon"></i></a>
+                        <p>I create smart library management system using layered architecture</p>
+                    </div>
+                </div>
+                <span class="layered-project-title"> Layered Architecture Software Project</span>
+            </div>
+
+
+            <div  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000" class="project-square-03">
+                <div class="chat-project-image">
+                    <img src="assets/images/3.jpg" title="Live Chat Application" alt="Live Chat Application">
+                    <div class="project-data">
+                        <a href="https://github.com/yehaniharshika/chat-room-applications" class="project-link">View Project<i class="fa-solid fa-link link-icon"></i></a>
+                        <p>I create live chat room application using client -server architecture</p>
+                    </div>
+                </div>
+                <span class="chat-project-title"> Live Chat-Application Project</span>
+            </div>
+
+
+            <div  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000" class="project-square-04">
+                <div class="portfolio-project-image">
+                    <img src="assets/images/2.jpg" title="Web Design Project" alt="Web Design Project">
+                    <div class="project-data">
+                        <a href="https://github.com/yehaniharshika/My-profile" class="project-link">View Project<i class="fa-solid fa-link"></i></a>
+                        <p>Book Worm is a Java-based e-library platform that works well with Hibernate. Users have access to borrowing and reading capabilities, while administrators effectively manage books and branches.</p>
+                    </div>
+                </div>
+                <span class="portfolio-project-title">Hibernate project</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!--my-assignment section HTML code-->
+    <section id="assignment" class="my-assignment">
+        <h2 id="assignment-heading">
+            <span>My</span>
+            <span id="assignment-last">Assignments</span>
+        </h2>
+        <div class="assignment-description">
+            <h5>see fully assignments of internet technologies module. I have successfully completed all the subjects to develop projects for you</h5>
+        </div>
+
+        <div class="my-assignment-container-it">
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/6.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 01</h4>
+                    <p>portfolio creation link</p>
+                    <a href="https://www.gloomaps.com/6ZhcQ473Hc"  class="assignment-link-01">site map link<i class="fa-solid fa-pencil"></i></a>
+                    <a href="https://drive.google.com/file/d/1v_o7_x-pxdIojwEbP_ICJ4YBOp0Ia_bw/view?usp=sharing"  class="assignment-link-01">wireframe link<i class="fa-solid fa-pencil"></i></a>
+                    <a href="https://www.figma.com/file/wAmPYygxQq5Ngm8dlkv3ho/Portfolio?type=design&node-id=14%3A89&mode=design&t=CiljnEUs9lTefZfV-1"  class="assignment-link-01">mockup link<i class="fa-solid fa-pencil"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/11.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 02</h4>
+                    <p>Implement the mockup structure using HTML</p>
+                    <a href="assets/pdf/" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03-case01.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-01)</h4>
+                    <p>practising css styles with css position</p>
+                    <a href="assets/assignments/assignment03-case01/css-assignment(case1).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03-case02.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-02)</h4>
+                    <p>this is a sample css web design</p>
+                    <a href="assets/assignments/assignment03-case02/css-assignment(case2).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03-case03.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-03)</h4>
+                    <p>practising css fixed position</p>
+                    <a href="assets/assignments/assignment03-case03/css-assignment(case3).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment02.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-04)</h4>
+                    <p>practising css sticky position</p>
+                    <a href="assets/assignments/assignment03-case04/css-assignment(case4).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03-case05.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-05)</h4>
+                    <p>practising css Grid position-01</p>
+                    <a href="assets/assignments/assignment03-case05/css-assignment(case5).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03-case06.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 03(case-06)</h4>
+                    <p>practising css Grid position-02</p>
+                    <a href="assets/assignments/assignment03-case06/css-assignment(case6).html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-assignment-01.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment03.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-01)</h4>
+                    <p>practising css navigation transition</p>
+                    <a href="assets/assignments/assignment04-case01/case-01.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment04-case02.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-02)</h4>
+                    <p>practising Animation-circle border transition</p>
+                    <a href="assets/assignments/assignment04-case02/case-02.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment04-case03.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-03)</h4>
+                    <p>practising basic rotation with animation</p>
+                    <a href="assets/assignments/assignment04-case03/case-03.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment04-case04.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-04)</h4>
+                    <p>This is a water drop animation training part</p>
+                    <a href="assets/assignments/assignment04-case04/case-04.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment04-case05.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-05)</h4>
+                    <p>practising css image slider animation </p>
+                    <a href="assets/assignments/assignment04-case05/case-05.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment04-case06.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 04(case-06)</h4>
+                    <p>practising css car animation</p>
+                    <a href="assets/assignments/assignment04-case06/case-06.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/CSS-Assignment-04.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/12.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 05</h4>
+                    <p>apply CSS for personal portfolio design</p>
+                    <a href="https://yehaniharshika.github.io/My-profile/" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/My-profile.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment11.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 06</h4>
+                    <p>creating pos-system design using css frameWorks</p>
+                    <a href="https://www.gloomaps.com/ssWtinRk7Whttps://www.gloomaps.com/ssWtinRk7W"  class="assignment-link-01">site map link<i class="fa-solid fa-pencil"></i></a>
+                    <a href="https://drive.google.com/file/d/1C5dZOWm4f5X9CMyU5PXVpPQboyPgJMEp/view?usp=sharing"  class="assignment-link-01">wireframe link<i class="fa-solid fa-pencil"></i></a>
+                    <a href="https://www.figma.com/file/AY764SCQLDGzAtAFCMejXG/POS-system-Design?type=design&node-id=1%3A71&mode=design&t=PD7FVTxy6jpe3Ms9-1"  class="assignment-link-01">mockup link<i class="fa-solid fa-pencil"></i></a>
+                    <a href="assets/assignments/assignment06/pages/dashboard.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/Assignment-06-pos-system-design" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment11.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 07</h4>
+                    <P>Applying JavaScript SPA for pos-system design</P>
+                    <a href="assets/assignments/assignment07/index.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/Assignment-06-pos-system-design/tree/spa" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment08-case01.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 08(case-01)</h4>
+                    <p>JavaScript QUA 01</p>
+                    <a href="assets/assignments/assignment08-case01/case-01.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/assignment-08-Javascript.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment08-case02.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 08(case-02)</h4>
+                    <p>JavaScript QUA 02</p>
+                    <a href="assets/assignments/assignment08-case02/case-02.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/assignment-08-Javascript.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/assignment09.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 09</h4>
+                    <p>JavaScript Knight Rider</p>
+                    <a href="assets/assignments/assignment09/assignment-09.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/assignment-09-Javascript.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/5.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 10</h4>
+                    <p>create simple calculator using HTML,CSS,JS</p>
+                    <a href="assets/assignments/assignment10/index.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/assignment-10-simple-calculator.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="assignment-square" data-aos="fade-up-right">
+                <img src="assets/images/7.jpg" title="" alt="">
+                <div class="assignment-data">
+                    <h4>Assignment 11</h4>
+                    <p>develop pos-system using JQuery</p>
+                    <a href="assets/assignments/assignment11/index.html" class="assignment-link-01">View Demo&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yehaniharshika/Assignment-06-pos-system-design.git" class="assignment-link-02">View in github&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--services section html code-->
+    <section id="services" class="my-services">
+        <h2 id="my-services-heading">
+            <span>My</span>
+            <span id="service-last">Services</span>
+        </h2>
+        <div class="service-container">
+            <div class="service-box "data-aos="zoom-out">
+                <div class="service-information">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>This service that I offer  is of high quality.I have studied web design
+                        development with excellence.It is up to
+                        me to develop to your web Application successfully.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box" data-aos="fade-down"
+                 data-aos-easing="linear"
+                 data-aos-duration="1500">
+                <div class="service-information">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        This service that I offer  is of high
+                        quality.I have studied UI/UX design development with excellence.It is up to
+                        me to develop to your software Application successfully.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box" data-aos="zoom-out">
+                <div class="service-information">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h3>App Development</h3>
+                    <p>
+                        This service that I offer is of high quality.I have studied
+                        back-end development styles and  development tools very well.
+                        It is up to me to develop to your software Application successfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--gallery section-->
+    <section id="gallery" class="my-gallery">
+        <h2 id="my-gallery-heading">
+            <span>My</span>
+            <span class="gallery-last">Gallery</span>
+        </h2>
+
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2">
+        <input type="radio" name="photos" id="check3">
+        <input type="radio" name="photos" id="check4">
+
+        <div class="gallery-container">
+            <div data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom" class="gallery-top-content">
+                <h3>Photo Gallery</h3>
+                <label for="check1">All Photos</label>
+                <label for="check2">Professional Photos</label>
+                <label for="check3">Travelling Photos</label>
+                <label for="check4">Other Photos</label>
+            </div>
+
+            <div class="photo-gallery">
+                <div class="pic pic-professional">
+                    <img src="assets/images/ProfessionalPhoto1..jpg" title="" alt="">
+                </div>
+                <div class="pic pic-travelling">
+                    <img src="assets/images/TravellingPhoto1.jpg" title="" alt="">
+                </div>
+                <div class="pic pic-other">
+                    <img src="assets/images/pic6.jpg" title="" alt="">
+                </div>
+
+                <div class="pic pic-professional">
+                    <img src="assets/images/ProfessionalPhoto2.jpg" title="" alt="">
+                </div>
+
+                <div class="pic pic-travelling">
+                    <img src="assets/images/era.jpg" title="" alt="">
+                </div>
+                <div class="pic pic-other">
+                    <img src="assets/images/pic4.jpg" title="" alt="" >
+                </div>
+
+
+                <div class="pic pic-professional">
+                    <img src="assets/images/ProfessionalPhoto3.jpg" title="" alt="">
+                </div>
+                <div class="pic pic-travelling">
+                    <img src="assets/images/TravellingPhoto3.jpg" title="" alt="" >
+                </div>
+                <div class="pic pic-other">
+                    <img src="assets/images/pic7.jpg" title="" alt="" >
+                </div>
+                <div class="pic pic-professional">
+                    <img src="assets/images/pic2.jpg" title="" alt="" >
+                </div>
+                <div class="pic pic-other">
+                    <img src="assets/images/pic3.jpg" title="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me" class="contact-me">
+        <h2 id="contactMe-heading">
+            <span>Contact</span>
+            <span class="contactMe-last">Me</span>
+        </h2>
+        <h4 class="info-text">Get in touch,,, talk to me</h4>
+        <div class="info-box">
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="contact-my-info">
+                <i class="fa-solid fa-phone"></i>
+                <span>&nbsp;076-4450928</span>
+            </div>
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="contact-my-info">
+                <i class="fa-brands fa-google"></i>
+                <span>&nbsp;pamunuwayehaniharshika@gmail.com</span>
+            </div>
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="contact-my-info">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>&nbsp;076-4450928</span>
+            </div>
+            <div data-aos="fade-up"
+                 data-aos-duration="3000" class="contact-my-info">
+                <i class="fa-solid fa-house-user"></i>
+                <span>&nbsp;29/101,Aththanakadawala,Polonnaruwa</span>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in-left" class="form-box">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <div class="input-box">
+                    <input type="hidden" name="access_key" value="70143735-0170-4cb6-a311-3ea125439a9d">
+                    <input type="text" name="name" placeholder="Full Name"  required>
+                    <input type="email" name="email" placeholder="Your Email Address"  required>
+                    <input type="tel" name="phone" placeholder="Mobile Number"  required>
+                    <input type="text" name="subject"  placeholder="subject" required>
+                    <textarea id=""  placeholder="Your Message" rows="5" cols="30" name="message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>
+                copyright &copy; 2024 by Yehani Harshika | All rights reserved
+            </p>
+        </div>
+
+        <div class="footer-icon-top">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+    </footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>

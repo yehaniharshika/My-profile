@@ -1,0 +1,156 @@
+/* My Education section styles */
+.my-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--bg-color);
+    gap: 2rem;
+    min-height: 60vh;
+    margin-bottom: -5px;
+}
+
+#my-education-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'nunito', sans-serif;
+}
+
+#education-last{
+    color: #00EEFF;
+}
+
+.education-contents {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.education-contents ul {
+    width: 100%;
+    font-family:"Ubuntu", sans-serif;
+    color: #FFCD1E;
+}
+
+.education-contents li {
+    list-style: none;
+}
+
+.education-contents h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.education-list-square-01,
+.education-list-square-02,
+.education-list-square-03,
+.education-list-square-04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    background-color: #1E2245;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-list-square-04:hover{
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.education-list-square-03:hover{
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.education-list-square-02:hover{
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.education-list-square-01:hover{
+    box-shadow: 0 0 25px #FFCD1E;
+}
+
+.education-list-square-01 img,
+.education-list-square-02 img,
+.education-list-square-03 img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    display: block;
+}
+
+.education-list-square-04 img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: block;
+}
+.year {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.year i {
+    margin-right: 0.5rem;
+}
+
+p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'nunito', sans-serif;
+    font-weight: 600;
+}
+
+.it-center-name {
+    margin: 1rem 0;
+    color: white;
+    font-family:"Ubuntu", sans-serif;
+}
+
+/*media queries*/
+@media all and (max-width: 840px){
+    #my-education-heading {
+        font-size: 3.5rem;
+    }
+}
+@media all and (max-width: 720px){
+    #my-education-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 810px) {
+
+    .education-contents h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 474px) {
+    #my-education-heading {
+        font-size: 2.6rem;
+    }
+
+    .education-contents h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
